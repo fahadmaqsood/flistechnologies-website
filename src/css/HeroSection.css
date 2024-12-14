@@ -24,7 +24,7 @@
 .hero-text p {
   color: #cbd5e0;
   line-height: 2;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 
 .hero-btn {
@@ -64,8 +64,11 @@
 
   .hero-text h1 {
     margin-left: 1rem;
-    font-size: 2rem; /* Adjust heading size */
+    font-size: 1.5rem; /* Adjust heading size */
     margin-bottom: 1rem; /* Add spacing below heading */
+  }
+  .highlight {
+    font-size: 1.5rem;
   }
 
   .hero-text p {
