@@ -62,9 +62,10 @@
 @media (max-width: 768px) {
   .custom-navbar {
     background: transparent !important;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.5rem; /* Decreased padding */
     margin-left: 0;
     margin-right: 0;
+    font-size: 0.875rem; /* Optional: Adjust font size if needed */
   }
 
   .custom-logo {

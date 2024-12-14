@@ -38,7 +38,7 @@ const Reviews = () => {
               width: '2.5rem',
               height: '2.5rem',
               borderRadius: '50%',
-              border: '2px solid #fff !important',
+              border: '2px solid white',
               backgroundColor: 'transparent',
               position: 'relative',
               top: '-12rem',
