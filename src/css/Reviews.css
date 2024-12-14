@@ -1,0 +1,72 @@
+.carousel {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* General column styling */
+.review-col {
+  margin-right: 0.3rem; /* Adjust horizontal spacing between columns */
+  margin-left: 0.3rem; /* Ensure consistent spacing */
+}
+
+/* Image adjustments */
+.review-col img {
+  width: 150px; /* Reduce image size */
+  height: 150px; /* Ensure consistent height */
+}
+
+.designation {
+  font-size: 0.8rem;
+  color: #a0aec0;
+}
+.large-img {
+  width: 190px !important;
+  height: 190px !important;
+}
+
+.review-col img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.line-container {
+  display: flex;
+  justify-content: center; /* Center the line */
+  margin-bottom: 10px; /* Add spacing between the line and the text */
+}
+
+.simple-line {
+  width: 70px; /* Set the width of the line */
+  height: 5px; /* Set the height of the line */
+  background: linear-gradient(to right, #5550bc, #57007b); /* Gradient color */
+  margin: 0 auto; /* Centers the line horizontally */
+}
+
+.highlightedparagraph {
+  color: #fff !important; /* Example: Set color to a bright orange */
+  font-weight: bold; /* Make it bold (optional) */
+  font-size: 1rem; /* Slightly larger font (optional) */
+}
+.paragraph {
+  color: #c4c4c4 !important;
+  font-size: 0.6rem;
+}
+
+.review-col p {
+  color: #a0aec0;
+  font-size: 1rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .review-col {
+    margin-right: 0.5rem; /* Reduce spacing for smaller screens */
+    margin-left: 0.5rem;
+  }
+
+  .review-col img {
+    width: 80px; /* Adjust image size for smaller screens */
+    height: 80px;
+  }
+}

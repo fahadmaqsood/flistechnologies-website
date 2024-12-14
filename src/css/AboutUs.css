@@ -1,0 +1,217 @@
+.about-us .info-boxes .info-box {
+  padding: 20px;
+}
+.info-boxes {
+  background-color: #d0d7ff;
+  border-radius: 20px;
+  color: #000;
+  width: 27rem;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between; /* Space between info-boxes */
+  align-items: center; /* Center vertically the info-box and grey lines */
+}
+.about-us {
+  margin-top: 8rem; /* Adjust this value for top margin */
+  margin-bottom: 10px; /* Adjust this value for bottom margin */
+}
+.heading {
+  position: relative; /* Required for positioning the pseudo-element */
+  display: inline-block; /* Makes sure the underline only applies to the text */
+}
+.heading-top-padding {
+  padding-top: 10px; /* Adjust this value to add space from the top */
+}
+.grey-color {
+  width: 2px; /* Adjust the thickness of the vertical line */
+  height: 80px; /* Adjust the height of the vertical line */
+  background-color: gray; /* The grey color */
+  align-self: center; /* Center the grey line between the info-box elements */
+}
+.btn {
+  background: linear-gradient(#5550bc, #57007b);
+  color: #fff;
+  width: 150px;
+  padding: 12px;
+  border-radius: 10px;
+  border: #57007b;
+}
+
+.heading::after {
+  content: ''; /* Creates an empty pseudo-element */
+  position: absolute;
+  bottom: -6px; /* Align it at the bottom of the text */
+  left: 0;
+  width: 50%; /* Make it the full width of the text */
+  height: 4px; /* Increase the thickness of the line */
+  background: linear-gradient(#5550bc, #57007b);
+}
+.image-section {
+  position: relative;
+  height: 300px; /* Adjust height as needed */
+  margin-top: -200px; /* Move the image section upwards */
+}
+
+.image-section .img-bottom-left {
+  position: absolute;
+  bottom: -25%; /* Adjust this value to move the image further down */
+  left: 0;
+  width: 48%; /* Adjust size */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Ensure it's on top of img-top-right */
+}
+
+.image-section .img-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%; /* Adjust size */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Ensure it's below img-bottom-left */
+}
+
+/* Optional: Connector styling for visual effect */
+
+.image-section {
+  position: relative; /* Positioning context for the half-circle */
+}
+
+.image-section .half-circle {
+  position: absolute;
+  top: 55%; /* Position it vertically in the middle of the container */
+  left: 34%; /* Adjust to position the half-circle to the left of the image */
+  transform: translateY(-50%); /* Center the circle vertically */
+  width: 70px;
+  height: 70px; /* Make it a full circle */
+  background: linear-gradient(#5550bc, #57007b);
+  border-radius: 50%; /* Make it a circle */
+  z-index: 0; /* Ensure it appears above the image */
+}
+.image-section .right-circle {
+  position: absolute;
+  bottom: -25px; /* Position the circle at the bottom of the container */
+  right: 43%; /* Adjust to position the circle on the right side */
+  transform: translateY(
+    50%
+  ); /* Adjust to make it visually centered from the bottom */
+  width: 70px;
+  height: 70px; /* Make it a full circle */
+  background: linear-gradient(#5550bc, #57007b);
+  border-radius: 50%; /* Make it a circle */
+  z-index: 0; /* Ensure it appears below the image */
+}
+/* Mobile Responsive Adjustments */
+@media only screen and (max-width: 767px) {
+  /* Center the entire .about-us section */
+  .about-us {
+    margin-top: 5rem; /* Adjust top margin */
+    margin-bottom: 30px; /* Adjust bottom margin */
+  }
+  .heading {
+    font-size: 1.5rem; /* Adjust font size */
+    padding-top: 10px; /* Add padding top */
+  }
+
+  /* Ensure consistent spacing for the top padding of the heading */
+  .heading-top-padding {
+    padding-top: 10px; /* Adjust padding for smaller screens */
+  }
+  /* Make info-boxes stack vertically */
+  .info-boxes {
+    width: 80%; /* Adjust width for smaller screens */
+    height: 120px; /* Let the height adjust automatically */
+    justify-content: center;
+    align-items: center; /* Center the info-boxes */
+    padding: 5px; /* Adjust padding */
+  }
+
+  /* Each info-box takes full width */
+  .info-box {
+    width: 100%;
+    margin-bottom: 15px; /* Space between info-boxes */
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Adjust grey line for mobile, making it thinner and with less height */
+  .grey-color {
+    width: 1px; /* Thin vertical line */
+    height: 50px; /* Adjust height */
+    margin: 10px 0; /* Add vertical spacing */
+    align-self: center; /* Center the line */
+  }
+
+  /* Full width button for smaller screens */
+  .btn {
+    width: 30%;
+    padding: 12px;
+    margin-top: 10px; /* Space between button and other elements */
+  }
+
+  .image-section {
+    position: relative;
+    margin-top: 15px; /* Reduce top margin */
+    height: 250px; /* Adjust image section height */
+    width: 100%; /* Make the image section full width */
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .image-section .img-bottom-left,
+  .image-section .img-top-right {
+    position: absolute; /* Make images absolute to overlap */
+    width: 50%; /* Adjust width for smaller screens */
+    max-width: 100%; /* Prevent overflow */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .image-section .img-bottom-left {
+    bottom: -20%; /* Move image further down */
+    left: 5%; /* Adjust horizontal positioning */
+    z-index: 2; /* Ensure it's on top */
+  }
+
+  .image-section .img-top-right {
+    top: 0;
+    right: 10%; /* Adjust horizontal positioning */
+    z-index: 1; /* Ensure it's below img-bottom-left */
+  }
+
+  /* Add circles on left and right sides */
+  .image-section .half-circle,
+  .image-section .right-circle {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(#5550bc, #57007b);
+    border-radius: 50%; /* Make them circles */
+    z-index: 0;
+  }
+
+  .image-section .half-circle {
+    top: 50%; /* Position it vertically in the middle of the container */
+    left: 30%; /* Adjust left positioning */
+  }
+
+  .image-section .right-circle {
+    bottom: 10px; /* Position the circle at the bottom of the container */
+    right: 35%; /* Adjust right positioning */
+  }
+
+  /* Adjust heading font size and alignment */
+  .heading {
+    font-size: 1.2rem; /* Adjust font size */
+    padding-top: 10px; /* Add padding top */
+    text-align: left;
+  }
+
+  /* Ensure consistent spacing for the top padding of the heading */
+  .heading-top-padding {
+    padding-top: 10px; /* Adjust padding for smaller screens */
+    text-align: left;
+  }
+}

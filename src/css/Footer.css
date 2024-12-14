@@ -1,0 +1,43 @@
+.footer-link {
+  color: #cbd5e0 !important;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin: 5px;
+}
+
+.footer {
+  height: 26rem;
+}
+
+/* Add spacing to headings */
+h5 {
+  margin-bottom: 25px; /* Space below headings */
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff; /* White text for headings */
+}
+
+/* Add spacing to paragraphs */
+p {
+  font-size: 18px;
+  margin: 10px 0; /* Adds vertical spacing */
+  font-weight: 300;
+  color: #cbd5e0;
+}
+
+/* Adjust spacing between links in the Links section */
+.footer-link {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* Style for horizontal line */
+.hor {
+  border: none; /* Remove default border */
+  height: 2px; /* Set the height of the line */
+  background-color: #cbd5e0 !important;
+  width: 100vw; /* Span the full width of the viewport */
+  margin: 20px auto; /* Add vertical spacing around the line */
+  margin-left: calc(-50vw + 50%); /* Align to the left edge */
+}

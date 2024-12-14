@@ -1,0 +1,272 @@
+.box {
+  background-color: #f9f9ff;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  height: 29rem;
+  position: relative;
+  overflow: visible;
+}
+.services-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 15px;
+}
+
+.service-card {
+  flex: 1;
+  max-width: calc(100% / 5 + 30px);
+  height: 270px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  border: 2px solid rgba(85, 80, 188, 0.753);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.service-card:hover .title {
+  color: #57007b;
+}
+.title {
+  font-size: 1rem;
+}
+
+.card-body {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgba(85, 80, 188, 0.5);
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+.half-circle {
+  position: absolute;
+  top: -50px; /* Place it above the box */
+  left: 35px;
+  width: 90px;
+  height: 50px;
+  background: linear-gradient(#5550bc, #57007b);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  z-index: 10;
+}
+.down-circle {
+  position: absolute;
+  bottom: -50px;
+  right: 35px;
+  width: 90px;
+  height: 50px;
+  background: linear-gradient(to top, #5550bc, #57007b);
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  z-index: -10;
+}
+
+.circle-img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.card-title {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.card-text {
+  margin-top: 5px;
+  font-size: 0.75rem;
+}
+
+.circle-row {
+  display: flex;
+  margin-left: 22rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.circle.bg-primary {
+  background: linear-gradient(#5550bc, #57007b);
+}
+
+.circle.bg-secondary {
+  background-color: #6c757d;
+}
+
+.active {
+  border: 2px solid #5550bc;
+}
+.borders {
+  margin-right: 5rem;
+}
+
+.circlees {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid;
+  color: inherit;
+  margin-right: 10px;
+}
+
+.line-container {
+  margin-top: 0.5rem;
+  width: 160px;
+  height: 5px;
+  background-color: #d3d3d3;
+  overflow: hidden;
+  position: relative;
+}
+
+.line-filled {
+  background: linear-gradient(#5550bc, #57007b);
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.line-unfilled {
+  background-color: transparent;
+  height: 100%;
+  width: 80%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.boders {
+  display: flex;
+  margin-top: 2rem;
+}
+.grey-txt {
+  color: gray;
+}
+.purple-txt {
+  color: #57007b;
+}
+.down-box {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 576px) {
+  .box {
+    height: auto; /* Allow height to adjust dynamically */
+  }
+
+  .services-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .service-card {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .half-circle {
+    left: 20px;
+    width: 70px;
+    height: 40px;
+    bottom: 2px;
+  }
+
+  .down-circle {
+    right: 20px;
+    width: 70px;
+    height: 40px;
+  }
+
+  .circle-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .circle-img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .circle-row {
+    margin-left: 0;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+  }
+
+  .circlees {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+
+  .line-container {
+    width: 120px;
+    height: 3px;
+  }
+
+  .line-filled {
+    width: 40%;
+  }
+
+  .borders,
+  .boders {
+    margin-left: 4rem;
+    align-items: center;
+  }
+
+  .down-box {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title,
+  .card-title {
+    font-size: 0.875rem;
+  }
+
+  .card-text {
+    font-size: 0.75rem;
+  }
+
+  .grey-txt,
+  .purple-txt {
+    font-size: 0.875rem;
+  }
+}

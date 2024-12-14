@@ -1,0 +1,128 @@
+.contact-container {
+  position: relative;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #f9f9ff;
+  color: #000;
+  overflow: visible;
+  margin-top: 8rem; /* Adjust this value for top margin */
+  margin-bottom: 10px;
+  height: 60rem;
+}
+.top-para {
+  color: #9f9f9f;
+}
+.hyd {
+  color: #000 !important;
+  font-size: 1rem;
+}
+.heading5 {
+  color: #000 !important;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+.para {
+  margin-left: 2rem;
+  font-size: 1rem;
+  color: #000 !important;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  padding: 15px;
+  border-radius: 5px; /* Optional for rounded corners */
+  border: 1px solid #57007b; /* Keep purple border on focus */
+  box-shadow: 0 0 5px rgba(87, 0, 123, 0.5); /* Optional purple glow effect */
+  outline: none; /* Remove the browser's default focus outline */
+  margin: '5px';
+}
+
+#subject {
+  border: 1px solid linear-gradient(#5550bc, #57007b);
+}
+.btn {
+  margin: 25px;
+  width: 200px;
+}
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 1rem;
+    margin-top: 4rem;
+    height: 70rem;
+  }
+
+  .top-para {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .address {
+    margin-bottom: 2rem;
+  }
+
+  .heading5 {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .paragraph {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+
+  .form-control {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    margin: 15px auto;
+    width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-6 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-para {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .heading5 {
+    font-size: 1rem;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-container {
+    margin-top: 2rem;
+  }
+}
