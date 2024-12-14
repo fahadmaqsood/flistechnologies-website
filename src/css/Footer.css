@@ -19,7 +19,7 @@ h5 {
 }
 
 /* Add spacing to paragraphs */
-p {
+.fot-para {
   font-size: 18px;
   margin: 10px 0; /* Adds vertical spacing */
   font-weight: 300;

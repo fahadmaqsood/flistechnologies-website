@@ -28,7 +28,7 @@ const AboutUs = () => {
           <div className='info-boxes d-flex justify-content-between mt-4'>
             <div className='info-box text-center'>
               <h4>200+</h4>
-              <p>Projects</p>
+              <p className='ab-para'>Projects</p>
             </div>
             <div
               className='grey-color'
@@ -36,12 +36,12 @@ const AboutUs = () => {
             ></div>
             <div className='info-box text-center'>
               <h4>20+</h4>
-              <p>Clients</p>
+              <p className='ab-para'>Clients</p>
             </div>
             <div className='grey-color'></div>
             <div className='info-box text-center'>
               <h4>150+</h4>
-              <p>Hours of Support</p>
+              <p className='ab-para'>Hours of Support</p>
             </div>
           </div>
           <button className='btn  mt-4'>Read More</button>

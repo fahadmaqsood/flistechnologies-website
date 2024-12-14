@@ -82,7 +82,9 @@ const Services = () => {
                     />
                   </div>
                   <Card.Title className='title'>{service.title}</Card.Title>
-                  <Card.Text>{service.description}</Card.Text>
+                  <Card.Text className='discribtion'>
+                    {service.description}
+                  </Card.Text>
                 </Card.Body>
               </Card>
             ))}

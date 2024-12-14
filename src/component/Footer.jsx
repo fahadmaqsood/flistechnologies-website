@@ -14,7 +14,7 @@ function Footer() {
           {/* First Column */}
           <div className='col-md-4 mb-3'>
             <h5>flistechnologies</h5>
-            <p style={{ color: '#CBD5E0' }}>
+            <p className='fot-para' style={{ color: '#CBD5E0' }}>
               At flistechnologies, we deliver innovative software solutions that
               transform businesses and elevate user experiences.
             </p>
@@ -30,7 +30,7 @@ function Footer() {
           {/* Second Column */}
           <div className='col-md-4 mb-3 '>
             <h5 style={{ textAlign: 'center' }}>Links</h5>
-            <p style={{ color: '#CBD5E0' }}>
+            <p className='fot-para' style={{ color: '#CBD5E0' }}>
               <a
                 href='#about'
                 className='text-decoration-none text-white d-block footer-link'
@@ -61,7 +61,7 @@ function Footer() {
           {/* Third Column */}
           <div className='col-md-4 mb-3'>
             <h5 className='fw-bold'>Contact Us</h5>
-            <p style={{ color: '#CBD5E0' }}>
+            <p className='fot-para' style={{ color: '#CBD5E0' }}>
               Whether you have a question about features, pricing, or anything
               else, our team is ready to answer all your questions.
               <br />

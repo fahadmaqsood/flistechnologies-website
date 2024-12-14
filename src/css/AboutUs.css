@@ -15,6 +15,9 @@
   margin-top: 8rem; /* Adjust this value for top margin */
   margin-bottom: 10px; /* Adjust this value for bottom margin */
 }
+.ab-para {
+  color: #000;
+}
 .heading {
   position: relative; /* Required for positioning the pseudo-element */
   display: inline-block; /* Makes sure the underline only applies to the text */
