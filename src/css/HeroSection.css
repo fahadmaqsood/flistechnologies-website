@@ -73,8 +73,8 @@
 
   .hero-text p {
     margin-left: 1rem;
-    font-size: 0.9rem; /* Adjust paragraph font size */
-    line-height: 2;
+    font-size: 1rem; /* Adjust paragraph font size */
+    line-height: 1;
     margin: 1rem 0;
   }
 
