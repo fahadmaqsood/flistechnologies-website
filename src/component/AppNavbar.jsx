@@ -29,7 +29,7 @@ function AppNavbar() {
           </Nav>
 
           {/* Contact Button */}
-          <Button className='custom-contact-btn ms-auto'>Contact Us</Button>
+          <Button className='custom-contact-btn'>Contact Us</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

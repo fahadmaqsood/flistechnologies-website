@@ -52,43 +52,56 @@
 /* Media Query for Mobile Responsiveness */
 @media (max-width: 768px) {
   .hero-container {
+    display: flex;
     flex-direction: column; /* Stack items vertically */
-    align-items: center;
-    padding: 2rem 1rem;
+    align-items: flex-start; /* Align items to the left */
+    padding: 1.5rem 1rem; /* Reduced padding for smaller screens */
   }
 
   .hero-text {
-    margin: 0; /* Remove left/right margins */
-    margin-bottom: 1.5rem; /* Add spacing below text */
+    margin: 0; /* Remove unnecessary margins */
+    margin-bottom: 1rem; /* Add space below the text */
+    width: 100%; /* Ensure it spans the full container width */
   }
 
   .hero-text h1 {
-    margin-left: 1rem;
-    font-size: 1.5rem; /* Adjust heading size */
-    margin-bottom: 1rem; /* Add spacing below heading */
+    font-size: 1.6rem; /* Slightly larger heading for emphasis */
+    margin-left: 1rem; /* Maintain left alignment */
+    margin-bottom: 0.8rem; /* Adjust space below the heading */
   }
+
   .highlight {
-    font-size: 1.5rem;
+    font-size: 1.4rem; /* Balanced size for highlighted text */
+    margin-left: 1rem; /* Maintain left alignment */
   }
 
   .hero-text p {
-    margin-left: 1rem;
-    font-size: 1rem; /* Adjust paragraph font size */
-    line-height: 1;
-    margin: 1rem 0;
+    font-size: 0.95rem; /* Slightly larger font for readability */
+    line-height: 1.4; /* Comfortable line spacing */
+    margin: 0.5rem 0; /* Reduce spacing for compact text display */
+    margin-left: 1rem; /* Maintain left alignment */
   }
 
   .hero-btn {
-    margin-left: 1rem;
-    padding: 0.6rem 1rem; /* Adjust button padding */
-    font-size: 0.9rem; /* Adjust button font size */
-    margin: 1rem auto; /* Center button */
+    padding: 0.5rem 1rem; /* Comfortable button size */
+    font-size: 1rem; /* Readable button text */
+    margin: 1rem 0; /* Add spacing around button */
+    margin-left: 1rem; /* Keep button aligned to the left */
+    border-radius: 5px; /* Add rounded corners for modern styling */
+    background-color: #6c63ff; /* Add button background color */
+    color: white; /* Ensure text is visible */
+    border: none; /* Remove default borders */
+  }
+
+  .hero-btn:hover {
+    background-color: #0056b3; /* Slightly darker color on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
   }
 
   .hero-image {
-    align-items: center;
-    max-width: 80%;
-    margin: 0 auto;
-    margin-top: 1.5rem;
+    max-width: 100%; /* Ensure image doesn't overflow the container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 1rem 0; /* Add spacing around the image */
+    align-self: center; /* Keep the image in the center for better design */
   }
 }
