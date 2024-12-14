@@ -57,7 +57,6 @@
   background: #5550bc !important;
   color: #fff !important;
 }
-
 /* Mobile-specific styles */
 @media (max-width: 768px) {
   .custom-navbar {
@@ -66,11 +65,15 @@
     margin-left: 0;
     margin-right: 0;
     font-size: 0.875rem; /* Optional: Adjust font size if needed */
+    display: flex;
+    justify-content: space-between; /* Align logo and toggle in one line */
+    align-items: center; /* Vertically align logo and toggle button */
   }
 
   .custom-logo {
     color: #fff !important;
     font-size: 1.5rem;
+    margin-right: 10px; /* Optional: Adjust margin for better spacing */
   }
 
   .custom-nav-links {
@@ -156,9 +159,9 @@
     content: url('../imgs/Group3.png'); /* About Us icon */
     margin-right: 20px;
   }
+
   .custom-contact-btn::before {
     content: url('../imgs/Group1.png'); /* Path to your image */
-    /* display: inline-block; */
     margin-right: 20px;
   }
 }
