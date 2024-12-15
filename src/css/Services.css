@@ -24,10 +24,7 @@
   box-sizing: border-box;
   position: relative;
 }
-.service-card:active {
-  transform: translateY(-15px); /* Moves the card 15px upwards */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Optional: Adds shadow effect */
-}
+
 .service-card:hover {
   transform: scale(1.05);
   border: 2px solid rgba(85, 80, 188, 0.753);

@@ -18,13 +18,15 @@ function AppNavbar() {
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
 
         <Navbar.Collapse id='basic-navbar-nav'>
-          {/* Navigation Links */}
           <Nav className='ms-auto custom-nav-links'>
             <Nav.Link as={NavLink} to='/' className='custom-nav-link'>
               Home
             </Nav.Link>
             <Nav.Link as={NavLink} to='/projects' className='custom-nav-link'>
               Projects
+            </Nav.Link>
+            <Nav.Link as={NavLink} to='/products' className='custom-nav-link'>
+              Products
             </Nav.Link>
             <Nav.Link as={NavLink} to='/about-us' className='custom-nav-link'>
               About Us

@@ -1,0 +1,65 @@
+.contact-us-section {
+  background-color: #f8f9fa;
+}
+
+.contact-info {
+  border-radius: 10px;
+  background-color: #000;
+}
+.contact-heading {
+  color: #000;
+}
+.contact-para {
+  color: #717171;
+}
+.data {
+  margin-top: 70px; /* Move it down further */
+  margin-bottom: 20px; /* Adjust space below the section */
+}
+.data div {
+  padding-bottom: 45px;
+}
+
+.custom-icon {
+  width: 24px;
+  height: 24px;
+}
+.overlapimages {
+  position: relative;
+  top: 6rem;
+  margin-left: 5.9rem;
+}
+.diff {
+  display: flex;
+}
+.social-icons {
+  display: flex; /* Use flexbox for easy alignment */
+  justify-content: space-between; /* Align the items to the left */
+  margin-top: 12rem;
+}
+.details {
+  color: #000;
+}
+.input input {
+  border: none;
+  border-bottom: 3px solid #8d8d8d;
+  width: 278px;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+}
+.textarea input {
+  border: none;
+  border-bottom: 3px solid #8d8d8d;
+  width: 595px;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+}
+.send-btn {
+  background-color: #000;
+  color: #fff;
+  border: #000;
+  border-radius: 5px;
+  margin-left: 27rem;
+}

@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: space-between;
   background: #fff;
-  padding: 1rem 3rem;
   height: 80px;
 }
 
@@ -12,7 +11,7 @@
   font-weight: bold;
   color: #000;
   cursor: pointer;
-  margin-right: auto;
+  margin-left: -4.5rem;
 }
 
 .custom-nav-links {
@@ -24,14 +23,8 @@
 .custom-nav-link {
   font-size: 1rem;
   color: #4a5568;
-  position: relative;
   cursor: pointer;
 }
-
-.custom-nav-link:hover {
-  color: #4a5568;
-}
-
 .custom-nav-link:hover::after {
   content: '';
   display: block;
@@ -41,7 +34,11 @@
   position: absolute;
   bottom: 0;
 }
-.custom-nav-link:focus,
+.custom-nav-link:focus {
+  outline: none !important; /* Remove default focus outline */
+  border: none !important; /* Remove any border */
+  box-shadow: none !important; /* Remove any focus shadow */
+}
 .custom-nav-link:active {
   outline: none !important; /* Remove default focus outline */
   border: none !important; /* Remove any border */
@@ -52,10 +49,10 @@
   background: #000 !important;
   color: #fff;
   font-size: 1rem;
-  padding: 0.6rem 1.5rem;
   border: none;
   cursor: pointer;
   transition: color 0.3s ease;
+  margin-right: 5rem;
 }
 
 .custom-contact-btn:hover {

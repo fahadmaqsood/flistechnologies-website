@@ -74,7 +74,7 @@ const Services = () => {
                 className={`shadow-sm service-card w-100 ${
                   activeIndex === index ? 'active' : ''
                 }`}
-                onClick={() => handleCardClick(index)} // Card click
+                onClick={() => handleCardClick(index)}
               >
                 <Card.Body>
                   <div className='circle-container'>
@@ -101,7 +101,7 @@ const Services = () => {
                   className={`circle mx-2 ${
                     activeIndex === index ? 'bg-primary' : 'bg-secondary'
                   }`}
-                  onClick={() => handleCircleClick(index)} // Circle click to activate the corresponding card
+                  onClick={() => handleCircleClick(index)}
                 ></div>
               ))}
             </div>
