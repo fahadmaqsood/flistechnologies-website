@@ -23,6 +23,7 @@
 .custom-nav-link {
   font-size: 1rem;
   color: #4a5568;
+  position: relative;
   cursor: pointer;
 }
 .custom-nav-link:hover::after {
@@ -52,7 +53,6 @@
   border: none;
   cursor: pointer;
   transition: color 0.3s ease;
-  margin-right: 5rem;
 }
 
 .custom-contact-btn:hover {
