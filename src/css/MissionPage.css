@@ -1,0 +1,108 @@
+.Mission-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f9f9ff;
+  position: relative; /* Fix container at the top */
+  bottom: 3rem; /* Ensures it stays at the top */
+  left: 0; /* Ensure it stretches across the entire width */
+  height: 59.9rem;
+  margin-bottom: 2rem; /* Optional bottom margin */
+}
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Text styling */
+.mission-heading,
+.mission-subheading {
+  color: #000000;
+}
+.mission-text {
+  color: #000000;
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+}
+.mission-row {
+  display: flex; /* Flex layout for the Row */
+  justify-content: space-between; /* Ensures space between Col elements */
+  align-items: center; /* Aligns items vertically */
+}
+.mission-quote {
+  color: #000000;
+}
+
+.mission-subheading .purple-text {
+  color: #5550bc; /* Color for the 'Vision' text */
+  font-size: 2rem;
+}
+
+/* Optional: Adjust margins and padding */
+.mission-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.mission-heading::after {
+  content: ''; /* Creates an empty pseudo-element */
+  position: absolute;
+  top: 5.5rem; /* Align it at the bottom of the text */
+  left: 4.5rem;
+  width: 5%; /* Make it the full width of the text */
+  height: 4px; /* Increase the thickness of the line */
+  background: linear-gradient(#5550bc, #57007b);
+}
+.mission-subheading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.mission-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mission-quote {
+  font-style: italic;
+  margin: 20px 0;
+}
+.image-section img {
+  max-width: 100%; /* Ensures the images are responsive */
+  height: auto;
+}
+.member {
+  background-color: rgba(0, 0, 0, 0.849); /* 20% transparent black */
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers the content inside */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Optional for visibility */
+  position: relative;
+  margin-top: 100px; /* Increases the space above */
+  margin-bottom: 50px; /* Space below, adjust if needed */
+}
+
+.downcircle {
+  position: absolute;
+  bottom: -50px; /* Moves the circle below */
+  right: 35px;
+  width: 90px;
+  height: 50px;
+  background: linear-gradient(to top, #5550bc, #57007b);
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  z-index: 10;
+}
+
+.upcircle {
+  position: absolute;
+  top: -50px; /* Moves the circle above */
+  left: 35px;
+  width: 90px;
+  height: 50px;
+  background: linear-gradient(#5550bc, #57007b);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  z-index: 10;
+}

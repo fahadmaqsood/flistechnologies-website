@@ -1,0 +1,55 @@
+.about-page {
+  display: flex;
+  color: white;
+  height: 300px;
+  overflow: hidden;
+}
+
+/* Content styling */
+.about-content {
+  text-align: left;
+  margin-left: 5rem;
+}
+.about-heading::after {
+  content: ''; /* Creates an empty pseudo-element */
+  position: absolute;
+  top: 12rem; /* Align it at the bottom of the text */
+  left: 5.2rem;
+  width: 5%; /* Make it the full width of the text */
+  height: 4px; /* Increase the thickness of the line */
+  background: linear-gradient(#5550bc, #57007b);
+}
+.about-subheading {
+  margin-top: 30px;
+  color: #6a5acd;
+  font-weight: bold;
+}
+
+.about-subheading span {
+  color: #6a5acd;
+}
+
+.about-deliver {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.overlap-images {
+  position: relative;
+  top: -7rem;
+  margin-left: 69.6rem;
+}
+.circle-image.circle1 {
+  position: absolute;
+  top: -4rem; /* Adjust this value to position the image */
+  left: 0.5rem; /* Adjust this value to position the image */
+  z-index: 1; /* Ensure this image is at the bottom */
+}
+
+/* Circle Image 2 */
+.circle-image.circle2 {
+  position: absolute;
+  top: -50px; /* Adjust the vertical position to overlap */
+  left: 50px; /* Adjust the horizontal position to overlap */
+  z-index: 2; /* Ensure this image is on top */
+}

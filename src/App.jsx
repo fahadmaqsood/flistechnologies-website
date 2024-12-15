@@ -1,24 +1,21 @@
 import './App.css'
 import AppNavbar from './component/AppNavbar'
 import Footer from './component/Footer'
-import AboutUs from './component/Home/AboutUs'
-import Contact from './component/Home/Contact'
-import HeroSection from './component/Home/HeroSection'
-import Projects from './component/Home/Projects'
-import Reviews from './component/Home/Reviews'
-import Services from './component/Home/Services'
+import AbooutPage from './Pages/AbooutPage'
+import HomePage from './Pages/HomePage'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
     <>
-      <AppNavbar />
-      <HeroSection />
-      <Services />
-      <AboutUs />
-      <Projects />
-      <Reviews />
-      <Contact />
-      <Footer />
+      <Router>
+        <AppNavbar />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='about-us' element={<AbooutPage />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   )
 }
