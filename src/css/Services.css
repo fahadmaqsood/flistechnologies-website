@@ -1,28 +1,33 @@
 .box {
   background-color: #f9f9ff;
-  margin-left: 4rem;
-  margin-right: 4rem;
   height: 29rem;
   position: relative;
   overflow: visible;
 }
 .services-row {
+  width: 200%; /* Expands the row to twice the viewport width */
+  max-width: 1320px; /* Removes the maximum width constraint */
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
   gap: 15px;
+  margin: 0; /* Ensures no offset from the left */
+  padding: 0; /* Removes any padding that could push it right */
 }
 
 .service-card {
   flex: 1;
-  max-width: calc(100% / 5 + 30px);
+  max-width: calc(100% / 4 + 30px); /* Adjusted to allow more width */
   height: 270px;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   box-sizing: border-box;
+  position: relative;
 }
-
+.service-card:active {
+  transform: translateY(-15px); /* Moves the card 15px upwards */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Optional: Adds shadow effect */
+}
 .service-card:hover {
   transform: scale(1.05);
   border: 2px solid rgba(85, 80, 188, 0.753);
@@ -96,7 +101,7 @@
 
 .circle-row {
   display: flex;
-  margin-left: 22rem;
+  margin-left: 35rem;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
@@ -171,6 +176,7 @@
 .boders {
   display: flex;
   margin-top: 2rem;
+  margin-left: 15rem;
 }
 .grey-txt {
   color: gray;

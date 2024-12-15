@@ -58,8 +58,11 @@ const Services = () => {
     <div>
       <div className='box'>
         <div className='half-circle'></div>
-        <Container className='py-5'>
-          <h2 className='text-center mb-4' style={{ color: '#000' }}>
+        <Container className='py-5 mx-0 py-0'>
+          <h2
+            className='text-center mb-4'
+            style={{ color: '#000', marginLeft: '12rem' }}
+          >
             Services We Offer
           </h2>
 
@@ -68,7 +71,7 @@ const Services = () => {
             {services.map((service, index) => (
               <Card
                 key={index}
-                className={`shadow-sm service-card ${
+                className={`shadow-sm service-card w-100 ${
                   activeIndex === index ? 'active' : ''
                 }`}
                 onClick={() => handleCardClick(index)} // Card click
