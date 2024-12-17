@@ -75,14 +75,13 @@ button:active,
     background: transparent !important;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
   }
   .custom-logo {
     font-size: 1.2rem;
     font-weight: bold;
     color: #fff;
     cursor: pointer;
-    margin-left: 1rem;
+    margin-left: 0rem;
   }
 
   .custom-nav-links {

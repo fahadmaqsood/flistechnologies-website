@@ -23,7 +23,10 @@
 
 .hero-text p {
   color: #cbd5e0;
-  line-height: 2;
+  width: 531px;
+  font-size: 17px;
+  line-height: 36px;
+  font-weight: 400;
   margin: 1rem 0;
 }
 
@@ -53,55 +56,65 @@
 @media (max-width: 768px) {
   .hero-container {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
-    padding: 1.5rem 1rem; /* Reduced padding for smaller screens */
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    margin-top: -50px;
   }
 
   .hero-text {
-    margin: 0; /* Remove unnecessary margins */
-    margin-bottom: 1rem; /* Add space below the text */
-    width: 100%; /* Ensure it spans the full container width */
+    margin: 0;
+    margin-bottom: 1rem;
+    width: 100%;
   }
 
   .hero-text h1 {
-    font-size: 1.6rem; /* Slightly larger heading for emphasis */
-    margin-left: 1rem; /* Maintain left alignment */
-    margin-bottom: 0.8rem; /* Adjust space below the heading */
+    width: 300px;
+    font-size: 24px;
+    margin-left: 0.5rem;
+    margin-bottom: 0.8rem;
+    font-weight: 800;
+    line-height: 31px;
   }
 
   .highlight {
-    font-size: 1.4rem; /* Balanced size for highlighted text */
-    margin-left: 1rem; /* Maintain left alignment */
+    width: 300px;
+    font-size: 24px;
+    margin-left: 0.1rem;
+    font-weight: 800;
+    line-height: 31px;
   }
 
   .hero-text p {
-    font-size: 0.95rem; /* Slightly larger font for readability */
-    line-height: 1.4; /* Comfortable line spacing */
-    margin: 0.5rem 0; /* Reduce spacing for compact text display */
-    margin-left: 1rem; /* Maintain left alignment */
+    width: 300px;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 0.5rem;
   }
 
   .hero-btn {
-    padding: 0.5rem 1rem; /* Comfortable button size */
-    font-size: 1rem; /* Readable button text */
-    margin: 1rem 0; /* Add spacing around button */
-    margin-left: 1rem; /* Keep button aligned to the left */
-    border-radius: 5px; /* Add rounded corners for modern styling */
-    background-color: #6c63ff; /* Add button background color */
-    color: white; /* Ensure text is visible */
-    border: none; /* Remove default borders */
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 170px;
+    margin: 1rem 0;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    border: none;
   }
 
   .hero-btn:hover {
-    background-color: #0056b3; /* Slightly darker color on hover */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
   }
 
   .hero-image {
-    max-width: 100%; /* Ensure image doesn't overflow the container */
+    max-width: 100%;
     height: auto; /* Maintain aspect ratio */
     margin: 1rem 0; /* Add spacing around the image */
-    align-self: center; /* Keep the image in the center for better design */
+    align-self: center;
   }
 }
