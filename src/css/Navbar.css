@@ -11,12 +11,12 @@
   font-weight: bold;
   color: #000;
   cursor: pointer;
-  margin-left: -4.5rem;
+  margin-left: -6rem;
 }
 
 .custom-nav-links {
   display: flex;
-  gap: 6rem;
+  gap: 7.5rem;
   margin-right: auto;
 }
 
@@ -26,6 +26,23 @@
   position: relative;
   cursor: pointer;
 }
+
+/* Remove focus styles on links and buttons immediately */
+a,
+a:focus,
+a:active,
+a:hover,
+button,
+button:focus,
+button:active,
+.custom-nav-link,
+.custom-nav-link:focus,
+.custom-nav-link:active {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 .custom-nav-link:hover::after {
   content: '';
   display: block;
@@ -35,16 +52,6 @@
   position: absolute;
   bottom: 0;
 }
-.custom-nav-link:focus {
-  outline: none !important; /* Remove default focus outline */
-  border: none !important; /* Remove any border */
-  box-shadow: none !important; /* Remove any focus shadow */
-}
-.custom-nav-link:active {
-  outline: none !important; /* Remove default focus outline */
-  border: none !important; /* Remove any border */
-  box-shadow: none !important; /* Remove any focus shadow */
-}
 
 .custom-contact-btn {
   background: #000 !important;
@@ -53,6 +60,8 @@
   border: none;
   cursor: pointer;
   transition: color 0.3s ease;
+  position: relative; /* Position it relative to its original position */
+  left: 100px; /* Move it 20px to the right */
 }
 
 .custom-contact-btn:hover {

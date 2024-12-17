@@ -141,30 +141,44 @@ const ContactPage = () => {
             <Form.Group className='mb-3 mt-4'>
               <Form.Label className='fw-bold'>Select Subject?</Form.Label>
               <div className='mt-2'>
-                <Form.Check
-                  inline
-                  label='General Inquiry'
-                  name='subject'
-                  type='radio'
-                />
-                <Form.Check
-                  inline
-                  label='General Inquiry'
-                  name='subject'
-                  type='radio'
-                />
-                <Form.Check
-                  inline
-                  label='General Inquiry'
-                  name='subject'
-                  type='radio'
-                />
-                <Form.Check
-                  inline
-                  label='General Inquiry'
-                  name='subject'
-                  type='radio'
-                />
+                <Form.Group className='custom-radio-group'>
+                  <div className='custom-radio'>
+                    <Form.Check
+                      inline
+                      label='General Inquiry'
+                      name='subject'
+                      type='radio'
+                      id='subject2'
+                    />
+                  </div>
+                  <div className='custom-radio'>
+                    <Form.Check
+                      inline
+                      label='General Inquiry'
+                      name='subject'
+                      type='radio'
+                      id='subject3'
+                    />
+                  </div>
+                  <div className='custom-radio'>
+                    <Form.Check
+                      inline
+                      label='General Inquiry'
+                      name='subject'
+                      type='radio'
+                      id='subject4'
+                    />
+                  </div>
+                  <div className='custom-radio'>
+                    <Form.Check
+                      inline
+                      label='General Inquiry'
+                      name='subject'
+                      type='radio'
+                      id='subject5'
+                    />
+                  </div>
+                </Form.Group>
               </div>
             </Form.Group>
 

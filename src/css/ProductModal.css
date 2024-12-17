@@ -1,0 +1,85 @@
+.productModel {
+  background-color: #f9f9ff;
+  color: #000;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 1500px;
+}
+.Products-heading {
+}
+.Products-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 6rem;
+  left: 39.5rem;
+  width: 6%;
+  height: 3px;
+  background: linear-gradient(#5550bc, #57007b);
+}
+.txt-box {
+  width: 535px;
+  height: 181px;
+}
+.styleLi {
+  margin-left: 3rem;
+  line-height: 26px;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+.lists li::marker {
+  color: #57007b; /* Change bullet color to purple */
+}
+
+.custom-modal .modal-dialog {
+  width: 650px; /* Adjust the width */
+}
+
+.custom-modal .modal-content {
+  height: 650px; /* Adjust the height */
+  border-radius: 15px; /* Optional for rounded corners */
+}
+.image-container {
+  position: relative; /* Parent container for positioning text */
+  width: 351px; /* Ensure fixed size like the image */
+  height: 370px;
+}
+
+.overlay-text {
+  position: absolute; /* Position the text absolutely */
+  bottom: -40px; /* Move to 50% from the top */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect center alignment */
+  width: 340px;
+  height: 60px;
+  color: white; /* Text color */
+  background-color: #000000a2; /* Semi-transparent background */
+  font-size: 1.2rem; /* Text size */
+  font-weight: bold; /* Make text bold */
+  border-radius: 5px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Add shadow for readability */
+  z-index: 2; /* Ensure text is above the image */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+}
+
+.tradmaster {
+  position: relative; /* Add relative positioning to parent */
+  display: inline-block; /* Ensures proper behavior */
+}
+
+.tradmaster::after {
+  content: '';
+  position: absolute;
+  top: 100%; /* Place line directly below the heading */
+  left: 45px; /* Align to the start of the heading */
+  width: 100px; /* Length of the line */
+  height: 3px; /* Thickness of the line */
+  background: linear-gradient(#5550bc, #57007b);
+  margin-top: 5px; /* Add space between the heading and the line */
+  border-radius: 3px; /* Rounded edges (optional) */
+}

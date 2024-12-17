@@ -1,18 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .logos {
-  max-width: 100%;
+  max-width: 125%;
   height: 80px; /* Set a fixed height */
   object-fit: contain; /* Maintain aspect ratio */
 }
 .logoes {
-  background-color: #fcf8fd;
-  height: 120px;
+  background-color: #e7daed; /* Background color */
+  height: 120px; /* Height */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80vw; /* Full width of the viewport */
-  margin: 0;
-  padding: 0;
+
+  /* Full width adjustments */
+  width: 100vw; /* 100% of the viewport width */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+  position: relative; /* Ensures it spans correctly */
+  right: 49px; /* Aligns to the left edge */
+  margin-top: 0px;
 }
+
 .project-container {
   position: relative;
   align-items: center;
@@ -22,6 +33,8 @@
   margin-top: 8rem; /* Adjust this value for top margin */
   margin-bottom: 10px;
   height: 67rem;
+  width: 100%;
+  max-width: 1400px;
 }
 /* Add custom spacing for the image containers */
 .row img {

@@ -1,6 +1,6 @@
 .box {
   background-color: #f9f9ff;
-  height: 29rem;
+  height: 30rem;
   position: relative;
   overflow: visible;
 }
@@ -9,20 +9,29 @@
   max-width: 1320px; /* Removes the maximum width constraint */
   display: flex;
   justify-content: space-between;
-  gap: 15px;
+  gap: 16px;
   margin: 0; /* Ensures no offset from the left */
   padding: 0; /* Removes any padding that could push it right */
 }
 
 .service-card {
   flex: 1;
-  max-width: calc(100% / 4 + 30px); /* Adjusted to allow more width */
+  max-width: calc(100% / 4 + 30px);
   height: 270px;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   box-sizing: border-box;
   position: relative;
+}
+
+.service-card.up {
+  transform: translateY(-30px); /* Move the active card up */
+  z-index: 1; /* Keep it on top */
+}
+
+.service-card.down {
+  transform: translateY(20px); /* Move the others down */
 }
 
 .service-card:hover {
@@ -184,95 +193,4 @@
 .down-box {
   display: flex;
   justify-content: space-around;
-}
-@media (max-width: 576px) {
-  .box {
-    height: auto; /* Allow height to adjust dynamically */
-  }
-
-  .services-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .service-card {
-    max-width: 80%;
-    height: auto;
-  }
-
-  .half-circle {
-    left: 20px;
-    width: 70px;
-    height: 40px;
-    bottom: 2px;
-  }
-
-  .down-circle {
-    right: 20px;
-    width: 70px;
-    height: 40px;
-  }
-
-  .circle-container {
-    width: 40px;
-    height: 40px;
-  }
-
-  .circle-img {
-    width: 70%;
-    height: 70%;
-  }
-
-  .circle-row {
-    margin-left: 0;
-    justify-content: center;
-    gap: 5px;
-  }
-
-  .circle {
-    width: 10px;
-    height: 10px;
-  }
-
-  .circlees {
-    width: 30px;
-    height: 30px;
-    font-size: 14px;
-    margin-right: 5px;
-  }
-
-  .line-container {
-    width: 120px;
-    height: 3px;
-  }
-
-  .line-filled {
-    width: 40%;
-  }
-
-  .borders,
-  .boders {
-    margin-left: 4rem;
-    align-items: center;
-  }
-
-  .down-box {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .title,
-  .card-title {
-    font-size: 0.875rem;
-  }
-
-  .card-text {
-    font-size: 0.75rem;
-  }
-
-  .grey-txt,
-  .purple-txt {
-    font-size: 0.875rem;
-  }
 }

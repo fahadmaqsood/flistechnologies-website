@@ -27,19 +27,19 @@ const Services = () => {
     {
       title: 'AI Solutions',
       description:
-        'Transform your business with cutting-edge AI solutions. We provide tailored AI services that optimize processes, enhance decision-making,',
+        'Transform your business with cutting-edge AI solutions. We provide tailored AI services that optimize processes, enhance decision-making.',
       image: aiSolutionImage,
     },
     {
       title: 'Software Testing',
       description:
-        'Empowering innovation with AI-driven solutions, ensuring flawless performance, robust system reliability, seamless scalability, enhanced security, ',
+        'Empowering innovation with AI-driven solutions, ensuring flawless performance, robust system reliability, seamless scalability, enhanced security.',
       image: softwareTestingImage,
     },
     {
       title: 'Custom Solutions',
       description:
-        'Delivering innovative, bespoke software solutions tailored to your unique business needs, driving efficiency, scalability, and seamless integration',
+        'Delivering innovative, bespoke software solutions tailored to your unique business needs, driving efficiency, scalability, and seamless integration.',
       image: softwareTestingImage,
     },
   ]
@@ -49,18 +49,13 @@ const Services = () => {
     setActiveIndex(activeIndex === index ? null : index) // Toggle active state
   }
 
-  // Handle circle click
-  const handleCircleClick = (index) => {
-    setActiveIndex(activeIndex === index ? null : index) // Toggle active state
-  }
-
   return (
     <div>
       <div className='box'>
         <div className='half-circle'></div>
         <Container className='py-5 mx-0 py-0'>
           <h2
-            className='text-center mb-4'
+            className='text-center mb-5'
             style={{ color: '#000', marginLeft: '12rem' }}
           >
             Services We Offer
@@ -72,8 +67,8 @@ const Services = () => {
               <Card
                 key={index}
                 className={`shadow-sm service-card w-100 ${
-                  activeIndex === index ? 'active' : ''
-                }`}
+                  index === 2 ? 'up' : 'down'
+                } ${activeIndex === index ? 'active' : ''}`}
                 onClick={() => handleCardClick(index)}
               >
                 <Card.Body>
@@ -101,15 +96,15 @@ const Services = () => {
                   className={`circle mx-2 ${
                     activeIndex === index ? 'bg-primary' : 'bg-secondary'
                   }`}
-                  onClick={() => handleCircleClick(index)}
+                  onClick={() => handleCardClick(index)}
                 ></div>
               ))}
             </div>
             <div className='boders'>
               <div className='grey-txt'>01</div>
-              <div class='line-container position-relative mx-3'>
-                <div class='line-filled'></div>
-                <div class='line-unfilled'></div>
+              <div className='line-container position-relative mx-3'>
+                <div className='line-filled'></div>
+                <div className='line-unfilled'></div>
               </div>
               <div className='purple-txt'>05</div>
             </div>

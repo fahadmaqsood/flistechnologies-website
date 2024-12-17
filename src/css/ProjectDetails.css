@@ -1,0 +1,25 @@
+.prjects-details {
+  display: flex;
+  color: white;
+  height: 350px;
+  overflow: hidden;
+}
+.project-content {
+  text-align: left;
+  margin-left: 4rem;
+  width: 800px;
+}
+.success-heading::after {
+  content: '';
+  position: absolute;
+  top: 11.5rem;
+  left: 4.5rem;
+  width: 5%;
+  height: 4px;
+  background: linear-gradient(#5550bc, #57007b);
+}
+.success-subheading {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 800;
+}
