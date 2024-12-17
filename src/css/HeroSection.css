@@ -71,7 +71,7 @@
   .hero-text h1 {
     width: 300px;
     font-size: 24px;
-    margin-left: 0.5rem;
+    margin-left: 0rem;
     margin-bottom: 0.8rem;
     font-weight: 800;
     line-height: 31px;
@@ -80,7 +80,7 @@
   .highlight {
     width: 300px;
     font-size: 24px;
-    margin-left: 0.1rem;
+    margin-left: 0rem;
     font-weight: 800;
     line-height: 31px;
   }
