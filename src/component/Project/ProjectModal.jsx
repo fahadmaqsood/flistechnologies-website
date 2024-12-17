@@ -106,28 +106,15 @@ function ProjectModal() {
                   >
                     NextGen Trading
                   </h5>
-                  <Button
-                    variant='light'
-                    onClick={handleClose}
-                    style={{
-                      position: 'absolute',
-                      top: '8px',
-                      right: '10px',
-                      background: '#fff',
-                      zIndex: 1000,
-                      fontSize: '20px',
-                      color: 'black', // Purpe color
-                      border: '2px solid #000',
-                      borderRadius: '50%',
-                      width: '35px',
-                      height: '35px',
-                      lineHeight: '20px',
-                      padding: '0',
-                      textAlign: 'center',
-                    }}
-                  >
-                    &times;
-                  </Button>
+                  <div style={{ border: ' 1px solid black' }}>
+                    <Button
+                      variant='light'
+                      onClick={handleClose}
+                      className='right-closeButton'
+                    >
+                      &times;
+                    </Button>
+                  </div>
                 </div>
                 <h5 className='text-black'>Project Summary</h5>
                 <p style={{ color: '#393939' }}>

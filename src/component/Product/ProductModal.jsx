@@ -104,22 +104,7 @@ function productModal() {
           <Button
             variant='light'
             onClick={handleClose}
-            style={{
-              position: 'absolute',
-              top: '10px',
-              left: '10px',
-              background: '#fff',
-              zIndex: 1000,
-              fontSize: '20px',
-              color: 'black', // Purpe color
-              border: '2px solid black',
-              borderRadius: '50%',
-              width: '35px',
-              height: '35px',
-              lineHeight: '20px',
-              padding: '0',
-              textAlign: 'center',
-            }}
+            className='left-closeButton'
           >
             &times;
           </Button>
