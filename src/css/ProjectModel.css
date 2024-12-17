@@ -6,13 +6,18 @@
   padding: 0;
   max-width: 1500px;
 }
+.Projects-heading {
+  display: block; /* Makes it a block element for full-width alignment */
+  text-align: center; /* Ensures text is horizontally centered */
+  transform: translateY(20px); /* Moves heading down */
+}
 .Projects-heading::after {
   content: '';
   position: absolute;
-  bottom: 6rem;
+  top: 3.5rem;
   left: 39.5rem;
   width: 6%;
-  height: 3px;
+  height: 2px;
   background: linear-gradient(#5550bc, #57007b);
 }
 .Projectheading::after {

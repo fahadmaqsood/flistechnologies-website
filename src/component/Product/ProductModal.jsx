@@ -55,7 +55,9 @@ function productModal() {
   return (
     <Container className='productModel'>
       {/* Heading */}
-      <h1 className='text-center Products-heading'>Products</h1>
+      <div>
+        <h1 className='text-center Products-heading'>Products</h1>
+      </div>
 
       {/* Category Button */}
       <div className='mb-3'>
