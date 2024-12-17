@@ -60,31 +60,29 @@ button:active,
   border: none;
   cursor: pointer;
   transition: color 0.3s ease;
-  position: relative; /* Position it relative to its original position */
-  left: 100px; /* Move it 20px to the right */
+  position: relative;
+  left: 100px;
 }
 
 .custom-contact-btn:hover {
   background: #5550bc !important;
   color: #fff !important;
 }
-/* Mobile-specific styles */
+
 @media (max-width: 768px) {
   .custom-navbar {
-    background: transparent !important;
-    padding: 0.5rem 1rem;
-    margin-left: 0;
-    margin-right: 0;
-    font-size: 0.875rem; /* Optional: Adjust font size if needed */
     display: flex;
-    justify-content: space-between; /* Align logo and toggle in one line */
-    align-items: center; /* Vertically align logo and toggle button */
+    background: transparent !important;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
   }
-
   .custom-logo {
-    color: #fff !important;
-    font-size: 1rem;
-    margin-right: 10px; /* Optional: Adjust margin for better spacing */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 1rem;
   }
 
   .custom-nav-links {
@@ -103,19 +101,23 @@ button:active,
     width: 100%;
     border-radius: 5%;
   }
-
   .custom-nav-link:hover::after {
-    background: none;
+    background: none !important;
   }
-
   .custom-contact-btn {
+    display: flex;
+
+    align-items: center;
+    margin-left: 0;
     width: 100%;
-    gap: 2rem;
-    padding: 0.6rem 1rem;
+    gap: 1rem;
     border-radius: 5px;
-    text-align: center;
     background: none;
     color: #fff !important;
+  }
+
+  .custom-contact-btn:hover::after {
+    background: none !important;
   }
 
   .custom-contact-btn:hover {
@@ -155,7 +157,6 @@ button:active,
     top: 8px;
   }
 
-  /* Add specific images/icons for each link */
   .custom-nav-link:nth-child(1)::before {
     content: url('../imgs/Rectangle2804.png'); /* Home icon */
     margin-right: 20px;
@@ -165,8 +166,12 @@ button:active,
     content: url('../imgs/Rectangle2877.png'); /* Projects icon */
     margin-right: 20px;
   }
-
   .custom-nav-link:nth-child(3)::before {
+    content: url('../imgs/Group3.png'); /* About Us icon */
+    margin-right: 20px;
+  }
+
+  .custom-nav-link:nth-child(4)::before {
     content: url('../imgs/Group3.png'); /* About Us icon */
     margin-right: 20px;
   }
