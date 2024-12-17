@@ -194,3 +194,95 @@
   display: flex;
   justify-content: space-around;
 }
+
+@media (max-width: 576px) {
+  .box {
+    height: auto; /* Allow height to adjust dynamically */
+  }
+
+  .services-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .service-card {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .half-circle {
+    left: 20px;
+    width: 70px;
+    height: 40px;
+    bottom: 2px;
+  }
+
+  .down-circle {
+    right: 20px;
+    width: 70px;
+    height: 40px;
+  }
+
+  .circle-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .circle-img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .circle-row {
+    margin-left: 0;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+  }
+
+  .circlees {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+
+  .line-container {
+    width: 120px;
+    height: 3px;
+  }
+
+  .line-filled {
+    width: 40%;
+  }
+
+  .borders,
+  .boders {
+    margin-left: 4rem;
+    align-items: center;
+  }
+
+  .down-box {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title,
+  .card-title {
+    font-size: 0.875rem;
+  }
+
+  .card-text {
+    font-size: 0.75rem;
+  }
+
+  .grey-txt,
+  .purple-txt {
+    font-size: 0.875rem;
+  }
+}

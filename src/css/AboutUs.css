@@ -8,28 +8,38 @@
   width: 27rem;
   height: 7rem;
   display: flex;
-  justify-content: space-between; /* Space between info-boxes */
-  align-items: center; /* Center vertically the info-box and grey lines */
+  justify-content: space-between;
+  align-items: center;
 }
 .about-us {
-  margin-top: 8rem; /* Adjust this value for top margin */
-  margin-bottom: 10px; /* Adjust this value for bottom margin */
+  margin-top: 8rem;
+  margin-bottom: 10px;
 }
 .ab-para {
   color: #000;
 }
 .heading {
-  position: relative; /* Required for positioning the pseudo-element */
-  display: inline-block; /* Makes sure the underline only applies to the text */
+  position: relative;
+  display: inline-block;
+}
+.bold-heading {
+  width: 490px;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 55px;
 }
 .heading-top-padding {
-  padding-top: 10px; /* Adjust this value to add space from the top */
+  color: #e7daed;
+  font-size: 18px;
+  width: 535px;
+  font-weight: 500;
+  line-height: 36px;
 }
 .grey-color {
-  width: 2px; /* Adjust the thickness of the vertical line */
-  height: 80px; /* Adjust the height of the vertical line */
-  background-color: gray; /* The grey color */
-  align-self: center; /* Center the grey line between the info-box elements */
+  width: 2px;
+  height: 80px;
+  background-color: gray;
+  align-self: center;
 }
 .btn {
   background: linear-gradient(#5550bc, #57007b);
@@ -41,50 +51,44 @@
 }
 
 .heading::after {
-  content: ''; /* Creates an empty pseudo-element */
+  content: '';
   position: absolute;
-  bottom: -6px; /* Align it at the bottom of the text */
+  bottom: -6px;
   left: 0;
-  width: 50%; /* Make it the full width of the text */
-  height: 4px; /* Increase the thickness of the line */
+  width: 50%;
+  height: 4px;
   background: linear-gradient(#5550bc, #57007b);
 }
 .image-section {
   position: relative;
-  height: 300px; /* Adjust height as needed */
-  margin-top: -200px; /* Move the image section upwards */
+  height: 300px;
+  margin-top: -200px;
 }
 
 .image-section .img-bottom-left {
   position: absolute;
-  bottom: -25%; /* Adjust this value to move the image further down */
+  bottom: -25%;
   left: 0;
-  width: 48%; /* Adjust size */
+  width: 48%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 2; /* Ensure it's on top of img-top-right */
+  z-index: 2;
 }
 
 .image-section .img-top-right {
   position: absolute;
   top: 0;
   right: 0;
-  width: 60%; /* Adjust size */
+  width: 60%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1; /* Ensure it's below img-bottom-left */
-}
-
-/* Optional: Connector styling for visual effect */
-
-.image-section {
-  position: relative; /* Positioning context for the half-circle */
+  z-index: 1;
 }
 
 .image-section .half-circle {
   position: absolute;
-  top: 55%; /* Position it vertically in the middle of the container */
-  left: 34%; /* Adjust to position the half-circle to the left of the image */
+  top: 55%;
+  left: 34%;
   transform: translateY(-50%); /* Center the circle vertically */
   width: 70px;
   height: 70px; /* Make it a full circle */
@@ -105,75 +109,100 @@
   border-radius: 50%; /* Make it a circle */
   z-index: 0; /* Ensure it appears below the image */
 }
-/* Mobile Responsive Adjustments */
+
 @media only screen and (max-width: 767px) {
-  /* Center the entire .about-us section */
   .about-us {
-    margin-top: 5rem; /* Adjust top margin */
-    margin-bottom: 30px; /* Adjust bottom margin */
+    margin-top: 5rem;
+    margin-bottom: 30px;
+    height: 42rem;
   }
   .heading {
-    font-size: 1.5rem; /* Adjust font size */
-    padding-top: 10px; /* Add padding top */
+    font-weight: 700;
+    font-size: 18.11px;
+    line-height: 28.46px;
+    margin-left: 1rem;
   }
-
-  /* Ensure consistent spacing for the top padding of the heading */
+  .bold-heading {
+    width: 256px;
+    font-weight: 400;
+    font-size: 18.11px;
+    line-height: 28.46px;
+    margin-left: 1rem;
+  }
   .heading-top-padding {
-    padding-top: 10px; /* Adjust padding for smaller screens */
+    margin-top: -1.5rem;
+    width: 290px;
+    font-weight: 500;
+    font-size: 9.9px;
+    line-height: 18.63px;
+    margin-left: 1rem;
   }
-  /* Make info-boxes stack vertically */
   .info-boxes {
-    width: 80%; /* Adjust width for smaller screens */
-    height: 120px; /* Let the height adjust automatically */
-    justify-content: center;
-    align-items: center; /* Center the info-boxes */
-    padding: 5px; /* Adjust padding */
-  }
-
-  /* Each info-box takes full width */
-  .info-box {
-    width: 100%;
-    margin-bottom: 15px; /* Space between info-boxes */
+    width: 80%;
+    height: 90px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    gap: 2px;
+    margin-left: 0.5rem;
   }
 
-  /* Adjust grey line for mobile, making it thinner and with less height */
+  .info-box {
+    flex: 1;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: left;
+    margin-left: -20px;
+  }
+  .info-box h4 {
+    width: 35px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.46px;
+  }
+  .info-box p {
+    width: 32px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18.63px;
+  }
+
   .grey-color {
-    width: 1px; /* Thin vertical line */
-    height: 50px; /* Adjust height */
-    margin: 10px 0; /* Add vertical spacing */
-    align-self: center; /* Center the line */
+    width: 1px;
+    height: 50px;
+    align-items: center;
+    align-self: stretch;
   }
-
-  /* Full width button for smaller screens */
   .btn {
     width: 30%;
     padding: 12px;
-    margin-top: 10px; /* Space between button and other elements */
+    margin-top: 10px;
+    margin-left: 0.5rem;
   }
 
   .image-section {
     position: relative;
-    margin-top: 15px; /* Reduce top margin */
-    height: 250px; /* Adjust image section height */
-    width: 100%; /* Make the image section full width */
+    margin-top: 15px;
+    height: 210px;
+    width: 90%;
     display: flex;
-    justify-content: center; /* Center images horizontally */
-    align-items: center; /* Center images vertically */
-    margin-left: 0; /* Remove left margin */
+    justify-content: center;
+    align-items: center;
+    margin-left: -2rem;
   }
 
   .image-section .img-bottom-left,
   .image-section .img-top-right {
-    position: absolute; /* Make images absolute to overlap */
-    width: 50%; /* Adjust width for smaller screens */
-    max-width: 100%; /* Prevent overflow */
-    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
   }
 
   .image-section .img-bottom-left {
-    bottom: -20%; /* Move image further down */
+    bottom: -20%;
     left: 5%; /* Adjust horizontal positioning */
     z-index: 2; /* Ensure it's on top */
   }
@@ -201,20 +230,7 @@
   }
 
   .image-section .right-circle {
-    bottom: 10px; /* Position the circle at the bottom of the container */
-    right: 35%; /* Adjust right positioning */
-  }
-
-  /* Adjust heading font size and alignment */
-  .heading {
-    font-size: 1.2rem; /* Adjust font size */
-    padding-top: 10px; /* Add padding top */
-    text-align: left;
-  }
-
-  /* Ensure consistent spacing for the top padding of the heading */
-  .heading-top-padding {
-    padding-top: 10px; /* Adjust padding for smaller screens */
-    text-align: left;
+    bottom: 10px;
+    right: 35%;
   }
 }

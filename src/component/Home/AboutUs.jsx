@@ -10,19 +10,15 @@ const AboutUs = () => {
         {/* Text Section */}
         <div className='col-lg-6'>
           <h2 className='text-white heading'>About Us</h2>
-          <h3 className='mb-4 heading-top-padding'>
-            We Are Elevating Business
-            <br /> Success Through Innovative
-            <br /> Technology
+          <h3 className='mb-4 bold-heading'>
+            We Are Elevating Business Success Through Innovative Technology
           </h3>
           <p className=' heading-top-padding'>
-            At <strong style={{ color: '#5550bc' }}>Flistechnology</strong>, our
-            mission is to drive your business <br />
-            forward with cutting-edge technological solutions. We <br />
-            specialize in helping businesses optimize their operations,
-            <br /> enhance their digital presence, and achieve their goals{' '}
-            <br />
-            efficiently.
+            At <strong style={{ color: '#5550bc' }}> Flistechnology</strong>,
+            our mission is to drive your business forward with cutting-edge
+            technological solutions. We specialize in helping businesses
+            optimize their operations, enhance their digital presence, and
+            achieve their goals efficiently.
           </p>
 
           <div className='info-boxes d-flex justify-content-between mt-4'>
@@ -30,10 +26,7 @@ const AboutUs = () => {
               <h4>200+</h4>
               <p className='ab-para'>Projects</p>
             </div>
-            <div
-              className='grey-color'
-              style={{ backgroundColor: 'gray' }}
-            ></div>
+            <div className='grey-color'></div>
             <div className='info-box text-center'>
               <h4>20+</h4>
               <p className='ab-para'>Clients</p>
