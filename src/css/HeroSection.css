@@ -65,7 +65,6 @@
   .hero-text {
     margin: 0;
     margin-bottom: 1rem;
-    width: 100%;
   }
 
   .hero-text h1 {
@@ -74,6 +73,7 @@
     margin-bottom: 0.8rem;
     font-weight: 800;
     line-height: 31px;
+    margin-left: 0px;
   }
 
   .highlight {
@@ -84,10 +84,11 @@
   }
 
   .hero-text p {
+    align-items: left;
     width: 300px;
     line-height: 22px;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 500;
   }
 
   .hero-btn {

@@ -13,55 +13,33 @@ import '../../css/Reviews.css'
 
 const Reviews = () => {
   return (
-    <Container className='text-center py-5'>
+    <Container className='text-center py-5 '>
       <div className='mb-4 simple-line'></div>
 
-      <h4 className='mb-4'>Why customers love</h4>
-      <h2>working with us</h2>
-      <div className='mb-5'>
-        <img src={comma} alt='' style={{ marginRight: '36rem' }} />
-        <p>Without any doubt I recommend Flistechnology as one of the</p>
-        <p>best web development and digital marketing agencies. One of</p>
-        <p>the best agencies I’ve come across so far. Wouldn’t be</p>
-        <p>hesitated to introduce their work to someone else.</p>
-        <img src={comma1} alt='' style={{ marginLeft: '35rem' }} />
+      <div className='customerdiv'>
+        <h4 className='mb-4 customer-heading'>Why customers love</h4>
+        <h2 className='customer-heading'>working with us</h2>
+      </div>
+      <div className='mb-5 review-container'>
+        <img src={comma} alt='' className='left-comma' />
+        <p className='review-pragh'>
+          Without any doubt I recommend Flistechnology as one of the best web
+          development and digital marketing agencies. One of the best agencies
+          I’ve came across so far. Wouldn’t be hesitated to introduce their work
+          to someone else.
+        </p>
+        <img src={comma1} alt='' className='right-comma' />
       </div>
 
       <Carousel
         interval={null}
         prevIcon={
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              width: '2.5rem',
-              height: '2.5rem',
-              borderRadius: '50%',
-              border: '2px solid white',
-              backgroundColor: 'transparent',
-              position: 'relative',
-              top: '-12rem',
-            }}
-          >
+          <div className='Icons'>
             <FaArrowLeft style={{ color: 'white', fontSize: '1.5rem' }} />
           </div>
         }
         nextIcon={
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              width: '2.5rem',
-              height: '2.5rem',
-              borderRadius: '50%',
-              border: '2px solid white',
-              backgroundColor: 'transparent',
-              position: 'relative',
-              top: '-12rem',
-            }}
-          >
+          <div className='Icons'>
             <FaArrowRight style={{ color: 'white', fontSize: '1.5rem' }} />
           </div>
         }
@@ -87,7 +65,7 @@ const Reviews = () => {
                     height={index === 2 ? '190' : '140'}
                     style={{ objectFit: 'cover' }} // Ensures images fit properly
                   />
-                  <div className='my-2'>
+                  <div className='my-2 stats'>
                     <FaStar color='gold' />
                     <FaStar color='gold' />
                     <FaStar color='gold' />

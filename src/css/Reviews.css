@@ -2,17 +2,55 @@
   border: none !important;
   box-shadow: none !important;
 }
-
-/* General column styling */
-.review-col {
-  margin-right: 0.3rem; /* Adjust horizontal spacing between columns */
-  margin-left: 0.3rem; /* Ensure consistent spacing */
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.Icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+  position: relative;
+  top: -12rem;
 }
 
-/* Image adjustments */
+.review-pragh {
+  text-align: center;
+  margin: 10px auto;
+  max-width: 540px;
+  font-weight: 500;
+  line-height: 36px;
+  font-size: 18px;
+  color: #c4c4c4;
+}
+
+.left-comma {
+  position: absolute;
+  left: 20%;
+  top: 0;
+}
+
+.right-comma {
+  position: absolute;
+  right: 20%;
+  bottom: 0;
+}
+
+.review-col {
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+}
+
 .review-col img {
-  width: 150px; /* Reduce image size */
-  height: 150px; /* Ensure consistent height */
+  width: 150px;
+  height: 150px;
 }
 
 .designation {
@@ -32,21 +70,21 @@
 
 .line-container {
   display: flex;
-  justify-content: center; /* Center the line */
-  margin-bottom: 10px; /* Add spacing between the line and the text */
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .simple-line {
-  width: 70px; /* Set the width of the line */
-  height: 5px; /* Set the height of the line */
-  background: linear-gradient(to right, #5550bc, #57007b); /* Gradient color */
-  margin: 0 auto; /* Centers the line horizontally */
+  width: 70px;
+  height: 5px;
+  background: linear-gradient(to right, #5550bc, #57007b);
+  margin: 0 auto;
 }
 
 .highlightedparagraph {
-  color: #fff !important; /* Example: Set color to a bright orange */
-  font-weight: bold; /* Make it bold (optional) */
-  font-size: 1rem; /* Slightly larger font (optional) */
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 1rem;
 }
 .paragraph {
   color: #c4c4c4 !important;
@@ -57,16 +95,100 @@
   color: #a0aec0;
   font-size: 1rem;
 }
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .review-col {
-    margin-right: 0.5rem; /* Reduce spacing for smaller screens */
-    margin-left: 0.5rem;
+@media only screen and (max-width: 768px) {
+  .simple-line {
+    width: 27.28px;
+  }
+  .customerdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .customer-heading {
+    text-align: center;
+    max-width: 188px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .review-pragh {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 213px;
+    font-weight: 500;
+    line-height: 15px;
+    font-size: 8px;
+  }
+  .carousel {
+    display: flex;
+    align-items: center;
+    width: 375px;
+    height: 120px;
+    gap: 30px;
   }
 
+  .stats {
+    display: flex;
+    width: 47px;
+  }
+  .no-gutters {
+    display: flex;
+    width: 374px;
+    height: 79px;
+  }
+  .review-col {
+    width: 55px;
+    height: 68.2px;
+    display: flex;
+    flex-direction: column;
+  }
+  .review-col p {
+    margin: 0;
+    width: 34px;
+    font-weight: 400;
+    font-size: 5px;
+    line-height: 8px;
+  }
   .review-col img {
-    width: 80px; /* Adjust image size for smaller screens */
-    height: 80px;
+    width: 33.6px;
+    height: 33.6px;
+  }
+  .rounded-circle {
+    width: 40px;
+    height: 78.09px;
+    gap: 5.93px;
+  }
+  .large-img {
+    width: 39.53px !important;
+    height: 39.53px !important;
+  }
+  .highlightedparagraph {
+    width: 40px;
+    height: 9px;
+    font-weight: 700;
+    font-size: 7.12px;
+    line-height: 8.61px;
+  }
+  .paragraph {
+    width: 49px;
+    height: 9px;
+    font-weight: 400;
+    font-size: 5.53px;
+    line-height: 8.97px;
+  }
+  .left-comma {
+    position: absolute;
+    left: 15%;
+    top: 0;
+  }
+  .Icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    position: relative;
   }
 }

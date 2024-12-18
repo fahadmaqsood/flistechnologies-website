@@ -7,58 +7,56 @@ import '../../css/Contact.css'
 const Contact = () => {
   return (
     <div className='contact-container'>
-      <div className='container my-5'>
-        <h2 className='text-center mb-4'>Get In Touch With Us</h2>
-        <p className='text-center mb-5 top-para'>
-          For more information about our products and services, please feel free
-          to drop us <br />
-          an email. Our staff is always here to help you out. Do not hesitate!
-        </p>
+      <div className='container my-5 '>
+        <h2 className='text-center mb-4 tech-heading'>Get In Touch With Us</h2>
+        <div className='contactdiv'>
+          <p className='text-center mb-5 top-para'>
+            For more information about our products and services, please feel
+            free to drop us an email. Our staff is always here to help you out.
+            Do not hesitate!
+          </p>
+        </div>
         <div className='row'>
           {/* Left Side */}
           <div className='col-md-6 mb-4 address'>
-            <div className='mb-4'>
+            <div className='mb-4 address-col'>
               {' '}
-              <img
-                src={icon1}
-                alt='Address Icon'
-                className='me-2'
-                style={{ width: '24px', height: '24px' }}
-              />
-              <h5 className='heading5'>Address</h5>
-              <p className='para'>
-                123 Street, Qasimabad,
-                <br /> <p className='hyd'>Hyderabad</p>
-              </p>
+              <div className='img-title'>
+                <div className='icon-imgs'>
+                  <img src={icon1} alt='Address Icon' className='me-2' />
+                </div>
+                <h5 className='heading5'>Address</h5>
+              </div>
+              <div className='para'>
+                <p>123 Street, Qasimabad, Hyderabad</p>
+              </div>
             </div>
-            <div className='mb-4'>
-              <img
-                src={icon2}
-                alt='Phone Icon'
-                className='me-2'
-                style={{ width: '24px', height: '24px' }}
-              />
-              <h5 className='heading5'>Phone</h5>
-              <p className='para'>
-                Mobile: +92 123 456789
-                <br />
-                Hotline: +92 123 456789
-              </p>
+            <div className='mb-4 address-col'>
+              <div className='img-title'>
+                <div className='icon-imgs'>
+                  <img src={icon2} alt='Phone Icon' className='me-2' />
+                </div>
+                <h5 className='heading5'>Phone</h5>
+              </div>
+              <div className='para'>
+                <p>Mobile: +92 123 456789 Hotline: +92 123 456789</p>
+              </div>
             </div>
-            <div className='mb-4'>
+            <div className='mb-4 address-col'>
               {' '}
-              <img
-                src={icon3}
-                alt='Working Time Icon'
-                className='me-2'
-                style={{ width: '24px', height: '24px' }}
-              />
-              <h5 className='heading5'>Working Time</h5>
-              <p className='para'>
-                Monday-Friday: 9:00 - 22:00
-                <br />
-                Saturday-Sunday: 9:00 - 21:00
-              </p>
+              <div className='img-title'>
+                <div className='icon-imgs'>
+                  <img src={icon3} alt='Working Time Icon' className='me-2' />
+                </div>
+                <h5 className='heading5'>Working Time</h5>
+              </div>
+              <div className='para'>
+                <p>
+                  Monday-Friday: 9:00 - 22:00
+                  <br />
+                  Saturday-Sunday: 9:00 - 21:00
+                </p>
+              </div>
             </div>
           </div>
 

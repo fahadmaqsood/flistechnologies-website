@@ -12,24 +12,26 @@ function Footer() {
       <div className='container mt-5'>
         <div className='row text-center text-md-start'>
           {/* First Column */}
-          <div className='col-md-4 mb-3'>
-            <h5>flistechnologies</h5>
+          <div className='col-md-4 mb-3 heading-icons'>
+            <h5 className='foot-heading'>flistechnologies</h5>
             <p className='fot-para' style={{ color: '#CBD5E0' }}>
               At flistechnologies, we deliver innovative software solutions that
               transform businesses and elevate user experiences.
             </p>
             {/* Social Icons */}
-            <div className='d-flex justify-content-center justify-content-md-start'>
-              <img src={fab} alt='icon1' className='mx-0' width='60px' />
-              <img src={insta} alt='icon2' className='mx-0' width='60px' />
-              <img src={tiw} alt='icon3' className='mx-0' width='60px' />
-              <img src={lin} alt='icon4' className='mx-0' width='60px' />
+            <div className='d-flex justify-content-center justify-content-md-start footer-icons'>
+              <img src={fab} alt='icon1' className='mx-0 icon' width='60px' />
+              <img src={insta} alt='icon2' className='mx-0 icon' width='60px' />
+              <img src={tiw} alt='icon3' className='mx-0 icon' width='60px' />
+              <img src={lin} alt='icon4' className='mx-0 icon' width='60px' />
             </div>
           </div>
 
           {/* Second Column */}
           <div className='col-md-4 mb-3 '>
-            <h5 style={{ textAlign: 'center' }}>Links</h5>
+            <h5 style={{ textAlign: 'center' }} className='small-heading'>
+              Links
+            </h5>
             <p className='fot-para' style={{ color: '#CBD5E0' }}>
               <a
                 href='#about'
@@ -51,7 +53,7 @@ function Footer() {
               </a>
               <a
                 href='#contact'
-                className='text-decoration-none text-white d-block footer-link'
+                className='text-decoration-none text-white d-block footer-link '
               >
                 Contact
               </a>
@@ -60,7 +62,7 @@ function Footer() {
 
           {/* Third Column */}
           <div className='col-md-4 mb-3'>
-            <h5 className='fw-bold'>Contact Us</h5>
+            <h5 className='fw-bold small-heading '>Contact Us</h5>
             <p className='fot-para' style={{ color: '#CBD5E0' }}>
               Whether you have a question about features, pricing, or anything
               else, our team is ready to answer all your questions.
@@ -74,8 +76,10 @@ function Footer() {
         <hr className='hor' />
 
         {/* Copyright */}
-        <div className='text-center' style={{ color: '#D9D9D9' }}>
-          <p>© 2024 Copyright by Flistechnologies. All rights reserved.</p>
+        <div className='text-center footer-last' style={{ color: '#D9D9D9' }}>
+          <p className='last-line'>
+            © 2024 Copyright by Flistechnologies. All rights reserved.
+          </p>
         </div>
       </div>
     </div>

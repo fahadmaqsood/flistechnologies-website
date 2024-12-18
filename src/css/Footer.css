@@ -10,34 +10,92 @@
   height: 26rem;
 }
 
-/* Add spacing to headings */
 h5 {
-  margin-bottom: 25px; /* Space below headings */
+  margin-bottom: 25px;
   font-size: 20px;
   font-weight: 600;
-  color: #ffffff; /* White text for headings */
+  color: #ffffff;
 }
 
-/* Add spacing to paragraphs */
 .fot-para {
   font-size: 18px;
-  margin: 10px 0; /* Adds vertical spacing */
+  margin: 10px 0;
   font-weight: 300;
   color: #cbd5e0;
 }
 
-/* Adjust spacing between links in the Links section */
 .footer-link {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-/* Style for horizontal line */
 .hor {
-  border: none; /* Remove default border */
-  height: 2px; /* Set the height of the line */
+  border: none;
+  height: 2px;
   background-color: #cbd5e0 !important;
-  width: 100vw; /* Span the full width of the viewport */
-  margin: 20px auto; /* Add vertical spacing around the line */
-  margin-left: calc(-50vw + 50%); /* Align to the left edge */
+  width: 100vw;
+  margin: 20px auto;
+  margin-left: calc(-50vw + 50%);
+}
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 0;
+    width: 360px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .heading-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+  }
+  .icon {
+    width: 15px;
+    height: 15px;
+  }
+  .foot-heading {
+    margin-left: 2rem;
+    margin-top: -6rem;
+    width: 134px;
+    height: 15px;
+    font-size: 14px;
+    line-height: 16.49px;
+  }
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -0.8rem;
+  }
+  .fot-para {
+    display: none;
+  }
+  .small-heading {
+    display: none;
+  }
+  .footer-last {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .last-line {
+    margin-left: 2rem;
+    margin-top: -0.8rem;
+    text-align: center;
+    width: 175px;
+    height: 5px;
+    font-size: 4.62px;
+    font-weight: 400;
+  }
+  .hor {
+    margin-top: -4.5rem;
+    width: 100vw;
+    background-color: #ffffff;
+  }
 }
