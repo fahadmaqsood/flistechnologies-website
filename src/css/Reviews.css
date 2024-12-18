@@ -144,7 +144,6 @@
     height: 68.2px;
     display: flex;
     flex-direction: column;
-    margin-right: 2px;
   }
   .review-col p {
     margin: 0;

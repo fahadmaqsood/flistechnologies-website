@@ -147,6 +147,7 @@
     align-items: center;
     gap: 2px;
     margin-left: 0.5rem;
+    background-color: #d0d7ff;
   }
 
   .info-box {
