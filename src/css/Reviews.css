@@ -136,7 +136,8 @@
     display: flex;
     width: 374px;
     height: 79px;
-    margin-right: 2rem;
+    align-items: center;
+    justify-content: center;
   }
   .review-col {
     width: 55px;
