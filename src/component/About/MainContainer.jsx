@@ -7,12 +7,10 @@ import '../../css/MainContainer.css' // Importing the CSS file
 const MainContainer = () => {
   return (
     <div className='about-page'>
-      <Row className='h-100 align-items-center'>
-        <Col lg={6} md={6} sm={12} className='about-content mt-5'>
+      <Row className='h-100 align-items-center detail-container'>
+        <Col lg={6} md={6} sm={12} className='about-content mt-5 '>
           <h2 className='about-heading'>About Us</h2>
-          <h3 className='about-subheading'>
-            We Listen. <span>We Understand.</span>
-          </h3>
+          <h3 className='about-subheading'>We Listen. We Understand.</h3>
           <h4 className='about-deliver'>We Deliver.</h4>
         </Col>
 

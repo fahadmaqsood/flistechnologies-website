@@ -13,13 +13,3 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
-.business-heading::after {
-  content: '';
-  position: absolute;
-  top: 13rem;
-  left: 4.5rem;
-  width: 5%;
-  height: 4px;
-  background: linear-gradient(#5550bc, #57007b);
-}

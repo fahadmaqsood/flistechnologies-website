@@ -11,22 +11,20 @@ function CompanyValues() {
   return (
     <Container fluid className='text-center my-5 company-container'>
       {/* Top Heading Section */}
-      <Row>
-        <Col className='mb-4 mt-5'>
+      <Row className='values-content'>
+        <Col className='mb-4 mt-5 col-values'>
           <h2 className='Culture-heading'>Culture</h2>
           <h3 className='company-heading'>
             Company <span className='company-subheading'>Values</span>
           </h3>
           <div className='company-description'>
-            <p>As a software solution provider, a company faces a lot of</p>
             <p>
+              As a software solution provider, a company faces a lot of
               challenges on its path to legitimate success. These challenges
-            </p>
-            <p>
               sometimes force organizations to fall prey to malpractices and
+              unfair means of business, ultimately damaging their own image and
+              upsetting the market environment on the whole as well.
             </p>
-            <p>unfair means of business, ultimately damaging their own image</p>
-            <p>and upsetting the market environment on the whole as well.</p>
           </div>
         </Col>
       </Row>
@@ -40,8 +38,8 @@ function CompanyValues() {
               <img src={empathyImg} alt='Empathy' className='card-image' />
             </div>
             <div className='card-content'>
-              <h5>Empathy</h5>
-              <p>
+              <h5 className='card-heading'>Empathy</h5>
+              <p className='card-paragraph'>
                 We do our best to deliver a productive, pleasant, and respectful
                 work environment because providing ease to everyone is our
                 purpose
@@ -57,8 +55,8 @@ function CompanyValues() {
               <img src={qualityImg} alt='Quality' className='card-image' />
             </div>
             <div className='card-content'>
-              <h5>Quality</h5>
-              <p>
+              <h5 className='card-heading'>Quality</h5>
+              <p className='card-paragraph'>
                 We as a team are never satisfied with the phrase "good enough".
                 What we want for our clients can only be great.
               </p>
@@ -79,8 +77,8 @@ function CompanyValues() {
               />
             </div>
             <div className='card-content'>
-              <h5>Transparency</h5>
-              <p>
+              <h5 className='card-heading'>Transparency</h5>
+              <p className='card-paragraph'>
                 We work with complete honesty and dedication for our clients
                 while keeping all our processes entirely transparent and
                 scalable.
@@ -100,8 +98,8 @@ function CompanyValues() {
               />
             </div>
             <div className='card-content'>
-              <h5>Collaboration</h5>
-              <p>
+              <h5 className='card-heading'>Collaboration</h5>
+              <p className='card-paragraph'>
                 We make sure that our clients stay involved in all development
                 stages via end-to-end team collaborations.
               </p>

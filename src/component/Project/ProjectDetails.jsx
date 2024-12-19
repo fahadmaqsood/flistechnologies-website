@@ -6,21 +6,19 @@ import '../../css/ProjectDetails.css'
 
 const ProjectDetails = () => {
   return (
-    <div className='prjects-details'>
+    <div className='prjects-details '>
       <Row className='h-100 align-items-center'>
         <Col lg={6} md={6} sm={12} className='project-content mt-5'>
           <h2 className='success-heading'>Our Success Stories</h2>
-          <h3 className='success-subheading'>
+          <h4 className='success-subheading'>
             Bringing ideas to life through{' '}
             <span style={{ color: '#5550bc' }}>
               innovative software solutions.{' '}
             </span>
-          </h3>
-          <h4 className='success-subheading'>
-            Take a closer look at the projects that are shaping{' '}
           </h4>
-          <h4 className='success-subheading'>
-            industries and driving results.{' '}
+          <h4 className='shaping-heading'>
+            Take a closer look at the projects that are shaping industries and
+            driving results.
           </h4>
         </Col>
 

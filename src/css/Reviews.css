@@ -136,10 +136,10 @@
     display: flex;
     width: 375px;
     height: 79px;
-    align-items: center; /* Keep items vertically aligned */
-    justify-content: flex-start; /* Align items to the left */
-    padding-left: 1rem; /* Optional: Add some left padding for spacing */
-    box-sizing: border-box; /* Ensure padding is included in the width */
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    box-sizing: border-box;
   }
 
   .review-col {

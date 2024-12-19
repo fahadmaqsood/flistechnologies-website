@@ -17,37 +17,42 @@ const ContactPage = () => {
     <Container fluid className='p-5 contact-us-section'>
       {/* Contact Us Heading */}
       <div className='text-center mb-5 contact-text'>
-        <h1 className='fw-bold contact-heading'>Contact Us</h1>
+        <h1 className='fw-bold contact-heading' style={{ color: '#000' }}>
+          Contact Us
+        </h1>
         <p className='contact-para'>
           Any question or remarks? Just write us a message!
         </p>
       </div>
 
       {/* Main Content */}
-      <Row className='shadow-lg bg-white rounded'>
+      <Row className='pagecontact shadow-lg rounded'>
         {/* Left Side */}
         <Col md={5} className='p-4 contact-info  text-white position-relative'>
-          <h3 className='mb-3 mt-4'>Contact Information</h3>
-          <p>Say something to start a live chat!</p>
+          <h3 className='mb-3 mt-4 contact-info-h'>Contact Information</h3>
+          <p className='contact-info-h'>Say something to start a live chat!</p>
 
           <div className='mb-4 mt-5 data'>
-            <div className='mb-3 mt-2'>
+            <div className='mb-3 mt-2 icon-text'>
               <img src={phoneIcon} alt='Phone' className='me-2 custom-icon' />
-              <span>+92 123 456789</span>
+              <span className='span'>+92 123 456789</span>
             </div>
-            <div className='mb-3 mt-2'>
+            <div className='mb-3 mt-2 icon-text'>
               <img src={emailIcon} alt='Email' className='me-2 custom-icon' />
-              <span>demo@gmail.com</span>
+              <span className='span'>demo@gmail.com</span>
             </div>
-            <div className='mb-4'>
+            <div className='mb-4 icon-text'>
               <img
                 src={locationIcon}
                 alt='Location'
                 className='me-2 custom-icon'
               />
-              <span>123Street, Qasimabad,</span>
+              <span className='span'>123Street, Qasimabad,</span>
               <br />
-              <span style={{ marginLeft: '2rem' }}> Hyderabad</span>
+              <span style={{ marginLeft: '2rem' }} className='span'>
+                {' '}
+                Hyderabad
+              </span>
             </div>
           </div>
 
@@ -95,7 +100,7 @@ const ContactPage = () => {
             <Row>
               <Col md={6}>
                 <Form.Group className='mb-3'>
-                  <Form.Label style={{ color: '#8D8D8D' }}>
+                  <Form.Label className='labels' style={{ color: '#8D8D8D' }}>
                     First Name
                   </Form.Label>
                   <div class='input'>
@@ -105,7 +110,7 @@ const ContactPage = () => {
               </Col>
               <Col md={6}>
                 <Form.Group className='mb-3'>
-                  <Form.Label>Last Name</Form.Label>
+                  <Form.Label className='labels'>Last Name</Form.Label>
                   <div class='input'>
                     <input type='text' id='itemInput' placeholder='Doe' />
                   </div>
@@ -117,7 +122,9 @@ const ContactPage = () => {
             <Row>
               <Col md={6}>
                 <Form.Group className='mb-3 mt-4'>
-                  <Form.Label style={{ color: '#8D8D8D' }}>Email</Form.Label>
+                  <Form.Label className='labels' style={{ color: '#8D8D8D' }}>
+                    Email
+                  </Form.Label>
                   <div class='input'>
                     <input type='email' id='itemInput' placeholder='' />
                   </div>
@@ -125,7 +132,7 @@ const ContactPage = () => {
               </Col>
               <Col md={6}>
                 <Form.Group className='mb-3 mt-4'>
-                  <Form.Label>Phone Number</Form.Label>
+                  <Form.Label className='labels'>Phone Number</Form.Label>
                   <div class='input'>
                     <input
                       type='number'
@@ -139,7 +146,9 @@ const ContactPage = () => {
 
             {/* Subject Selection */}
             <Form.Group className='mb-3 mt-4'>
-              <Form.Label className='fw-bold'>Select Subject?</Form.Label>
+              <Form.Label className='fw-bold subject'>
+                Select Subject?
+              </Form.Label>
               <div className='mt-2'>
                 <Form.Group className='custom-radio-group'>
                   <div className='custom-radio'>
@@ -149,6 +158,7 @@ const ContactPage = () => {
                       name='subject'
                       type='radio'
                       id='subject2'
+                      className='checks'
                     />
                   </div>
                   <div className='custom-radio'>
@@ -158,6 +168,7 @@ const ContactPage = () => {
                       name='subject'
                       type='radio'
                       id='subject3'
+                      className='checks'
                     />
                   </div>
                   <div className='custom-radio'>
@@ -167,6 +178,7 @@ const ContactPage = () => {
                       name='subject'
                       type='radio'
                       id='subject4'
+                      className='checks'
                     />
                   </div>
                   <div className='custom-radio'>
@@ -176,6 +188,7 @@ const ContactPage = () => {
                       name='subject'
                       type='radio'
                       id='subject5'
+                      className='checks'
                     />
                   </div>
                 </Form.Group>
@@ -184,7 +197,9 @@ const ContactPage = () => {
 
             {/* Message */}
             <Form.Group className='mb-4 mt-5'>
-              <Form.Label style={{ color: '#8D8D8D' }}>Message</Form.Label>
+              <Form.Label className='labels' style={{ color: '#8D8D8D' }}>
+                Message
+              </Form.Label>
               <div class='textarea'>
                 <input
                   type='text'

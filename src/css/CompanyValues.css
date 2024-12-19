@@ -1,41 +1,46 @@
 .company-container {
   background-color: #f9f9ff;
-  position: relative; /* Fix container at the top */
-  bottom: 6rem; /* Ensures it stays at the top */
-  left: 0; /* Ensure it stretches across the entire width */
-  margin-bottom: 3rem; /* Optional bottom margin */
-  height: 49rem;
+  position: relative;
+  bottom: 6rem;
+  left: 0;
+  margin-bottom: 1rem;
+  height: 45rem;
 }
 .company-heading {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   font-weight: bold;
   color: #000;
 }
 .Culture-heading {
+  margin-top: -6rem;
   color: #000;
   font-weight: bold;
 }
+.company-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.company-description p {
+  color: #555;
+  width: 623px;
+  height: 221px;
+  font-weight: 400;
+  font-size: 20px;
+}
 .Culture-heading::after {
-  content: ''; /* Creates an empty pseudo-element */
+  content: '';
   position: absolute;
-  top: 5.5rem; /* Align it at the bottom of the text */
-  left: 40rem;
-  width: 5%; /* Make it the full width of the text */
-  height: 5px; /* Increase the thickness of the line */
+  top: -0.5rem;
+  left: 40.5rem;
+  width: 5%;
+  height: 5px;
   background: linear-gradient(#5550bc, #57007b);
 }
 
 .company-subheading {
   font-weight: bold;
   color: #5550bc;
-}
-
-.company-description {
-  max-width: 800px;
-  margin: 0 auto;
-  color: #555;
-  font-size: 16px;
-  line-height: 1.6;
 }
 
 /* Cards Section */
@@ -87,7 +92,7 @@
 }
 .halfcircle {
   position: absolute;
-  bottom: 0px; /* Place it above the box */
+  bottom: 0px;
   left: 35px;
   width: 90px;
   height: 50px;
@@ -95,4 +100,78 @@
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   z-index: 10;
+}
+@media (max-width: 768px) {
+  .values-content {
+    margin-top: -7rem;
+    height: 200px;
+  }
+  .col-values {
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Culture-heading {
+    width: 66px;
+    height: 32px;
+    font-weight: 700;
+    font-size: 18.11px;
+    line-height: 33.12px;
+  }
+  .Culture-heading::after {
+    content: '';
+    position: absolute;
+    top: 1.5rem;
+    left: 12rem;
+    width: 8%;
+    height: 2px;
+    background: linear-gradient(#5550bc, #57007b);
+  }
+  .company-heading,
+  .company-subheading {
+    margin-top: -0.5rem;
+    width: 170px;
+    height: 32px;
+    font-weight: 700;
+    font-size: 18.11px;
+    line-height: 33.12px;
+  }
+  .company-description p {
+    color: #555;
+    width: 322px;
+    height: 133px;
+    font-weight: 400;
+    font-size: 9.31px;
+    line-height: 21.68px;
+  }
+  .custom-card {
+    width: 340px;
+    height: 95px;
+  }
+  .card-icon {
+    width: 50.31px;
+    height: 51.31px;
+  }
+  .card-content {
+    width: 270px;
+    margin-top: -0.5rem;
+    height: 80px;
+  }
+  .card-heading {
+    margin-top: 1rem;
+    width: 130px;
+    height: 10px;
+    font-weight: 400;
+    font-size: 8.96px;
+    line-height: 17.92px;
+  }
+  .card-paragraph {
+    width: 240px;
+    height: 45.79px;
+    font-weight: 400;
+    font-size: 6.97px;
+    line-height: 10.95px;
+  }
 }

@@ -110,7 +110,7 @@
   z-index: 0; /* Ensure it appears below the image */
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .about-us {
     margin-top: 5rem;
     margin-bottom: 30px;
