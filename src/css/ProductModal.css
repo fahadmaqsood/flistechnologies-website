@@ -103,3 +103,95 @@
   padding: 0;
   text-align: center;
 }
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 0; /* Add padding for spacing */
+  margin: 0; /* Reset margin */
+  border-bottom-left-radius: 8px; /* Rounded corners (optional) */
+  border-bottom-right-radius: 8px; /* Rounded corners (optional) */
+}
+@media (max-width: 768px) {
+  .Products-heading {
+    font-size: 18.11px;
+    font-weight: 700;
+  }
+  /* Apply styles for mobile screens and smaller tablets */
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: -15px;
+    width: 129.09px;
+    height: 36.08px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 0; /* Add padding for spacing */
+    margin: 0; /* Reset margin */
+    border-bottom-left-radius: 8px; /* Rounded corners (optional) */
+    border-bottom-right-radius: 8px; /* Rounded corners (optional) */
+  }
+
+  .img-hole {
+    margin-top: 2rem;
+    width: 289.71px;
+    height: 150.68px;
+  }
+
+  .txt-box {
+    margin-left: -2rem;
+    width: 315px;
+    height: 112px;
+    font-size: 12.11px;
+    font-weight: 400;
+    line-height: 24.22px;
+  }
+  .purches-btn {
+    margin-top: -3rem;
+    margin-left: 20px;
+    width: 70%;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  .styleLi {
+    margin-top: -0.5rem;
+    line-height: 1.6; /* Improve readability */
+    font-size: 10px; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Add spacing between list items */
+  }
+
+  .tradmaster {
+    margin-top: 0rem;
+    font-size: 23.55px;
+    font-weight: 700;
+    margin-bottom: 10px; /* Add spacing below the heading */
+  }
+
+  .left-closeButton {
+    top: 5px; /* Adjust position for smaller screens */
+    left: 5px;
+    width: 30px; /* Adjust size */
+    height: 30px;
+    font-size: 16px; /* Adjust font size */
+  }
+}

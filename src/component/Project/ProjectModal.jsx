@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
-import { Modal, Button, Container, Row, Col } from 'react-bootstrap'
+import { Modal, Button, Container, Row, Col, Image } from 'react-bootstrap'
+import pic1 from '../../imgs/Rectangle 3862.png'
+import pic2 from '../../imgs/Group2.png'
+import { FaStar } from 'react-icons/fa'
 
-// Import images explicitly
 import img1 from '../../imgs/Rectangle 3862.png'
 import img2 from '../../imgs/Rectangle 3863.png'
 import img3 from '../../imgs/Rectangle 3864.png'
@@ -58,13 +60,13 @@ function ProjectModal() {
       </div>
 
       {/* Category Button */}
-      <div className='mb-3'>
+      <div className='mb-3 cat-btn'>
         <Button variant='primary'>Categories</Button>
       </div>
 
-      {/* Project Images */}
+      {/* Project Images for Desktop */}
       <Row
-        className='d-flex align-items-center justify-content-center'
+        className='d-flex align-items-center justify-content-center d-none d-md-flex'
         style={{ marginLeft: '2rem', width: '1300px' }}
       >
         {projectImages.map((project) => (
@@ -72,12 +74,165 @@ function ProjectModal() {
             <img
               src={project.img}
               alt={`Project ${project.id}`}
-              className='img-fluid rounded project-img '
-              onClick={() => handleShow(project.thumbnail)}
+              className='img-fluid rounded project-img'
+              onClick={() => handleShow(project.thumbnail)} // onClick function to show modal for desktop
               style={{ cursor: 'pointer' }}
             />
           </Col>
         ))}
+      </Row>
+
+      {/* Project Images for Mobile */}
+      <Row className='d-block d-md-none my-4 justify-content-center'>
+        <Container className='my-4'>
+          {/* Create only 3 rows */}
+          {[...Array(3)].map((_, rowIndex) => (
+            <Row className='mb-4 justify-content-center' key={rowIndex}>
+              {/* Create only 2 columns per row */}
+              {[...Array(2)].map((_, colIndex) => (
+                <Col
+                  md={6}
+                  key={colIndex}
+                  style={{
+                    width: '153.15px',
+                    height: '290px',
+                    padding: '5px',
+                    display: 'flex',
+                    alignItems: 'center',
+                  }}
+                >
+                  <div
+                    className='p-2 bg-dark text-white rounded'
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      overflow: 'hidden',
+                      fontSize: '12px', // Adjust font size
+                    }}
+                  >
+                    {/* Image */}
+                    <Image
+                      src={pic1} // Replace with your actual image URL
+                      alt='Feedback'
+                      fluid
+                      style={{
+                        width: '128px',
+                        height: '137.78px', // Adjusted for smaller height
+                        objectFit: 'cover',
+                      }}
+                      className='mb-2'
+                      onClick={() => handleShow(pic1)} // onClick function for mobile
+                    />
+
+                    {/* Main Heading */}
+                    <h6
+                      className='text-white mb-1'
+                      style={{
+                        fontSize: '8.24px',
+                        fontWeight: '700',
+                        lineHeight: '13.02px ',
+                        marginLeft: '2rem',
+                      }}
+                    >
+                      NextGen Trading
+                    </h6>
+
+                    {/* Sub Heading */}
+                    <small
+                      className='mb-2 d-block'
+                      style={{
+                        marginTop: '0rem',
+                        fontSize: '6.91px',
+                        fontWeight: '700',
+                        lineHeight: '15.84px ',
+                      }}
+                    >
+                      Feed Back
+                    </small>
+
+                    {/* Stars */}
+                    <div
+                      className='mb-2 d-flex'
+                      style={{
+                        width: '21.99px',
+                        height: '3.68px',
+                        marginTop: '-0.7rem',
+                      }}
+                    >
+                      <FaStar color='gold' size={12} />
+                      <FaStar color='gold' size={12} />
+                      <FaStar color='gold' size={12} />
+                      <FaStar color='gold' size={12} />
+                      <FaStar color='gold' size={12} />
+                    </div>
+
+                    {/* Paragraph */}
+                    <p
+                      style={{
+                        fontSize: '5.19px',
+                        width: '130.58px',
+                        fontWeight: '500',
+                      }}
+                    >
+                      Without any doubt I recommend Flistechnology as one of the
+                      best web development and digital marketing agencies. One
+                      of the best agencies I’ve came across so far. Wouldn’t be
+                      hesitated to introduce their work to someone else.
+                    </p>
+
+                    {/* Profile Section */}
+                    <div
+                      className='d-flex align-items-center'
+                      style={{ marginLeft: '-1rem', marginTop: '-0.8rem' }}
+                    >
+                      {/* Profile Image */}
+                      <Image
+                        src={pic2} // Replace with your small profile image URL
+                        alt='Profile'
+                        roundedCircle
+                        style={{
+                          width: '22px',
+                          height: '22px',
+                          objectFit: 'cover',
+                          marginLeft: '10px',
+                        }}
+                        className='me-2'
+                      />
+                      {/* Profile Text */}
+                      <div>
+                        <small
+                          className='d-block'
+                          style={{
+                            marginLeft: '-6px',
+                            width: '19px',
+                            height: '4px',
+                            fontSize: '3.31px',
+                            fontWeight: '700',
+                          }}
+                        >
+                          John Doe
+                        </small>
+                        <small
+                          className='d-block '
+                          style={{
+                            marginTop: '2px',
+                            marginLeft: '-6px',
+                            width: '30px',
+                            height: '4px',
+                            fontSize: '2.58px',
+                            fontWeight: '400',
+                          }}
+                        >
+                          Software Engineer
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </Col>
+              ))}
+            </Row>
+          ))}
+        </Container>
       </Row>
 
       {/* Modal */}
@@ -85,8 +240,7 @@ function ProjectModal() {
         <Modal.Body style={{ backgroundColor: '#F9F9FF' }}>
           <Container>
             <Row>
-              {/* Left Side Image starts at the origin */}
-              <Col md={4} className='p-0'>
+              <Col md={4} className='p-0 smallimg'>
                 {selectedImage && (
                   <img
                     src={selectedImage}
@@ -96,17 +250,10 @@ function ProjectModal() {
                 )}
               </Col>
 
-              {/* Right Side Text */}
               <Col md={8}>
-                {/* Custom Title Section */}
                 <div className='d-flex justify-content-between align-items-center p-3'>
-                  <h5
-                    className='Projectheading fw-bold'
-                    style={{ color: '#000', marginLeft: '15rem' }}
-                  >
-                    NextGen Trading
-                  </h5>
-                  <div style={{ border: ' 1px solid black' }}>
+                  <h5 className='Projectheading fw-bold'>NextGen Trading</h5>
+                  <div style={{ border: '1px solid black' }}>
                     <Button
                       variant='light'
                       onClick={handleClose}
@@ -120,26 +267,19 @@ function ProjectModal() {
                 <p style={{ color: '#393939' }}>
                   Discover the NextGen Trading Platform, a cutting-edge solution
                   designed to modernize and streamline trading experiences for
-                  both novice and expert traders. This project was crafted to
-                  provide a seamless, intuitive interface, combined with
-                  powerful tools to enhance decision-making and trading
-                  efficiency.
+                  both novice and expert traders.
                 </p>
                 <h5 className='text-black'>Technologies Used</h5>
                 <ul style={{ color: '#393939' }}>
                   <li>Frontend: HTML5, CSS3, React.js</li>
                   <li>Backend: Node.js, Python</li>
                   <li>Database: MongoDB</li>
-                  <li>
-                    Others: REST APIs, WebSocket for real-time data updates
-                  </li>
+                  <li>Others: REST APIs, WebSocket</li>
                 </ul>
                 <h5 className='text-black'>Client Feedback</h5>
                 <p style={{ color: '#393939' }}>
                   The NextGen Trading Platform has exceeded our expectations in
-                  every way. The interface is user-friendly, and the integration
-                  of real-time data has significantly improved our trading
-                  efficiency.
+                  every way.
                 </p>
                 <h5 className='text-black'>Developed By</h5>
                 <p style={{ color: '#393939' }}>Zeeshan Memon(Developer)</p>

@@ -23,7 +23,11 @@ const Contact = () => {
               {' '}
               <div className='img-title'>
                 <div className='icon-imgs'>
-                  <img src={icon1} alt='Address Icon' className='me-2' />
+                  <img
+                    src={icon1}
+                    alt='Address Icon'
+                    className='me-2 iconimgs'
+                  />
                 </div>
                 <h5 className='heading5'>Address</h5>
               </div>
@@ -34,7 +38,7 @@ const Contact = () => {
             <div className='mb-4 address-col'>
               <div className='img-title'>
                 <div className='icon-imgs'>
-                  <img src={icon2} alt='Phone Icon' className='me-2' />
+                  <img src={icon2} alt='Phone Icon' className='me-2 iconimgs' />
                 </div>
                 <h5 className='heading5'>Phone</h5>
               </div>
@@ -46,7 +50,11 @@ const Contact = () => {
               {' '}
               <div className='img-title'>
                 <div className='icon-imgs'>
-                  <img src={icon3} alt='Working Time Icon' className='me-2' />
+                  <img
+                    src={icon3}
+                    alt='Working Time Icon'
+                    className='me-2 iconimgs'
+                  />
                 </div>
                 <h5 className='heading5'>Working Time</h5>
               </div>

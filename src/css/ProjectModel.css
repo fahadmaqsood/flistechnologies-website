@@ -1,3 +1,4 @@
+/* Default Styles for Modal */
 .projectModel {
   background-color: #f9f9ff;
   color: #000;
@@ -6,11 +7,13 @@
   padding: 0;
   max-width: 1500px;
 }
+
 .Projects-heading {
-  display: block; /* Makes it a block element for full-width alignment */
-  text-align: center; /* Ensures text is horizontally centered */
-  transform: translateY(20px); /* Moves heading down */
+  display: block;
+  text-align: center;
+  transform: translateY(20px);
 }
+
 .Projects-heading::after {
   content: '';
   position: absolute;
@@ -20,6 +23,11 @@
   height: 2px;
   background: linear-gradient(#5550bc, #57007b);
 }
+.Projectheading {
+  margin-left: 15rem;
+  color: #000;
+}
+
 .Projectheading::after {
   content: '';
   position: absolute;
@@ -29,6 +37,7 @@
   height: 2px;
   background: linear-gradient(#5550bc, #57007b);
 }
+
 /* Custom Modal Styles */
 .modal-dialog {
   max-width: 1000px !important;
@@ -41,19 +50,23 @@
   border-radius: 5px;
   overflow: hidden;
 }
+
 .project-img {
   width: 351px;
   height: 370px;
 }
+
 .btns {
   padding: 5px;
   margin-left: 25rem;
 }
+
 .body-data {
   margin: 0;
   padding: 0;
   background-color: #f9f9ff;
 }
+
 .right-closeButton {
   position: absolute;
   top: 8px;
@@ -62,11 +75,85 @@
   z-index: 1000;
   font-size: 20px;
   color: black;
-  border: 2px solid black !important; /* Ensure border is applied */
+  border: 2px solid black !important;
   border-radius: 50%;
   width: 35px;
   height: 35px;
   line-height: 20px;
   padding: 0;
   text-align: center;
+}
+
+/* Media Query for Mobile Responsiveness */
+
+@media (max-width: 768px) {
+  .Projects-heading {
+    font-size: 18.11px;
+    font-weight: 700;
+  }
+  .Projects-heading::after {
+    content: '';
+    position: absolute;
+    top: 3.5rem;
+    left: 39.5rem;
+    width: 6%;
+    height: 2px;
+    background: linear-gradient(#5550bc, #57007b);
+  }
+
+  .cat-btn Button {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 115px;
+    height: 40.38px;
+  }
+  .modal-dialog {
+    width: 370px !important;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .btns {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .right-closeButton {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 22px;
+    border-radius: 50%;
+    background: #fff;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+    z-index: 1000;
+  }
+  .Projectheading {
+    width: 200px;
+    height: 40px;
+    font-size: 21.55px;
+    line-height: 55px;
+    font-weight: 700;
+
+    margin-left: 2rem;
+    text-align: center;
+  }
+  .Projectheading::after {
+    content: '';
+    position: absolute;
+    top: 4rem;
+    left: 40rem;
+    width: 8%;
+    height: 2px;
+    background: linear-gradient(#5550bc, #57007b);
+  }
+
+  .smallimg {
+    margin-top: 3rem;
+  }
 }

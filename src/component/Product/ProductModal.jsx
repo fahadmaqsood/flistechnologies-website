@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Modal, Button, Container, Row, Col } from 'react-bootstrap'
+import { Modal, Button, Container, Row, Col, Image } from 'react-bootstrap' // Ensure Image is imported
 import '../../css/ProductModal.css'
 
 // Import images explicitly
@@ -21,13 +21,11 @@ import img15 from '../../imgs/Rectangle 3863.png'
 
 import thumb from '../../imgs/Rectangle 3904.png'
 
-// Continue importing all thumbnail images...
-
 const productImages = [
   { id: 1, img: img1, thumbnail: thumb },
   { id: 2, img: img2, thumbnail: thumb },
   { id: 3, img: img3, thumbnail: thumb },
-  { id: 4, img: img4, thumbnail: thumb }, // Can mix imports if necessary
+  { id: 4, img: img4, thumbnail: thumb },
   { id: 5, img: img5, thumbnail: thumb },
   { id: 6, img: img6, thumbnail: thumb },
   { id: 7, img: img7, thumbnail: thumb },
@@ -41,7 +39,7 @@ const productImages = [
   { id: 15, img: img15, thumbnail: thumb },
 ]
 
-function productModal() {
+function ProductModal() {
   const [showModal, setShowModal] = useState(false)
   const [selectedImage, setSelectedImage] = useState(null)
 
@@ -60,21 +58,19 @@ function productModal() {
       </div>
 
       {/* Category Button */}
-      <div className='mb-3'>
+      <div className='mb-3 cat-btn'>
         <Button variant='primary'>Categories</Button>
       </div>
 
-      {/* product Images */}
+      {/* Desktop Product Images */}
       <Row
-        className='d-flex align-items-center justify-content-center'
+        className='d-none d-md-flex align-items-center justify-content-center'
         style={{ marginLeft: '2rem', width: '1300px' }}
       >
         {productImages.map((product) => (
           <Col md={4} key={product.id} className='mb-4'>
             <div className='image-container'>
-              {/* Text overlay */}
               <p className='overlay-text'>Lorem Ipsum</p>
-              {/* Image */}
               <img
                 src={product.img}
                 alt={`product ${product.id}`}
@@ -92,8 +88,40 @@ function productModal() {
         ))}
       </Row>
 
+      {/* Mobile Product Layout (Only img1 and img2, 12 images total, 6 rows) */}
+      <Row className='d-block d-md-none my-4 justify-content-center'>
+        <Container>
+          {/* Loop through 6 rows with only img1 and img2 */}
+          {Array.from({ length: 6 }).map((_, rowIndex) => (
+            <Row key={rowIndex} className='mb-4'>
+              {[img1, img2].map((img, colIndex) => (
+                <Col key={colIndex} md={6} xs={6} className='text-center'>
+                  <div
+                    className='image-container'
+                    style={{ position: 'relative' }}
+                  >
+                    <Image
+                      src={img}
+                      alt={`Image ${colIndex + 1}`}
+                      fluid
+                      style={{
+                        cursor: 'pointer',
+                        width: '134.71px',
+                        height: '142px',
+                        objectFit: 'cover',
+                      }}
+                      onClick={() => handleShow(thumb)} // Opens modal on click
+                    />
+                    <p className='overlay-text'>Lorem Ipsum</p>
+                  </div>
+                </Col>
+              ))}
+            </Row>
+          ))}
+        </Container>
+      </Row>
+
       {/* Modal */}
-      {/* Updated Modal */}
       <Modal show={showModal} onHide={handleClose} className='custom-modal'>
         <div
           style={{
@@ -102,7 +130,6 @@ function productModal() {
             backgroundColor: '#F9F9FF',
           }}
         >
-          {/* Close Button in Circle */}
           <Button
             variant='light'
             onClick={handleClose}
@@ -112,23 +139,21 @@ function productModal() {
           </Button>
 
           <Modal.Body className='text-center'>
-            {/* Image Section */}
             {selectedImage && (
               <div className='mb-4'>
                 <img
                   src={selectedImage}
                   alt='Selected product'
-                  className='img-fluid rounded'
+                  className='img-fluid rounded img-hole'
                   style={{ maxWidth: '50%', borderRadius: '15px' }}
                 />
               </div>
             )}
 
-            {/* Text Content */}
             <h4 className='text-black mb-3 tradmaster'>TradeMaster Pro</h4>
             <div className=' mt-3 txt-box'>
               <ul className='lists'>
-                <li className='mb-2 styleLi '>
+                <li className='mb-2 styleLi'>
                   A powerful trading platform designed for both novice and
                   experienced traders.
                 </li>
@@ -143,10 +168,9 @@ function productModal() {
               </ul>
             </div>
 
-            {/* Purchase Button */}
             <Button
               variant='primary'
-              className='mt-5'
+              className='mt-5 purches-btn'
               style={{
                 backgroundColor: '#6c63ff',
                 borderColor: '#6c63ff',
@@ -164,4 +188,4 @@ function productModal() {
   )
 }
 
-export default productModal
+export default ProductModal

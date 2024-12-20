@@ -6,6 +6,7 @@ function ProjectPage() {
   return (
     <>
       <ProjectDetails />
+      {/* <CardLayout /> */}
       <ProjectModal />
     </>
   )
