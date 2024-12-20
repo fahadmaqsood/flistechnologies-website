@@ -116,18 +116,33 @@
 }
 @media (max-width: 768px) {
   .mission-heading {
+    margin-left: -2rem;
     width: 70px;
     font-weight: 700;
     font-size: 18.11px;
     line-height: 32.33px;
   }
+  .mission-heading::after {
+    content: ''; /* Creates an empty pseudo-element */
+    position: absolute;
+    top: 5rem; /* Align it at the bottom of the text */
+    left: 2rem;
+    width: 7%; /* Make it the full width of the text */
+    height: 2px; /* Increase the thickness of the line */
+    background: linear-gradient(#5550bc, #57007b);
+  }
   .mission-subheading {
-    width: 93px;
+    margin-left: -2rem;
+    width: 150px;
     font-weight: 700;
     font-size: 18.11px;
     line-height: 32.33px;
   }
   .mission-text {
+    position: relative;
+    left: -2rem; /* Moves the element left by 2rem */
+
+    margin-left: -2rem;
     margin: 0px;
     color: #000000;
     width: 315px;
@@ -136,6 +151,8 @@
     line-height: 14px;
   }
   .mission-quote {
+    position: relative;
+    left: -2rem;
     margin: 0px;
     color: #000000;
     width: 315px;
