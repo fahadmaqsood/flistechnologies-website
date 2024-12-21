@@ -102,6 +102,7 @@
   }
 
   .cat-btn Button {
+    padding: 5px;
     margin-top: 1rem;
     margin-left: 1rem;
     width: 115px;

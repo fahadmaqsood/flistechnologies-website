@@ -129,8 +129,10 @@
   }
 
   .stats {
+    margin-top: -1rem;
     display: flex;
-    width: 47px;
+    width: 42px;
+    height: 5.91px;
   }
   .no-gutters {
     display: flex;
@@ -143,16 +145,17 @@
   }
 
   .review-col {
-    width: 55px;
+    margin-left: -0.7rem;
+    width: 60px;
     height: 68.2px;
     display: flex;
     flex-direction: column;
   }
   .review-col p {
     margin: 0;
-    width: 34px;
+    width: 40px;
     font-weight: 400;
-    font-size: 5px;
+    font-size: 4px;
     line-height: 8px;
   }
   .review-col img {
@@ -193,6 +196,8 @@
     justify-content: center;
     width: 17px;
     height: 17px;
+    margin-bottom: -2rem;
+    margin-left: -1.5rem;
     border-radius: 50%;
     position: relative;
   }

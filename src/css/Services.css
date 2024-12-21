@@ -195,94 +195,67 @@
   justify-content: space-around;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .box {
-    height: auto; /* Allow height to adjust dynamically */
+    height: auto; /* Adjust height for smaller screens */
   }
 
   .services-row {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
   }
-
   .service-card {
-    max-width: 80%;
-    height: auto;
-  }
-
-  .half-circle {
-    left: 20px;
-    width: 70px;
-    height: 40px;
-    bottom: 2px;
-  }
-
-  .down-circle {
-    right: 20px;
-    width: 70px;
-    height: 40px;
+    max-width: 90%; /* Full-width on smaller screens */
+    height: 180px; /* Adjusted height for mobile */
   }
 
   .circle-container {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
 
-  .circle-img {
-    width: 70%;
-    height: 70%;
+  .card-title {
+    font-size: 0.8rem;
+  }
+
+  .card-text {
+    font-size: 0.65rem;
   }
 
   .circle-row {
     margin-left: 0;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
   }
 
   .circle {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
   }
 
   .circlees {
-    width: 30px;
-    height: 30px;
-    font-size: 14px;
-    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
   }
 
   .line-container {
-    width: 120px;
-    height: 3px;
+    width: 140px;
+    height: 4px;
   }
 
   .line-filled {
-    width: 40%;
+    width: 50%;
   }
 
   .borders,
   .boders {
-    margin-left: 4rem;
-    align-items: center;
+    margin-left: 2rem;
   }
 
   .down-box {
     flex-direction: column;
-    justify-content: center;
-  }
-
-  .title,
-  .card-title {
-    font-size: 0.875rem;
-  }
-
-  .card-text {
-    font-size: 0.75rem;
-  }
-
-  .grey-txt,
-  .purple-txt {
-    font-size: 0.875rem;
+    align-items: center;
   }
 }
