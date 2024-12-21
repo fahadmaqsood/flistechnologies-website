@@ -131,7 +131,7 @@
   .stats {
     margin-top: -1rem;
     display: flex;
-    width: 42px;
+    width: 38px;
     height: 5.91px;
   }
   .no-gutters {
@@ -145,13 +145,14 @@
   }
 
   .review-col {
-    margin-left: -0.7rem;
-    width: 60px;
+    margin-left: -1rem;
+    width: 65px;
     height: 68.2px;
     display: flex;
     flex-direction: column;
   }
   .review-col p {
+    margin-left: -2rem;
     margin: 0;
     width: 40px;
     font-weight: 400;
