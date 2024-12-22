@@ -138,6 +138,7 @@ button:active,
     height: 3px;
     display: block;
     position: relative;
+    right: -1rem;
   }
 
   .navbar-toggler-icon::before,
