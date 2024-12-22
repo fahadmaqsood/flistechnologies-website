@@ -80,7 +80,7 @@ button:active,
 @media (max-width: 768px) {
   .custom-contact-btn {
     position: relative; /* Moves relative to its normal position */
-    top: -26rem; /* Moves the button upwards */
+    top: -25rem; /* Moves the button upwards */
   }
   .custom-navbar {
     display: flex;
@@ -217,7 +217,7 @@ button:active,
   }
   #home {
     margin-left: -1rem;
-    margin-top: -25rem;
+    margin-top: -22rem;
   }
   #project {
     margin-top: -3rem;
