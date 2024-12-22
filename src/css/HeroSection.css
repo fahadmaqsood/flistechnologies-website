@@ -60,6 +60,7 @@
     align-items: flex-start;
     margin-bottom: 0px;
     margin-top: -50px;
+    width: 405px;
   }
 
   .hero-text {
@@ -93,9 +94,9 @@
 
   .hero-btn {
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    width: 170px;
+    width: 150px;
     margin: 1rem 0;
     margin-left: 0.5rem;
     border-radius: 5px;

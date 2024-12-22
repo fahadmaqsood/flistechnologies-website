@@ -1,3 +1,4 @@
+/* changes done */
 .contact-us-section {
   background-color: #f8f9fa;
 }
@@ -115,17 +116,27 @@
   gap: 0; /* Remove spacing */
   flex-wrap: nowrap; /* Prevent wrapping */
 }
+
 @media (max-width: 768px) {
+  .contact-us-section,
+  .pagecontact,
+  .data,
+  .contact-info {
+    overflow: hidden; /* Prevent overflow */
+  }
   .contact-us-section {
-    background-color: #000;
+    margin-left: 0rem;
+    background-color: #000000;
+    width: 405px;
   }
   .pagecontact {
-    margin-top: -50px;
-    margin-left: -3rem;
-    width: 407px;
-    border: 1px solid #000000a9 !important;
+    background-color: #f8f9fa;
+    margin-left: -3.2rem;
+    width: 405px;
   }
   .contact-text {
+    width: 405px;
+    height: 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -165,20 +176,20 @@
   }
   .data {
     display: flex;
-    width: 380px;
+    width: 405px;
     position: relative;
-    top: -5rem; /* Move the div upwards */
+    top: -4rem; /* Move the div upwards */
+    margin-left: 0rem;
     height: 57px;
   }
 
   .contact-info {
-    width: 407px;
-    /* height: 120px; */
-    justify-content: space-between;
-    align-items: center;
+    background-color: #000000;
+    width: 405px;
   }
   .span {
     margin-top: -2rem;
+
     width: 170px;
     font-weight: 400;
     font-size: 7.36px;
@@ -203,8 +214,8 @@
   }
   .overlapimages {
     position: relative;
-    top: 0.5rem; /* Reset positioning */
-    right: 18px; /* Reset positioning */
+    top: 0.8rem; /* Reset positioning */
+    right: 0px; /* Reset positioning */
     margin: 1rem 0; /* Add spacing for the image */
     display: flex;
     justify-content: center; /* Center the main content */

@@ -39,14 +39,13 @@ h5 {
 }
 @media (max-width: 768px) {
   .footer {
-    margin-top: 0;
-    width: 360px;
+    margin-left: 0rem;
+    width: 405px;
     height: 92px;
     display: flex;
     align-items: center;
     justify-items: center;
     overflow: hidden;
-    box-sizing: border-box;
   }
   .heading-icons {
     display: flex;
@@ -95,7 +94,7 @@ h5 {
   }
   .hor {
     margin-top: -4.5rem;
-    width: 100vw;
+    width: 405px;
     background-color: #ffffff;
   }
 }

@@ -1,7 +1,4 @@
 .custom-navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background: #fff;
   height: 80px;
 }
@@ -9,24 +6,37 @@
 .custom-logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #000;
+  margin-left: -2rem;
   cursor: pointer;
-  margin-left: -6rem;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: space-between; /* Space between links and the button */
+  align-items: center; /* Align items vertically */
+  flex-wrap: wrap; /* Ensure it wraps for smaller screens */
+  width: 100%; /* Full width */
+  padding: 1rem;
 }
 
 .custom-nav-links {
   display: flex;
-  gap: 7.5rem;
-  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  list-style: none;
+  gap: 4rem;
+  margin: 0;
+  padding: 0;
 }
 
 .custom-nav-link {
-  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
   color: #4a5568;
   position: relative;
-  cursor: pointer;
+  font-size: 1rem;
 }
-
 /* Remove focus styles on links and buttons immediately */
 a,
 a:focus,
@@ -42,7 +52,6 @@ button:active,
   border: none !important;
   box-shadow: none !important;
 }
-
 .custom-nav-link:hover::after {
   content: '';
   display: block;
@@ -56,20 +65,23 @@ button:active,
 .custom-contact-btn {
   background: #000 !important;
   color: #fff;
-  font-size: 1rem;
   border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 1rem;
   transition: color 0.3s ease;
-  position: relative;
-  left: 100px;
+  white-space: nowrap; /* Prevent wrapping */
 }
-
 .custom-contact-btn:hover {
   background: #5550bc !important;
   color: #fff !important;
 }
-
 @media (max-width: 768px) {
+  .custom-contact-btn {
+    position: relative; /* Moves relative to its normal position */
+    top: -28rem; /* Moves the button upwards */
+  }
   .custom-navbar {
     display: flex;
     background: transparent !important;
@@ -84,45 +96,35 @@ button:active,
     margin-left: -1.5rem;
   }
 
-  .custom-nav-links {
+  /* Sidebar Styles */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially hidden */
+    height: 100vh;
+    width: 300px;
+    background: black;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    align-items: stretch; /* Stretch all items to full width */
+    padding: 0; /* Remove all padding */
+    transition: right 0.3s ease;
+    z-index: 1000;
   }
 
-  .custom-nav-link {
-    color: #fff !important;
-    text-align: center;
+  .sidebar.open {
+    right: 0; /* Slide in from the right */
   }
 
-  .custom-nav-link:hover {
-    background-color: grey;
-    width: 100%;
-    border-radius: 5%;
+  .sidebar .close-btn {
+    align-self: flex-end;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+    margin: 0.5rem; /* Slight margin for the close button */
   }
   .custom-nav-link:hover::after {
-    background: none !important;
-  }
-  .custom-contact-btn {
-    display: flex;
-
-    align-items: center;
-    margin-left: 0;
-    width: 100%;
-    gap: 1rem;
-    border-radius: 5px;
-    background: none;
-    color: #fff !important;
-  }
-
-  .custom-contact-btn:hover::after {
-    background: none !important;
-  }
-
-  .custom-contact-btn:hover {
-    background-color: grey;
-    width: 100%;
-    border-radius: 5%;
+    display: none;
   }
 
   .navbar-toggler {
@@ -156,27 +158,67 @@ button:active,
     top: 8px;
   }
 
-  .custom-nav-link:nth-child(1)::before {
-    content: url('../imgs/Rectangle2804.png'); /* Home icon */
+  /* NavLinks */
+  .sidebar .custom-nav-link {
+    gap: 0px !important;
+    color: #fff !important;
+    font-size: 1.2rem;
+    display: block; /* Make each link a block element */
+    padding: 1rem; /* Add padding for better clickability */
+    margin: 0; /* Remove all margins */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #444; /* Optional: Add a divider between links */
+  }
+
+  /* Custom Button */
+  .sidebar .custom-contact-btn {
+    background: grey;
+    font-size: 1.2rem;
+    width: 100%; /* Full width */
+    border: none;
+    border-radius: 0; /* Remove border radius */
+    color: #fff !important;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 0; /* Remove margins */
+    text-align: center; /* Center button text */
+    border-top: 1px solid #444; /* Optional: Add a divider above the button */
+  }
+  .custom-nav-link:hover {
+    text-align: center;
+    background-color: grey;
+    width: 90%;
+    border-radius: 5px;
+  }
+
+  .sidebar .custom-nav-link:nth-child(1)::before {
+    content: url('../imgs/Rectangle2804.png'); /* Add your icons here */
     margin-right: 20px;
   }
 
-  .custom-nav-link:nth-child(2)::before {
-    content: url('../imgs/Rectangle2877.png'); /* Projects icon */
-    margin-right: 20px;
-  }
-  .custom-nav-link:nth-child(3)::before {
-    content: url('../imgs/Group3.png'); /* About Us icon */
+  .sidebar .custom-nav-link:nth-child(2)::before {
+    content: url('../imgs/Rectangle2877.png');
     margin-right: 20px;
   }
 
-  .custom-nav-link:nth-child(4)::before {
-    content: url('../imgs/Group3.png'); /* About Us icon */
+  .sidebar .custom-nav-link:nth-child(3)::before {
+    content: url('../imgs/Group3.png');
     margin-right: 20px;
   }
 
-  .custom-contact-btn::before {
-    content: url('../imgs/Group1.png'); /* Path to your image */
+  .sidebar .custom-nav-link:nth-child(4)::before {
+    content: url('../imgs/Group3.png');
     margin-right: 20px;
+  }
+  .sidebar .custom-contact-btn::before {
+    content: url('../imgs/Group1.png');
+    margin-right: 20px;
+  }
+  #home {
+    margin-left: -1rem;
+    margin-top: -30rem;
+  }
+  #project {
+    margin-top: -3rem;
   }
 }

@@ -112,8 +112,9 @@
 
 @media only screen and (max-width: 768px) {
   .about-us {
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-bottom: 30px;
+    width: 405px;
     height: 42rem;
   }
   .heading {
@@ -142,7 +143,7 @@
     height: 90px;
     padding: 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 2px;
@@ -151,12 +152,11 @@
   }
 
   .info-box {
-    flex: 1;
-    margin-top: -15px;
-    padding: 10px;
-    text-align: left;
-    align-items: center;
-    justify-content: center;
+    margin-top: -2.5rem;
+    margin-left: -0.8rem;
+    padding: 0px;
+    width: 65px;
+    height: 30px;
   }
 
   .info-box h4 {
@@ -166,6 +166,8 @@
     line-height: 28.46px;
   }
   .info-box p {
+    margin-left: -0.5rem;
+    margin-top: -1rem;
     width: 50px;
     font-weight: 400;
     font-size: 9px;
@@ -175,8 +177,6 @@
   .grey-color {
     width: 1px;
     height: 50px;
-    align-items: center;
-    align-self: stretch;
   }
   .btn {
     width: 40%;

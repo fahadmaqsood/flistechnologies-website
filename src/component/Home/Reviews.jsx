@@ -13,7 +13,7 @@ import '../../css/Reviews.css'
 
 const Reviews = () => {
   return (
-    <Container className='text-center py-5 '>
+    <Container className='text-center py-5 review-contain '>
       <div className='mb-4 simple-line'></div>
 
       <div className='customerdiv'>

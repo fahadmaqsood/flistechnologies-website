@@ -70,7 +70,7 @@
     display: flex;
     flex-direction: row;
     width: 405px;
-    height: 180px;
+    height: 170px;
   }
   .about-content {
     position: relative; /* Enables movement with top/left properties */
@@ -84,7 +84,7 @@
   .about-heading::after {
     content: '';
     position: absolute;
-    top: 1.7rem;
+    top: 2.5rem;
     left: 1.5rem;
     width: 10%;
     height: 3px;
@@ -92,8 +92,10 @@
   }
 
   .about-heading {
+    margin-top: 0.5rem;
     width: 109px;
-    font-size: 20px; /* Adjust font size for visibility */
+    font-weight: 700;
+    font-size: 23px; /* Adjust font size for visibility */
     line-height: 28px;
     height: auto; /* Allow height to adjust based on content */
     margin-left: 0.5rem; /* Apply negative margin to shift the heading */
@@ -105,10 +107,11 @@
     line-height: 30px;
     height: 60px;
     margin-left: 0.5rem;
+    margin-top: 0.5rem;
   }
   .about-deliver {
     position: relative;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     top: -3rem;
     left: 0.5rem;
     width: 264px;
@@ -118,7 +121,7 @@
   }
   .overlap-images {
     position: relative;
-    top: 3.8rem; /* Reset positioning */
+    top: 4rem; /* Reset positioning */
     right: -43px; /* Reset positioning */
     margin: 1rem 0; /* Add spacing for the image */
     display: flex;
@@ -128,17 +131,17 @@
 
   .circle-image.circle1 {
     position: absolute;
-    top: -13rem; /* Move further up */
+    top: -15rem; /* Move further up */
     right: -17rem; /* Align to the right corner */
-    width: 70px; /* Circle size */
-    height: 70px;
+    width: 80px; /* Circle size */
+    height: 80px;
   }
 
   .circle-image.circle2 {
     position: absolute;
-    top: -11rem; /* Move further up, slightly below circle1 */
+    top: -13rem; /* Move further up, slightly below circle1 */
     right: -17rem; /* Offset to the left of circle1 */
-    width: 80px; /* Circle size */
-    height: 80px;
+    width: 90px; /* Circle size */
+    height: 90px;
   }
 }

@@ -115,6 +115,10 @@
   z-index: 10;
 }
 @media (max-width: 768px) {
+  .Mission-container {
+    width: 405px;
+    height: 57rem;
+  }
   .mission-heading {
     margin-left: -2rem;
     width: 70px;

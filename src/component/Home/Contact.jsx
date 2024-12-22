@@ -31,7 +31,7 @@ const Contact = () => {
                 </div>
                 <h5 className='heading5'>Address</h5>
               </div>
-              <div className='para'>
+              <div className='para '>
                 <p>123 Street, Qasimabad, Hyderabad</p>
               </div>
             </div>

@@ -94,8 +94,8 @@
   .Projects-heading::after {
     content: '';
     position: absolute;
-    top: 3.5rem;
-    left: 39.5rem;
+    top: 2rem;
+    left: 12.5rem;
     width: 6%;
     height: 2px;
     background: linear-gradient(#5550bc, #57007b);
@@ -103,7 +103,8 @@
 
   .cat-btn Button {
     padding: 5px;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    font-size: 0.8rem;
     margin-left: 1rem;
     width: 115px;
     height: 40.38px;
@@ -117,7 +118,8 @@
 
   .btns {
     margin-left: 0;
-    width: 100%;
+    margin-left: 5rem;
+    width: 50%;
     text-align: center;
     padding: 10px 0;
   }
@@ -153,8 +155,19 @@
     height: 2px;
     background: linear-gradient(#5550bc, #57007b);
   }
+  .h5 {
+    font-size: 14.87px;
+    font-weight: 700;
+  }
+  .m-para {
+    font-size: 11.15px;
+    font-weight: 400;
+  }
 
   .smallimg {
     margin-top: 3rem;
+    width: 276.71px;
+    height: 291.68px;
+    margin-left: 1.5rem;
   }
 }

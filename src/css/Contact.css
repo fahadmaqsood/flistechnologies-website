@@ -1,13 +1,9 @@
 .contact-container {
-  position: relative;
   align-items: center;
   padding: 0.5rem 2rem;
   background-color: #f9f9ff;
   color: #000;
-  overflow: visible;
-  margin-top: 8rem;
-  margin-bottom: 10px;
-  height: 60rem;
+  height: 56rem;
 }
 .contactdiv {
   display: flex;
@@ -67,13 +63,18 @@
 /* Media Queries for Responsiveness */
 
 @media (max-width: 768px) {
+  .contact-container {
+    margin-left: 0rem;
+    background-color: #f9f9ff;
+    width: 405px;
+  }
   .top-para {
     margin: 0;
     text-align: center;
-    width: 274px;
+    width: 290px;
     font-weight: 400;
-    line-height: 10.21px;
-    font-size: 7px;
+    line-height: 9.21px;
+    font-size: 8.5px;
     color: #9f9f9f;
     margin-top: -10px;
   }
@@ -106,19 +107,20 @@
     height: 11px;
     line-height: 10.5px;
     font-weight: 500;
-    margin-left: 10.5px;
+    margin-left: -5px;
     margin-top: 10px;
   }
   .para p {
+    margin-top: -1.2rem;
     width: 72.52px;
-    font-size: 5px;
+    font-size: 6.23px;
     line-height: 7.5px;
     font-weight: 400;
     margin-left: 10px;
   }
   .iconimgs {
     width: 7px;
-    height: 9.78px;
+    height: 6.9px;
   }
   .img-title {
     display: flex;

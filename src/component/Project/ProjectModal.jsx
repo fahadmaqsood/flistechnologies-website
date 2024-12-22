@@ -94,12 +94,13 @@ function ProjectModal() {
                   md={6}
                   key={colIndex}
                   style={{
-                    width: '153.15px',
+                    width: '180.15px',
                     height: '290px',
                     padding: '5px',
                     display: 'flex',
                     alignItems: 'center',
                   }}
+                  className='proj-col'
                 >
                   <div
                     className='p-2 bg-dark text-white rounded'
@@ -116,9 +117,11 @@ function ProjectModal() {
                       alt='Feedback'
                       fluid
                       style={{
-                        width: '128px',
+                        width: '140px',
                         height: '137.78px', // Adjusted for smaller height
                         objectFit: 'cover',
+                        marginLeft: '0.5rem',
+                        borderRadius: '5px',
                       }}
                       className='mb-2'
                       onClick={() => handleShow(pic1)} // onClick function for mobile
@@ -131,7 +134,7 @@ function ProjectModal() {
                         fontSize: '8.24px',
                         fontWeight: '700',
                         lineHeight: '13.02px ',
-                        marginLeft: '2rem',
+                        marginLeft: '2.8rem',
                       }}
                     >
                       NextGen Trading
@@ -170,7 +173,7 @@ function ProjectModal() {
                     <p
                       style={{
                         fontSize: '5.19px',
-                        width: '130.58px',
+                        width: '150.58px',
                         fontWeight: '500',
                       }}
                     >
@@ -263,28 +266,30 @@ function ProjectModal() {
                     </Button>
                   </div>
                 </div>
-                <h5 className='text-black'>Project Summary</h5>
-                <p style={{ color: '#393939' }}>
+                <h5 className='text-black h5'>Project Summary</h5>
+                <p className='m-para' style={{ color: '#393939' }}>
                   Discover the NextGen Trading Platform, a cutting-edge solution
                   designed to modernize and streamline trading experiences for
                   both novice and expert traders.
                 </p>
-                <h5 className='text-black'>Technologies Used</h5>
-                <ul style={{ color: '#393939' }}>
+                <h5 className='text-black h5'>Technologies Used</h5>
+                <ul className='m-para' style={{ color: '#393939' }}>
                   <li>Frontend: HTML5, CSS3, React.js</li>
                   <li>Backend: Node.js, Python</li>
                   <li>Database: MongoDB</li>
                   <li>Others: REST APIs, WebSocket</li>
                 </ul>
-                <h5 className='text-black'>Client Feedback</h5>
-                <p style={{ color: '#393939' }}>
+                <h5 className='text-black h5'>Client Feedback</h5>
+                <p className='m-para' style={{ color: '#393939' }}>
                   The NextGen Trading Platform has exceeded our expectations in
                   every way.
                 </p>
-                <h5 className='text-black'>Developed By</h5>
-                <p style={{ color: '#393939' }}>Zeeshan Memon(Developer)</p>
+                <h5 className='text-black h5'>Developed By</h5>
+                <p className='m-para' style={{ color: '#393939' }}>
+                  Zeeshan Memon(Developer)
+                </p>
                 <Button variant='primary' className='mt-3 btns'>
-                  <img src={phone} alt='phone' className='me-2' />
+                  <img src={phone} alt='phone' className='me-2 ' />
                   Text With Us
                 </Button>
               </Col>

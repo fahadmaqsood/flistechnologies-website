@@ -102,6 +102,12 @@
   z-index: 10;
 }
 @media (max-width: 768px) {
+  .company-container {
+    margin-left: -0rem;
+    background-color: #f9f9ff;
+    width: 405px;
+    height: 46rem;
+  }
   .values-content {
     margin-top: -7rem;
     height: 200px;

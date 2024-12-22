@@ -96,6 +96,12 @@
   font-size: 1rem;
 }
 @media only screen and (max-width: 768px) {
+  .review-contain {
+    margin-left: 0rem;
+    margin-top: -0.8rem;
+    width: 405px;
+    height: 370px;
+  }
   .simple-line {
     width: 27.28px;
   }
@@ -115,10 +121,10 @@
   .review-pragh {
     text-align: center;
     margin: 10px auto;
-    max-width: 213px;
+    max-width: 230px;
     font-weight: 500;
     line-height: 15px;
-    font-size: 8px;
+    font-size: 9.5px;
   }
   .carousel {
     display: flex;
@@ -186,9 +192,14 @@
     font-size: 5.53px;
     line-height: 8.97px;
   }
+  .right-comma {
+    position: absolute;
+    right: 17%;
+    bottom: 0;
+  }
   .left-comma {
     position: absolute;
-    left: 15%;
+    left: 13%;
     top: 0;
   }
   .Icons {
@@ -197,8 +208,8 @@
     justify-content: center;
     width: 17px;
     height: 17px;
-    margin-bottom: -2rem;
-    margin-left: -1.5rem;
+    margin-bottom: -3rem;
+    margin-left: -1rem;
     border-radius: 50%;
     position: relative;
   }
