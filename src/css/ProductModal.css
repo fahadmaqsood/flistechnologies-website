@@ -50,14 +50,13 @@
   width: 351px; /* Ensure fixed size like the image */
   height: 370px;
 }
-
 .overlay-text {
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
+  position: absolute; /* Position the text absolutely */
+  bottom: -40px; /* Adjusted position */
+  left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Perfect center alignment */
-  width: 250px; /* Decreased width */
-  height: 60px;
+  width: 280px; /* Decreased width */
+  height: 60px; /* Same height */
   color: white; /* Text color */
   background-color: #000000a2; /* Semi-transparent background */
   font-size: 1.2rem; /* Text size */
@@ -70,9 +69,48 @@
   align-items: center; /* Vertical centering */
   text-align: center;
 }
-
 .overlay-text {
-  width: 60%; /* Adjust to a percentage of the parent container's width */
+  position: absolute; /* Position the text absolutely */
+  bottom: -40px; /* Adjusted position */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect center alignment */
+  width: 280px; /* Decreased width */
+  height: 60px; /* Same height */
+  color: white; /* Text color */
+  background-color: #000000a2; /* Semi-transparent background */
+  font-size: 1.2rem; /* Text size */
+  font-weight: bold; /* Make text bold */
+  border-radius: 5px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Add shadow for readability */
+  z-index: 2; /* Ensure text is above the image */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+}
+.overlay-text {
+  position: absolute; /* Position the text absolutely */
+  bottom: -30px; /* Adjusted position */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect center alignment */
+  width: 280px; /* Decreased width */
+  height: 60px; /* Same height */
+  color: white; /* Text color */
+  background-color: #000000a2; /* Semi-transparent background */
+  font-size: 1.2rem; /* Text size */
+  font-weight: bold; /* Make text bold */
+  border-radius: 5px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Add shadow for readability */
+  z-index: 2; /* Ensure text is above the image */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+}
+.overlay-text {
+  bottom: -1.5rem !important;
+  margin-left: -1.8rem !important;
+  width: 340px !important;
 }
 
 .tradmaster {
