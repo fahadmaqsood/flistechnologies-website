@@ -1,5 +1,5 @@
-import React from 'react'
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import React, { useState } from 'react'
+import { Container, Row, Col, Button, Modal } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 
 import logo1 from '../../imgs/guru.png'
@@ -22,6 +22,8 @@ import '../../css/Project.css'
 import p1 from '../../imgs/Rectangle 45.png'
 import p2 from '../../imgs/Rectangle 46.png'
 import p3 from '../../imgs/large.png'
+import thumb1 from '../../imgs/tumbil.png'
+import phone from '../../imgs/phone.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -29,6 +31,18 @@ import 'swiper/css'
 
 const Projects = () => {
   const navigate = useNavigate()
+  const [showModal, setShowModal] = useState(false)
+  const [selectedImage, setSelectedImage] = useState(null)
+  const [imageType, setImageType] = useState('') // To track if it's a logo or project image
+
+  const handleShow = (img, type) => {
+    setSelectedImage(img)
+    setImageType(type)
+    setShowModal(true)
+  }
+
+  const handleClose = () => setShowModal(false)
+
   return (
     <Container className='project-container'>
       <div className='half-circle'></div>
@@ -41,9 +55,8 @@ const Projects = () => {
           className={'mySwiper'}
         >
           {[logo1, logo2, logo3, logo4, logo5, logo6].map((logo, idx) => (
-            <SwiperSlide>
+            <SwiperSlide key={idx}>
               <Col
-                key={idx}
                 sm={2}
                 className='d-flex justify-content-center logo-container align-items-center'
               >
@@ -57,12 +70,13 @@ const Projects = () => {
           ))}
         </Swiper>
       </Row>
+
       <Row className='mb-4'>
         <Col className='d-flex justify-content-center'>
           <h3 className='project-heading'>Projects</h3>
         </Col>
       </Row>
-      {/* Responsive Layout */}
+
       <div className='d-sm-none'>
         <Row className='d-flex row-img'>
           <Col xs={12} sm={4} className='d-flex flex-column'>
@@ -72,6 +86,9 @@ const Projects = () => {
                   src={p1}
                   alt='Responsive Project 1'
                   className='img-fluid rounded img-fixed'
+                  onClick={() => {
+                    handleShow(p1)
+                  }}
                   style={{ width: '109px', height: '106px' }}
                 />
               </Col>
@@ -82,6 +99,7 @@ const Projects = () => {
                   src={p2}
                   alt='Responsive Project 2'
                   className='img-fluid rounded img-fixed'
+                  onClick={() => handleShow(p2)}
                   style={{ width: '109px', height: '106px' }}
                 />
               </Col>
@@ -92,12 +110,13 @@ const Projects = () => {
               src={p3}
               alt='Responsive Project Large'
               className='img-fluid img-fixed'
+              onClick={() => handleShow(p2)}
               style={{ width: '120px', height: '228px' }}
             />
           </Col>
         </Row>
       </div>
-      {/* Desktop Layout */}
+
       <div className='d-none d-sm-block px-5'>
         <Row className='align-items-stretch mb-4 project-sec'>
           <Col sm={4} className='d-flex flex-column'>
@@ -108,6 +127,7 @@ const Projects = () => {
                     src={proj}
                     alt={`Project ${idx + 1}`}
                     className='img-fluid rounded img-fixed'
+                    onClick={() => handleShow(thumb1, 'project')}
                   />
                 </Col>
               ))}
@@ -117,7 +137,12 @@ const Projects = () => {
             sm={4}
             className='d-flex justify-content-center align-items-center'
           >
-            <img src={proj5} alt='Project 5' className='img-fluid img-fixed' />
+            <img
+              src={proj5}
+              alt='Project 5'
+              className='img-fluid img-fixed'
+              onClick={() => handleShow(thumb1, 'project')}
+            />
           </Col>
           <Col sm={4} className='d-flex flex-column'>
             <Row>
@@ -127,6 +152,7 @@ const Projects = () => {
                     src={proj}
                     alt={`Project ${idx + 6}`}
                     className='img-fluid rounded img-fixed'
+                    onClick={() => handleShow(thumb1, 'project')}
                   />
                 </Col>
               ))}
@@ -134,6 +160,7 @@ const Projects = () => {
           </Col>
         </Row>
       </div>
+
       <Row className='mb-4'>
         <Col className='d-flex justify-content-center btn-pj'>
           <Button variant='primary' onClick={() => navigate('/projects')}>
@@ -141,6 +168,79 @@ const Projects = () => {
           </Button>
         </Col>
       </Row>
+
+      {/* Modal */}
+      <Modal show={showModal} onHide={handleClose} className='modelpage'>
+        <Modal.Body style={{ backgroundColor: '#F9F9FF' }}>
+          <Container>
+            <Row>
+              <Col md={4} className='p-0 smallimg'>
+                {selectedImage && (
+                  <img
+                    src={selectedImage}
+                    alt='Selected Content'
+                    className='img-fluid rounded'
+                  />
+                )}
+              </Col>
+              <Col md={8}>
+                <div className='d-flex justify-content-between align-items-center p-3'>
+                  <h5 className='Projectheading fw-bold'>
+                    {imageType === 'logo' ? 'Company Logo' : 'Project Details'}
+                  </h5>
+                  <div style={{ border: '1px solid black' }}>
+                    <Button
+                      variant='light'
+                      onClick={handleClose}
+                      className='right-closeButton'
+                    >
+                      &times;
+                    </Button>
+                  </div>
+                </div>
+
+                {imageType === 'logo' ? (
+                  <div>
+                    <h5 className='text-black h5'>Logo</h5>
+                    <p className='m-para' style={{ color: '#393939' }}>
+                      This is a company logo.
+                    </p>
+                  </div>
+                ) : (
+                  <div>
+                    <h5 className='text-black h5'>Project Summary</h5>
+                    <p className='m-para' style={{ color: '#393939' }}>
+                      Discover the NextGen Trading Platform, a cutting-edge
+                      solution designed to modernize and streamline trading
+                      experiences for both novice and expert traders.
+                    </p>
+                    <h5 className='text-black h5'>Technologies Used</h5>
+                    <ul className='m-para' style={{ color: '#393939' }}>
+                      <li>Frontend: HTML5, CSS3, React.js</li>
+                      <li>Backend: Node.js, Python</li>
+                      <li>Database: MongoDB</li>
+                      <li>Others: REST APIs, WebSocket</li>
+                    </ul>
+                    <h5 className='text-black h5'>Client Feedback</h5>
+                    <p className='m-para' style={{ color: '#393939' }}>
+                      The NextGen Trading Platform has exceeded our expectations
+                      in every way.
+                    </p>
+                    <h5 className='text-black h5'>Developed By</h5>
+                    <p className='m-para' style={{ color: '#393939' }}>
+                      Zeeshan Memon(Developer)
+                    </p>
+                    <Button variant='primary' className='mt-3 btns'>
+                      <img src={phone} alt='phone' className='me-2 ' />
+                      Text With Us
+                    </Button>
+                  </div>
+                )}
+              </Col>
+            </Row>
+          </Container>
+        </Modal.Body>
+      </Modal>
     </Container>
   )
 }

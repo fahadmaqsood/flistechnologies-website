@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Modal, Button, Container, Row, Col, Image } from 'react-bootstrap' // Ensure Image is imported
-import '../../css/ProductModal.css'
+import '../../css/ProjectModel.css'
 
 // Import images explicitly
 import img1 from '../../imgs/Rectangle 3862.png'
@@ -70,7 +70,7 @@ function ProductModal() {
         {productImages.map((product) => (
           <Col md={4} key={product.id} className='mb-4'>
             <div className='image-container'>
-              <p className='overlay-text'>Lorem Ipsum</p>
+              <p className='overlay-text'>Lorem Ipsum 456</p>
               <img
                 src={product.img}
                 alt={`product ${product.id}`}

@@ -52,11 +52,11 @@
 }
 
 .overlay-text {
-  position: absolute; /* Position the text absolutely */
+  position: absolute;
   bottom: -50px;
   left: 50%;
   transform: translate(-50%, -50%); /* Perfect center alignment */
-  width: 340px;
+  width: 250px; /* Decreased width */
   height: 60px;
   color: white; /* Text color */
   background-color: #000000a2; /* Semi-transparent background */
@@ -69,6 +69,10 @@
   justify-content: center; /* Horizontal centering */
   align-items: center; /* Vertical centering */
   text-align: center;
+}
+
+.overlay-text {
+  width: 60%; /* Adjust to a percentage of the parent container's width */
 }
 
 .tradmaster {
