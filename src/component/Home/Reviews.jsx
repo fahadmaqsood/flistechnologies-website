@@ -1,7 +1,6 @@
-import React from 'react'
-import { Container, Row, Col, Carousel } from 'react-bootstrap'
-import { FaStar } from 'react-icons/fa'
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
+import React, { useState } from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import { FaStar, FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import person1 from '../../imgs/Group2(1).png'
 import person2 from '../../imgs/Group2(2).png'
 import person3 from '../../imgs/Group2.png'
@@ -12,6 +11,28 @@ import comma1 from '../../imgs/Group (1).png'
 import '../../css/Reviews.css'
 
 const Reviews = () => {
+  const [activeIndex, setActiveIndex] = useState(2) // Default active review in the center
+
+  const reviews = [
+    { img: person1, name: 'Romeena De Silva', position: 'Janet Cosmetics' },
+    { img: person2, name: 'Alex Brown', position: 'Digital Marketer' },
+    { img: person3, name: 'Imran Khan', position: 'Software Engineer' },
+    { img: person4, name: 'Sophia White', position: 'Freelancer' },
+    { img: person5, name: 'John Doe', position: 'Entrepreneur' },
+  ]
+
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
+    )
+  }
+
+  const handleNext = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === reviews.length - 1 ? 0 : prevIndex + 1
+    )
+  }
+
   return (
     <Container className='text-center py-5 review-contain '>
       <div className='mb-4 simple-line'></div>
@@ -31,59 +52,51 @@ const Reviews = () => {
         <img src={comma1} alt='' className='right-comma' />
       </div>
 
-      <Carousel
-        interval={null}
-        prevIcon={
-          <div className='Icons'>
-            <FaArrowLeft style={{ color: 'white', fontSize: '1.5rem' }} />
-          </div>
-        }
-        nextIcon={
-          <div className='Icons'>
-            <FaArrowRight style={{ color: 'white', fontSize: '1.5rem' }} />
-          </div>
-        }
-        indicators={false}
-        style={{ border: 'none', boxShadow: 'none' }}
-      >
-        <Carousel.Item className='carousel'>
-          <Row className='justify-content-center no-gutters'>
-            {[person1, person2, person3, person4, person5].map(
-              (person, index) => (
-                <Col
-                  key={index}
-                  md={2}
-                  className='review-col text-center' // Add custom class for styling
-                >
-                  <img
-                    src={person}
-                    alt={`Person ${index + 1}`}
-                    className={`rounded-circle ${
-                      index === 2 ? 'large-img' : ''
-                    }`} // Add a class for person3
-                    width={index === 2 ? '190' : '140'}
-                    height={index === 2 ? '190' : '140'}
-                    style={{ objectFit: 'cover' }} // Ensures images fit properly
-                  />
-                  <div className='my-2 stats'>
-                    <FaStar color='gold' />
-                    <FaStar color='gold' />
-                    <FaStar color='gold' />
-                    <FaStar color='gold' />
-                    <FaStar color='gold' />
-                  </div>
-                  <p className={index === 2 ? 'highlightedparagraph' : ''}>
-                    {index === 2 ? 'Imran Khan' : 'Romeena De Silva'}
-                  </p>
-                  <p className={index === 2 ? 'paragraph' : ''}>
-                    {index === 2 ? 'Software Engineer' : 'Janet Cosmetics'}
-                  </p>
-                </Col>
-              )
-            )}
-          </Row>
-        </Carousel.Item>
-      </Carousel>
+      <div className='carousel-wrapper'>
+        <div className='Icons prev-icon' onClick={handlePrev}>
+          <FaArrowLeft style={{ color: 'white', fontSize: '1.5rem' }} />
+        </div>
+        <Row className='justify-content-center no-gutters'>
+          {reviews.map((review, index) => (
+            <Col
+              key={index}
+              md={2}
+              className={`review-col text-center ${
+                index === activeIndex ? 'active-review' : ''
+              }`}
+            >
+              <img
+                src={review.img}
+                alt={`Person ${index + 1}`}
+                className={`rounded-circle ${
+                  index === activeIndex ? 'bright-img' : ''
+                }`}
+                width={index === activeIndex ? '190' : '140'}
+                height={index === activeIndex ? '190' : '140'}
+                style={{ objectFit: 'cover' }}
+              />
+              <div className='my-2 stats'>
+                <FaStar color='gold' />
+                <FaStar color='gold' />
+                <FaStar color='gold' />
+                <FaStar color='gold' />
+                <FaStar color='gold' />
+              </div>
+              <p
+                className={index === activeIndex ? 'highlightedparagraph' : ''}
+              >
+                {review.name}
+              </p>
+              <p className={index === activeIndex ? 'paragraph' : ''}>
+                {review.position}
+              </p>
+            </Col>
+          ))}
+        </Row>
+        <div className='Icons next-icon' onClick={handleNext}>
+          <FaArrowRight style={{ color: 'white', fontSize: '1.5rem' }} />
+        </div>
+      </div>
     </Container>
   )
 }

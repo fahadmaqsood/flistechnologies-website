@@ -53,8 +53,8 @@
 
 .overlay-text {
   position: absolute; /* Position the text absolutely */
-  bottom: -40px; /* Move to 50% from the top */
-  left: 50%; /* Center horizontally */
+  bottom: -50px;
+  left: 50%;
   transform: translate(-50%, -50%); /* Perfect center alignment */
   width: 340px;
   height: 60px;
