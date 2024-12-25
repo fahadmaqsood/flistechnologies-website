@@ -204,6 +204,11 @@
     border-bottom-left-radius: 8px; /* Rounded corners (optional) */
     border-bottom-right-radius: 8px; /* Rounded corners (optional) */
   }
+  .overlay-text {
+    bottom: -1rem !important;
+    margin-left: 0rem !important;
+    width: 130px !important;
+  }
 
   .img-hole {
     margin-top: 2rem;
