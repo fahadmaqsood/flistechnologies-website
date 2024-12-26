@@ -96,8 +96,36 @@
 }
 
 .review-col p {
+  width: 150px;
   color: #a0aec0;
   font-size: 1rem;
+}
+.active-review .bright-img {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.review-col img {
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.highlightedparagraph {
+  font-weight: bold;
+  color: #000;
+}
+
+.review-col .paragraph {
+  font-weight: normal;
+  color: #666;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -229,7 +257,7 @@
     width: 17px;
     height: 17px;
     margin-bottom: -3rem;
-    margin-left: -2rem;
+    margin-left: 0rem;
     border-radius: 50%;
     position: relative;
   }

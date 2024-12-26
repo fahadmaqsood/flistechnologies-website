@@ -69,13 +69,15 @@
   position: absolute;
   /* Position the text absolutely */
   bottom: -40px;
-  /* Move to 50% from the top */
+  /* Adjusted position */
   left: 50%;
   /* Center horizontally */
   transform: translate(-50%, -50%);
   /* Perfect center alignment */
-  width: 340px;
+  width: 280px;
+  /* Decreased width */
   height: 60px;
+  /* Same height */
   color: white;
   /* Text color */
   background-color: #000000a2;
@@ -96,6 +98,82 @@
   align-items: center;
   /* Vertical centering */
   text-align: center;
+}
+
+.overlay-text {
+  position: absolute;
+  /* Position the text absolutely */
+  bottom: -40px;
+  /* Adjusted position */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+  /* Perfect center alignment */
+  width: 280px;
+  /* Decreased width */
+  height: 60px;
+  /* Same height */
+  color: white;
+  /* Text color */
+  background-color: #000000a2;
+  /* Semi-transparent background */
+  font-size: 1.2rem;
+  /* Text size */
+  font-weight: bold;
+  /* Make text bold */
+  border-radius: 5px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  /* Add shadow for readability */
+  z-index: 2;
+  /* Ensure text is above the image */
+  display: flex;
+  /* Flexbox for centering */
+  justify-content: center;
+  /* Horizontal centering */
+  align-items: center;
+  /* Vertical centering */
+  text-align: center;
+}
+
+.overlay-text {
+  position: absolute;
+  /* Position the text absolutely */
+  bottom: -30px;
+  /* Adjusted position */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+  /* Perfect center alignment */
+  width: 280px;
+  /* Decreased width */
+  height: 60px;
+  /* Same height */
+  color: white;
+  /* Text color */
+  background-color: #000000a2;
+  /* Semi-transparent background */
+  font-size: 1.2rem;
+  /* Text size */
+  font-weight: bold;
+  /* Make text bold */
+  border-radius: 5px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  /* Add shadow for readability */
+  z-index: 2;
+  /* Ensure text is above the image */
+  display: flex;
+  /* Flexbox for centering */
+  justify-content: center;
+  /* Horizontal centering */
+  align-items: center;
+  /* Vertical centering */
+  text-align: center;
+}
+
+.overlay-text {
+  bottom: -1.5rem !important;
+  margin-left: -1.8rem !important;
+  width: 340px !important;
 }
 
 .tradmaster {
@@ -213,6 +291,12 @@
     /* Rounded corners (optional) */
     border-bottom-right-radius: 8px;
     /* Rounded corners (optional) */
+  }
+
+  .overlay-text {
+    bottom: -1rem !important;
+    margin-left: 0rem !important;
+    width: 130px !important;
   }
 
   .img-hole {
