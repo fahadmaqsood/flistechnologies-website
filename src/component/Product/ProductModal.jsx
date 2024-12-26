@@ -89,7 +89,7 @@ function ProductModal() {
       </Row>
 
       {/* Mobile Product Layout (Only img1 and img2, 12 images total, 6 rows) */}
-      <Row className='d-block d-md-none my-4 justify-content-center'>
+      <Row className='d-block d-md-none  pb-3 justify-content-center'>
         <Container>
           {/* Loop through 6 rows with only img1 and img2 */}
           {Array.from({ length: 6 }).map((_, rowIndex) => (

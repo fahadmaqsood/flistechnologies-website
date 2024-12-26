@@ -10,7 +10,7 @@ const ProductDetails = () => {
       <Row className='h-100 align-items-center'>
         <Col lg={6} md={6} sm={12} className='product-content mt-5'>
           <h2 className='business-heading' style={{}}>
-            innovative Solutions for Your Business Success
+            Innovative Solutions for Your Business Success
           </h2>
           <h3 className='industries-subheading'>
             Discover how our{' '}
