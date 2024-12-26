@@ -191,7 +191,7 @@ button:active,
     /* Add padding for better clickability */
     margin: 0;
     /* Remove all margins */
-    text-align: left;
+    text-align: start;
     /* Align text to the left */
     border-bottom: 1px solid #444;
     /* Optional: Add a divider between links */
@@ -211,7 +211,7 @@ button:active,
     padding: 1rem;
     margin: 0;
     /* Remove margins */
-    text-align: center;
+    text-align: start;
     /* Center button text */
     border-top: 1px solid #444;
     /* Optional: Add a divider above the button */

@@ -167,7 +167,7 @@ const Services = () => {
       <div>
         <div className="box">
           <div className="half-circle"></div>
-          <Container className="py-5 px-0 mx-0 mh-100 h-100 py-0 mw-100">
+          <Container className="pt-5 pb-2 px-0 mx-0 mh-100 h-100 py-0 mw-100">
             <h2 className="text-center" style={{ color: "#000" }}>
               Services We Offer
             </h2>
