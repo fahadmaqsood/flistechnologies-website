@@ -91,6 +91,7 @@ button:active,
 @media (max-width: 768px) {
   .custom-contact-btn {
     position: relative;
+
     /* Moves relative to its normal position */
     top: -24rem;
     /* Moves the button upwards */
