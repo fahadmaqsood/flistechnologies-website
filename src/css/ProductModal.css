@@ -6,10 +6,14 @@
   padding: 0;
   max-width: 1500px;
 }
+
 .Products-heading {
-  display: block; /* Makes it a block element for full-width alignment */
-  text-align: center; /* Ensures text is horizontally centered */
-  transform: translateY(20px); /* Moves heading down */
+  display: block;
+  /* Makes it a block element for full-width alignment */
+  text-align: center;
+  /* Ensures text is horizontally centered */
+  transform: translateY(20px);
+  /* Moves heading down */
 }
 
 .Products-heading::after {
@@ -21,10 +25,12 @@
   height: 2px;
   background: linear-gradient(#5550bc, #57007b);
 }
+
 .txt-box {
   width: 535px;
   height: 181px;
 }
+
 .styleLi {
   margin-left: 3rem;
   line-height: 26px;
@@ -33,80 +39,137 @@
   font-weight: 400;
   text-align: left;
 }
+
 .lists li::marker {
-  color: #57007b; /* Change bullet color to purple */
+  color: #57007b;
+  /* Change bullet color to purple */
 }
 
 .custom-modal .modal-dialog {
-  width: 650px; /* Adjust the width */
+  width: 650px;
+  /* Adjust the width */
 }
 
 .custom-modal .modal-content {
-  height: 650px; /* Adjust the height */
-  border-radius: 15px; /* Optional for rounded corners */
+  height: 650px;
+  /* Adjust the height */
+  border-radius: 15px;
+  /* Optional for rounded corners */
 }
+
 .image-container {
-  position: relative; /* Parent container for positioning text */
-  width: 351px; /* Ensure fixed size like the image */
+  position: relative;
+  /* Parent container for positioning text */
+  width: 351px;
+  /* Ensure fixed size like the image */
   height: 370px;
 }
+
 .overlay-text {
-  position: absolute; /* Position the text absolutely */
-  bottom: -40px; /* Adjusted position */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Perfect center alignment */
-  width: 280px; /* Decreased width */
-  height: 60px; /* Same height */
-  color: white; /* Text color */
-  background-color: #000000a2; /* Semi-transparent background */
-  font-size: 1.2rem; /* Text size */
-  font-weight: bold; /* Make text bold */
+  position: absolute;
+  /* Position the text absolutely */
+  bottom: -40px;
+  /* Adjusted position */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+  /* Perfect center alignment */
+  width: 280px;
+  /* Decreased width */
+  height: 60px;
+  /* Same height */
+  color: white;
+  /* Text color */
+  background-color: #000000a2;
+  /* Semi-transparent background */
+  font-size: 1.2rem;
+  /* Text size */
+  font-weight: bold;
+  /* Make text bold */
   border-radius: 5px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Add shadow for readability */
-  z-index: 2; /* Ensure text is above the image */
-  display: flex; /* Flexbox for centering */
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  /* Add shadow for readability */
+  z-index: 2;
+  /* Ensure text is above the image */
+  display: flex;
+  /* Flexbox for centering */
+  justify-content: center;
+  /* Horizontal centering */
+  align-items: center;
+  /* Vertical centering */
   text-align: center;
 }
+
 .overlay-text {
-  position: absolute; /* Position the text absolutely */
-  bottom: -40px; /* Adjusted position */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Perfect center alignment */
-  width: 280px; /* Decreased width */
-  height: 60px; /* Same height */
-  color: white; /* Text color */
-  background-color: #000000a2; /* Semi-transparent background */
-  font-size: 1.2rem; /* Text size */
-  font-weight: bold; /* Make text bold */
+  position: absolute;
+  /* Position the text absolutely */
+  bottom: -40px;
+  /* Adjusted position */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+  /* Perfect center alignment */
+  width: 280px;
+  /* Decreased width */
+  height: 60px;
+  /* Same height */
+  color: white;
+  /* Text color */
+  background-color: #000000a2;
+  /* Semi-transparent background */
+  font-size: 1.2rem;
+  /* Text size */
+  font-weight: bold;
+  /* Make text bold */
   border-radius: 5px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Add shadow for readability */
-  z-index: 2; /* Ensure text is above the image */
-  display: flex; /* Flexbox for centering */
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  /* Add shadow for readability */
+  z-index: 2;
+  /* Ensure text is above the image */
+  display: flex;
+  /* Flexbox for centering */
+  justify-content: center;
+  /* Horizontal centering */
+  align-items: center;
+  /* Vertical centering */
   text-align: center;
 }
+
 .overlay-text {
-  position: absolute; /* Position the text absolutely */
-  bottom: -30px; /* Adjusted position */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Perfect center alignment */
-  width: 280px; /* Decreased width */
-  height: 60px; /* Same height */
-  color: white; /* Text color */
-  background-color: #000000a2; /* Semi-transparent background */
-  font-size: 1.2rem; /* Text size */
-  font-weight: bold; /* Make text bold */
+  position: absolute;
+  /* Position the text absolutely */
+  bottom: -30px;
+  /* Adjusted position */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+  /* Perfect center alignment */
+  width: 280px;
+  /* Decreased width */
+  height: 60px;
+  /* Same height */
+  color: white;
+  /* Text color */
+  background-color: #000000a2;
+  /* Semi-transparent background */
+  font-size: 1.2rem;
+  /* Text size */
+  font-weight: bold;
+  /* Make text bold */
   border-radius: 5px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Add shadow for readability */
-  z-index: 2; /* Ensure text is above the image */
-  display: flex; /* Flexbox for centering */
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  /* Add shadow for readability */
+  z-index: 2;
+  /* Ensure text is above the image */
+  display: flex;
+  /* Flexbox for centering */
+  justify-content: center;
+  /* Horizontal centering */
+  align-items: center;
+  /* Vertical centering */
   text-align: center;
 }
+
 .overlay-text {
   bottom: -1.5rem !important;
   margin-left: -1.8rem !important;
@@ -114,21 +177,30 @@
 }
 
 .tradmaster {
-  position: relative; /* Add relative positioning to parent */
-  display: inline-block; /* Ensures proper behavior */
+  position: relative;
+  /* Add relative positioning to parent */
+  display: inline-block;
+  /* Ensures proper behavior */
 }
 
 .tradmaster::after {
   content: '';
   position: absolute;
-  top: 100%; /* Place line directly below the heading */
-  left: 45px; /* Align to the start of the heading */
-  width: 100px; /* Length of the line */
-  height: 3px; /* Thickness of the line */
+  top: 100%;
+  /* Place line directly below the heading */
+  left: 45px;
+  /* Align to the start of the heading */
+  width: 100px;
+  /* Length of the line */
+  height: 3px;
+  /* Thickness of the line */
   background: linear-gradient(#5550bc, #57007b);
-  margin-top: 5px; /* Add space between the heading and the line */
-  border-radius: 3px; /* Rounded edges (optional) */
+  margin-top: 5px;
+  /* Add space between the heading and the line */
+  border-radius: 3px;
+  /* Rounded edges (optional) */
 }
+
 .left-closeButton {
   position: absolute;
   top: 8px;
@@ -137,7 +209,8 @@
   z-index: 1000;
   font-size: 20px;
   color: black;
-  border: 2px solid black !important; /* Ensure border is applied */
+  border: 2px solid black !important;
+  /* Ensure border is applied */
   border-radius: 50%;
   width: 35px;
   height: 35px;
@@ -145,6 +218,7 @@
   padding: 0;
   text-align: center;
 }
+
 .image-container {
   position: relative;
   width: 100%;
@@ -155,24 +229,32 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  background: rgba(0, 0, 0, 0.6);
+  /* Semi-transparent black background */
   color: white;
   text-align: center;
   font-size: 12px;
   font-weight: bold;
-  padding: 5px 0; /* Add padding for spacing */
-  margin: 0; /* Reset margin */
-  border-bottom-left-radius: 8px; /* Rounded corners (optional) */
-  border-bottom-right-radius: 8px; /* Rounded corners (optional) */
+  padding: 5px 0;
+  /* Add padding for spacing */
+  margin: 0;
+  /* Reset margin */
+  border-bottom-left-radius: 8px;
+  /* Rounded corners (optional) */
+  border-bottom-right-radius: 8px;
+  /* Rounded corners (optional) */
 }
+
 @media (max-width: 768px) {
   .productModel {
-    width: 405px;
+    width: 100%;
   }
+
   .Products-heading {
     font-size: 18.11px;
     font-weight: 700;
   }
+
   .Products-heading::after {
     content: '';
     position: absolute;
@@ -182,6 +264,7 @@
     height: 2px;
     background: linear-gradient(#5550bc, #57007b);
   }
+
   /* Apply styles for mobile screens and smaller tablets */
   .image-container {
     position: relative;
@@ -194,16 +277,22 @@
     bottom: -15px;
     width: 129.09px;
     height: 36.08px;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    background: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black background */
     color: white;
     text-align: center;
     font-size: 12px;
     font-weight: bold;
-    padding: 5px 0; /* Add padding for spacing */
-    margin: 0; /* Reset margin */
-    border-bottom-left-radius: 8px; /* Rounded corners (optional) */
-    border-bottom-right-radius: 8px; /* Rounded corners (optional) */
+    padding: 5px 0;
+    /* Add padding for spacing */
+    margin: 0;
+    /* Reset margin */
+    border-bottom-left-radius: 8px;
+    /* Rounded corners (optional) */
+    border-bottom-right-radius: 8px;
+    /* Rounded corners (optional) */
   }
+
   .overlay-text {
     bottom: -1rem !important;
     margin-left: 0rem !important;
@@ -224,6 +313,7 @@
     font-weight: 400;
     line-height: 24.22px;
   }
+
   .purches-btn {
     margin-top: -3rem;
     margin-left: 20px;
@@ -234,23 +324,30 @@
 
   .styleLi {
     margin-top: -0.5rem;
-    line-height: 1.6; /* Improve readability */
-    font-size: 10px; /* Adjust font size for smaller screens */
-    margin-bottom: 10px; /* Add spacing between list items */
+    line-height: 1.6;
+    /* Improve readability */
+    font-size: 10px;
+    /* Adjust font size for smaller screens */
+    margin-bottom: 10px;
+    /* Add spacing between list items */
   }
 
   .tradmaster {
     margin-top: 0rem;
     font-size: 23.55px;
     font-weight: 700;
-    margin-bottom: 10px; /* Add spacing below the heading */
+    margin-bottom: 10px;
+    /* Add spacing below the heading */
   }
 
   .left-closeButton {
-    top: 5px; /* Adjust position for smaller screens */
+    top: 5px;
+    /* Adjust position for smaller screens */
     left: 5px;
-    width: 30px; /* Adjust size */
+    width: 30px;
+    /* Adjust size */
     height: 30px;
-    font-size: 16px; /* Adjust font size */
+    font-size: 16px;
+    /* Adjust font size */
   }
 }
