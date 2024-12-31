@@ -116,7 +116,7 @@
 }
 @media (max-width: 768px) {
   .Mission-container {
-    width: 405px;
+    width: 100%;
     height: 57rem;
   }
   .mission-heading {

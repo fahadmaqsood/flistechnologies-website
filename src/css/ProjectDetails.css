@@ -38,7 +38,7 @@
   .prjects-details {
     display: flex;
     flex-direction: row;
-    width: 405px;
+    /* width: 405px; */
     height: 180px;
   }
   .project-content {
