@@ -74,10 +74,10 @@
     display: flex;
     background-color: #e7daed;
     margin-left: 10px;
-    width: 100%;
+    width: calc(100% + 2rem);
     height: 50.51px;
     margin-top: -1rem;
-    margin-left: -2.2rem;
+    margin-left: -1rem;
   }
 
   .logo-container {

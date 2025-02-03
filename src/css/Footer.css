@@ -96,9 +96,9 @@ h5 {
     margin-left: 2rem;
     margin-top: -0.8rem;
     text-align: center;
-    width: 175px;
+    /* width: 175px; */
     height: 5px;
-    font-size: 4.62px;
+    font-size: 12.62px;
     font-weight: 400;
   }
 

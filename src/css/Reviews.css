@@ -100,6 +100,7 @@
   color: #a0aec0;
   font-size: 1rem;
 }
+
 .active-review .bright-img {
   opacity: 1;
   transform: scale(1.1);
@@ -130,8 +131,8 @@
 
 @media only screen and (max-width: 768px) {
   .review-contain {
-    margin-left: 0rem;
-    margin-top: -0.8rem;
+    /* margin-left: 0rem; */
+    /* margin-top: -0.8rem; */
     /* width: 405px; */
     height: 370px;
   }
@@ -158,10 +159,10 @@
   .review-pragh {
     text-align: center;
     margin: 10px auto;
-    max-width: 230px;
+    max-width: 290px;
     font-weight: 500;
     line-height: 15px;
-    font-size: 9.5px;
+    font-size: 14.5px;
   }
 
   .carousel {
@@ -260,5 +261,6 @@
     margin-left: 0rem;
     border-radius: 50%;
     position: relative;
+    cursor: pointer;
   }
 }

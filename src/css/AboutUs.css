@@ -1,6 +1,7 @@
 .about-us .info-boxes .info-box {
   padding: 20px;
 }
+
 .info-boxes {
   background-color: #d0d7ff;
   border-radius: 20px;
@@ -11,23 +12,28 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .about-us {
   margin-top: 8rem;
   margin-bottom: 10px;
 }
+
 .ab-para {
   color: #000;
 }
+
 .heading {
   position: relative;
   display: inline-block;
 }
+
 .bold-heading {
   width: 490px;
   font-weight: 400;
   font-size: 35px;
   line-height: 55px;
 }
+
 .heading-top-padding {
   color: #e7daed;
   font-size: 18px;
@@ -35,12 +41,14 @@
   font-weight: 500;
   line-height: 36px;
 }
+
 .grey-color {
   width: 2px;
   height: 80px;
   background-color: gray;
   align-self: center;
 }
+
 .btn {
   background: linear-gradient(#5550bc, #57007b);
   color: #fff;
@@ -59,6 +67,7 @@
   height: 4px;
   background: linear-gradient(#5550bc, #57007b);
 }
+
 .image-section {
   position: relative;
   height: 300px;
@@ -89,25 +98,34 @@
   position: absolute;
   top: 55%;
   left: 34%;
-  transform: translateY(-50%); /* Center the circle vertically */
+  transform: translateY(-50%);
+  /* Center the circle vertically */
   width: 70px;
-  height: 70px; /* Make it a full circle */
+  height: 70px;
+  /* Make it a full circle */
   background: linear-gradient(#5550bc, #57007b);
-  border-radius: 50%; /* Make it a circle */
-  z-index: 0; /* Ensure it appears above the image */
+  border-radius: 50%;
+  /* Make it a circle */
+  z-index: 0;
+  /* Ensure it appears above the image */
 }
+
 .image-section .right-circle {
   position: absolute;
-  bottom: -25px; /* Position the circle at the bottom of the container */
-  right: 43%; /* Adjust to position the circle on the right side */
-  transform: translateY(
-    50%
-  ); /* Adjust to make it visually centered from the bottom */
+  bottom: -25px;
+  /* Position the circle at the bottom of the container */
+  right: 43%;
+  /* Adjust to position the circle on the right side */
+  transform: translateY(50%);
+  /* Adjust to make it visually centered from the bottom */
   width: 70px;
-  height: 70px; /* Make it a full circle */
+  height: 70px;
+  /* Make it a full circle */
   background: linear-gradient(#5550bc, #57007b);
-  border-radius: 50%; /* Make it a circle */
-  z-index: 0; /* Ensure it appears below the image */
+  border-radius: 50%;
+  /* Make it a circle */
+  z-index: 0;
+  /* Ensure it appears below the image */
 }
 
 @media only screen and (max-width: 768px) {
@@ -117,12 +135,14 @@
     width: 100%;
     height: 42rem;
   }
+
   .heading {
     font-weight: 700;
     font-size: 18.11px;
     line-height: 28.46px;
     margin-left: 1rem;
   }
+
   .bold-heading {
     width: 256px;
     font-weight: 400;
@@ -130,6 +150,7 @@
     line-height: 28.46px;
     margin-left: 1rem;
   }
+
   .heading-top-padding {
     margin-top: -1.5rem;
     width: 290px;
@@ -138,8 +159,9 @@
     line-height: 18.63px;
     margin-left: 1rem;
   }
+
   .info-boxes {
-    width: 82%;
+    width: 100%;
     height: 90px;
     padding: 5px;
     display: flex;
@@ -165,6 +187,7 @@
     font-weight: 400;
     line-height: 28.46px;
   }
+
   .info-box p {
     margin-left: -0.5rem;
     margin-top: -1rem;
@@ -178,6 +201,7 @@
     width: 1px;
     height: 50px;
   }
+
   .btn {
     width: 40%;
     padding: 12px;
@@ -206,14 +230,18 @@
 
   .image-section .img-bottom-left {
     bottom: -20%;
-    left: 5%; /* Adjust horizontal positioning */
-    z-index: 2; /* Ensure it's on top */
+    left: 5%;
+    /* Adjust horizontal positioning */
+    z-index: 2;
+    /* Ensure it's on top */
   }
 
   .image-section .img-top-right {
     top: 0;
-    right: 10%; /* Adjust horizontal positioning */
-    z-index: 1; /* Ensure it's below img-bottom-left */
+    right: 10%;
+    /* Adjust horizontal positioning */
+    z-index: 1;
+    /* Ensure it's below img-bottom-left */
   }
 
   /* Add circles on left and right sides */
@@ -223,7 +251,8 @@
     width: 70px;
     height: 70px;
     background: linear-gradient(#5550bc, #57007b);
-    border-radius: 50%; /* Make them circles */
+    border-radius: 50%;
+    /* Make them circles */
     z-index: 0;
   }
 
