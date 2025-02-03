@@ -12,7 +12,11 @@ import facebookIcon from "../imgs/Group 1000001751.png";
 import circleImage1 from "../imgs/Ellipse793.png";
 import circleImage2 from "../imgs/Ellipse794.png";
 
+import { useTitle } from "../utils";
+
 const ContactPage = () => {
+  useTitle("Contact Us | Flis Technologies");
+
   return (
     <Container fluid className="p-5 contact-us-section">
       {/* Contact Us Heading */}

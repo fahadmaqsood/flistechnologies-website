@@ -1,38 +1,41 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import circleImage1 from '../../imgs/Ellipse793.png'
-import circleImage2 from '../../imgs/Ellipse794.png'
-import '../../css/MainContainer.css' // Importing the CSS file
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import circleImage1 from "../../imgs/Ellipse793.png";
+import circleImage2 from "../../imgs/Ellipse794.png";
+import "../../css/MainContainer.css"; // Importing the CSS file
 
 const MainContainer = () => {
   return (
-    <div className='about-page'>
-      <Row className='h-100 align-items-center detail-container'>
-        <Col lg={6} md={6} sm={12} className='about-content mt-5 '>
-          <h2 className='about-heading'>About Us</h2>
-          <h3 className='about-subheading'>We Listen. We Understand.</h3>
-          <h4 className='about-deliver'>We Deliver.</h4>
+    <div className="about-page">
+      <Row className="h-100 align-items-center detail-container">
+        <Col lg={6} md={6} sm={12} className="about-content mt-5 ">
+          <div>
+            <h2 className="about-heading">About Us</h2>
+            <div className="purple-line"></div>
+          </div>
+          <h3 className="about-subheading">We Listen. We Understand.</h3>
+          <h4 className="about-deliver">We Deliver.</h4>
         </Col>
 
         {/* Right Side Empty */}
-        <Col lg={6} md={6} sm={12} className='overlap-images'>
+        <Col lg={6} md={6} sm={12} className="overlap-images">
           {/* Overlapping Images */}
           <div>
             <img
               src={circleImage2}
-              alt='Circle 1'
-              className='circle-image circle1'
+              alt="Circle 1"
+              className="circle-image circle1"
             />
             <img
               src={circleImage1}
-              alt='Circle 2'
-              className='circle-image circle2'
+              alt="Circle 2"
+              className="circle-image circle2"
             />
           </div>
         </Col>
       </Row>
     </div>
-  )
-}
+  );
+};
 
-export default MainContainer
+export default MainContainer;

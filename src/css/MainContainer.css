@@ -4,10 +4,12 @@
   height: 350px;
   overflow: hidden;
 }
+
 .about-content {
   text-align: left;
   margin-left: 5rem;
 }
+
 .about-heading {
   width: 170px;
   height: 55px;
@@ -15,15 +17,7 @@
   line-height: 55px;
   font-weight: 700;
 }
-.about-heading::after {
-  content: '';
-  position: absolute;
-  top: 12rem;
-  left: 5.2rem;
-  width: 5%;
-  height: 4px;
-  background: linear-gradient(#5550bc, #57007b);
-}
+
 .about-subheading {
   color: #6a5acd;
   width: 500px;
@@ -51,6 +45,7 @@
   top: -8rem;
   margin-left: 69.6rem;
 }
+
 .circle-image.circle1 {
   position: absolute;
   top: -4rem;
@@ -65,6 +60,12 @@
   z-index: 2;
 }
 
+.purple-line {
+  width: 10%;
+  height: 3px;
+  background: linear-gradient(#5550bc, #57007b);
+}
+
 @media (max-width: 768px) {
   .about-page {
     display: flex;
@@ -72,8 +73,10 @@
     width: 100%;
     height: 170px;
   }
+
   .about-content {
-    position: relative; /* Enables movement with top/left properties */
+    position: relative;
+    /* Enables movement with top/left properties */
     top: -3rem;
     display: flex;
     flex-direction: column;
@@ -81,24 +84,18 @@
     margin-left: 1.2rem;
     height: 150px;
   }
-  .about-heading::after {
-    content: '';
-    position: absolute;
-    top: 2.5rem;
-    left: 1.5rem;
-    width: 10%;
-    height: 3px;
-    background: linear-gradient(#5550bc, #57007b);
-  }
 
   .about-heading {
     margin-top: 0.5rem;
     width: 109px;
     font-weight: 700;
-    font-size: 23px; /* Adjust font size for visibility */
+    font-size: 23px;
+    /* Adjust font size for visibility */
     line-height: 28px;
-    height: auto; /* Allow height to adjust based on content */
-    margin-left: 0.5rem; /* Apply negative margin to shift the heading */
+    height: auto;
+    /* Allow height to adjust based on content */
+    margin-left: 0.5rem;
+    /* Apply negative margin to shift the heading */
   }
 
   .about-subheading {
@@ -109,6 +106,7 @@
     margin-left: 0.5rem;
     margin-top: 0.5rem;
   }
+
   .about-deliver {
     position: relative;
     margin-top: 2.5rem;
@@ -119,29 +117,40 @@
     line-height: 30px;
     height: 60px;
   }
+
   .overlap-images {
     position: relative;
-    top: 4rem; /* Reset positioning */
-    right: -43px; /* Reset positioning */
-    margin: 1rem 0; /* Add spacing for the image */
+    top: 4rem;
+    /* Reset positioning */
+    right: -43px;
+    /* Reset positioning */
+    margin: 1rem 0;
+    /* Add spacing for the image */
     display: flex;
-    justify-content: center; /* Center the main content */
+    justify-content: center;
+    /* Center the main content */
     align-items: center;
   }
 
   .circle-image.circle1 {
     position: absolute;
-    top: -15rem; /* Move further up */
-    right: -17rem; /* Align to the right corner */
-    width: 80px; /* Circle size */
+    top: -15rem;
+    /* Move further up */
+    right: -17rem;
+    /* Align to the right corner */
+    width: 80px;
+    /* Circle size */
     height: 80px;
   }
 
   .circle-image.circle2 {
     position: absolute;
-    top: -13rem; /* Move further up, slightly below circle1 */
-    right: -17rem; /* Offset to the left of circle1 */
-    width: 90px; /* Circle size */
+    top: -13rem;
+    /* Move further up, slightly below circle1 */
+    right: -17rem;
+    /* Offset to the left of circle1 */
+    width: 90px;
+    /* Circle size */
     height: 90px;
   }
 }

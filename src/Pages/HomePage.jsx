@@ -6,7 +6,11 @@ import Projects from "../component/Home/Projects";
 import Reviews from "../component/Home/Reviews";
 import Contact from "../component/Home/Contact";
 
+import { useTitle } from "../utils";
+
 function HomePage() {
+  useTitle("Home | Flis Technologies");
+
   return (
     <>
       <HeroSection />
