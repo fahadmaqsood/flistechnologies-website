@@ -45,16 +45,25 @@ function AppNavbar() {
               Products
             </Nav.Link> */}
             <Nav.Link
-              id="project"
+              id="about-us"
               as={NavLink}
               to="/about-us"
               className="custom-nav-link"
             >
               About Us
             </Nav.Link>
+
+            <Nav.Link
+              id="contact-us-nav"
+              as={NavLink}
+              to="/contact-us"
+              className="custom-nav-link"
+            >
+              Contact Us
+            </Nav.Link>
           </Nav>
           <Button
-            id="contact"
+            id="contact-us"
             className="custom-contact-btn"
             onClick={() => {
               navigate("/contact-us");

@@ -88,11 +88,26 @@ button:active,
   color: #fff !important;
 }
 
+
+#contact-us-nav {
+  display: none !important;
+}
+
 @media (max-width: 768px) {
   .custom-contact-btn {
+    display: none;
     position: relative;
     /* top: -24rem; */
     /* Moves the button upwards */
+  }
+
+  .custom-nav-links {
+    gap: 1rem;
+    justify-content: start;
+  }
+
+  #contact-us-nav {
+    display: block !important;
   }
 
   .custom-navbar {
@@ -247,14 +262,5 @@ button:active,
   .sidebar .custom-contact-btn::before {
     content: url('../imgs/Group1.png');
     margin-right: 20px;
-  }
-
-  #home {
-    /* margin-left: -1rem; */
-    margin-top: -22rem;
-  }
-
-  #project {
-    margin-top: -3rem;
   }
 }
