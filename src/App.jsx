@@ -1,5 +1,6 @@
 import "./App.css";
 import AppNavbar from "./component/AppNavbar";
+import InfoBanner from "./component/InfoBanner";
 import Footer from "./component/Footer";
 import AbooutPage from "./Pages/AbooutPage";
 import ContactPage from "./Pages/ContactPage";
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <Router>
+        <InfoBanner />
         <AppNavbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
