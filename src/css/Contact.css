@@ -74,6 +74,11 @@
 /* Media Queries for Responsiveness */
 
 @media (max-width: 768px) {
+  .address {
+    display: none;
+  }
+
+  /*
   .contact-container {
     margin-left: 0rem;
     background-color: #f9f9ff;
@@ -83,17 +88,9 @@
   .top-para {
     margin: 0;
     text-align: center;
-    width: 290px;
     font-weight: 400;
-    line-height: 9.21px;
-    font-size: 8.5px;
     color: #9f9f9f;
     margin-top: -10px;
-  }
-
-  .tech-heading {
-    font-size: 15.32px;
-    line-height: 23px;
   }
 
   .contact-container {
@@ -102,47 +99,42 @@
   }
 
   .address {
-    width: 300px;
-    margin-left: 1rem;
     margin-top: -2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    gap: 40px;
+    flex-direction: column;
   }
 
   .address-col {
     display: flex;
     flex-direction: column;
-    width: 64.55px;
+    width: 100%;
+    margin-bottom: 0 !important;
   }
 
   .heading5 {
-    width: 49px;
-    font-size: 6.8px;
-    height: 11px;
-    line-height: 10.5px;
     font-weight: 500;
-    margin-left: -5px;
-    margin-top: 10px;
+    vertical-align: middle;
+    margin-left: 0px;
   }
 
   .para p {
-    margin-top: -1.2rem;
-    width: 72.52px;
-    font-size: 6.23px;
-    line-height: 7.5px;
     font-weight: 400;
-    margin-left: 10px;
+    margin-left: 25px;
   }
 
   .iconimgs {
-    width: 7px;
-    height: 6.9px;
+    width: 16px;
+    vertical-align: middle;
+  }
+
+  .icon-imgs {
+    width: auto;
+    height: auto;
   }
 
   .img-title {
     display: flex;
-  }
+  }*/
 }

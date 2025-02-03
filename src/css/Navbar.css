@@ -261,7 +261,7 @@ button:active,
     margin-right: 20px;
   }
 
-  .sidebar .custom-contact-btn::before {
+  .sidebar .custom-nav-link:nth-child(4)::before {
     content: url('../imgs/Group1.png');
     margin-right: 20px;
   }
