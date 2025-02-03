@@ -63,10 +63,6 @@
   border-radius: 10px;
 }
 
-.btn-pj {
-  margin-top: 5rem;
-}
-
 @media (max-width: 768px) {
   .project-container {
     background-color: #f9f9ff;
