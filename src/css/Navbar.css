@@ -208,6 +208,8 @@ button:active,
     text-align: start;
     /* Align text to the left */
     border-bottom: 1px solid #444;
+
+    width: 90%;
     /* Optional: Add a divider between links */
   }
 
@@ -232,7 +234,7 @@ button:active,
   }
 
   .custom-nav-link:hover {
-    text-align: center;
+    /* text-align: center; */
     background-color: grey;
     width: 90%;
     border-radius: 5px;
