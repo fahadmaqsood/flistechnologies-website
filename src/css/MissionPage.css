@@ -3,12 +3,17 @@
   padding: 0;
   margin: 0;
   background-color: #f9f9ff;
-  position: relative; /* Fix container at the top */
-  bottom: 3rem; /* Ensures it stays at the top */
-  left: 0; /* Ensure it stretches across the entire width */
+  position: relative;
+  /* Fix container at the top */
+  bottom: 3rem;
+  /* Ensures it stays at the top */
+  left: 0;
+  /* Ensure it stretches across the entire width */
   height: 59.9rem;
-  margin-bottom: 2rem; /* Optional bottom margin */
+  margin-bottom: 2rem;
+  /* Optional bottom margin */
 }
+
 .text {
   color: #000000;
   display: flex;
@@ -21,6 +26,7 @@
 .mission-subheading {
   color: #000000;
 }
+
 .mission-text {
   margin: 0px;
   color: #000000;
@@ -29,11 +35,16 @@
   font-size: 20px;
   line-height: 27px;
 }
+
 .mission-row {
-  display: flex; /* Flex layout for the Row */
-  justify-content: space-between; /* Ensures space between Col elements */
-  align-items: center; /* Aligns items vertically */
+  display: flex;
+  /* Flex layout for the Row */
+  justify-content: space-between;
+  /* Ensures space between Col elements */
+  align-items: center;
+  /* Aligns items vertically */
 }
+
 .mission-quote {
   margin: 0px;
   color: #000000;
@@ -43,7 +54,8 @@
 }
 
 .mission-subheading .purple-text {
-  color: #5550bc; /* Color for the 'Vision' text */
+  color: #5550bc;
+  /* Color for the 'Vision' text */
   font-size: 2rem;
 }
 
@@ -52,15 +64,21 @@
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
 .mission-heading::after {
-  content: ''; /* Creates an empty pseudo-element */
+  content: '';
+  /* Creates an empty pseudo-element */
   position: absolute;
-  top: 5.5rem; /* Align it at the bottom of the text */
+  top: 5.5rem;
+  /* Align it at the bottom of the text */
   left: 4.5rem;
-  width: 5%; /* Make it the full width of the text */
-  height: 4px; /* Increase the thickness of the line */
+  width: 5%;
+  /* Make it the full width of the text */
+  height: 4px;
+  /* Increase the thickness of the line */
   background: linear-gradient(#5550bc, #57007b);
 }
+
 .mission-subheading {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -75,25 +93,34 @@
   font-style: italic;
   margin: 20px 0;
 }
+
 .image-section img {
-  max-width: 100%; /* Ensures the images are responsive */
+  max-width: 100%;
+  /* Ensures the images are responsive */
   height: auto;
 }
+
 .member {
-  background-color: rgba(0, 0, 0, 0.849); /* 20% transparent black */
+  background-color: rgba(0, 0, 0, 0.849);
+  /* 20% transparent black */
   height: 12rem;
   display: flex;
   align-items: center;
-  justify-content: center; /* Centers the content inside */
-  border: 1px solid rgba(0, 0, 0, 0.1); /* Optional for visibility */
+  justify-content: center;
+  /* Centers the content inside */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* Optional for visibility */
   position: relative;
-  margin-top: 100px; /* Increases the space above */
-  margin-bottom: 50px; /* Space below, adjust if needed */
+  margin-top: 100px;
+  /* Increases the space above */
+  margin-bottom: 50px;
+  /* Space below, adjust if needed */
 }
 
 .downcircle {
   position: absolute;
-  bottom: -50px; /* Moves the circle below */
+  bottom: -50px;
+  /* Moves the circle below */
   right: 35px;
   width: 90px;
   height: 50px;
@@ -105,7 +132,8 @@
 
 .upcircle {
   position: absolute;
-  top: -50px; /* Moves the circle above */
+  top: -50px;
+  /* Moves the circle above */
   left: 35px;
   width: 90px;
   height: 50px;
@@ -114,11 +142,13 @@
   border-top-right-radius: 100px;
   z-index: 10;
 }
+
 @media (max-width: 768px) {
   .Mission-container {
     width: 100%;
     height: 57rem;
   }
+
   .mission-heading {
     margin-left: -2rem;
     width: 70px;
@@ -126,15 +156,21 @@
     font-size: 18.11px;
     line-height: 32.33px;
   }
+
   .mission-heading::after {
-    content: ''; /* Creates an empty pseudo-element */
+    content: '';
+    /* Creates an empty pseudo-element */
     position: absolute;
-    top: 5rem; /* Align it at the bottom of the text */
+    top: 5rem;
+    /* Align it at the bottom of the text */
     left: 2rem;
-    width: 7%; /* Make it the full width of the text */
-    height: 2px; /* Increase the thickness of the line */
+    width: 7%;
+    /* Make it the full width of the text */
+    height: 2px;
+    /* Increase the thickness of the line */
     background: linear-gradient(#5550bc, #57007b);
   }
+
   .mission-subheading {
     margin-left: -2rem;
     width: 150px;
@@ -142,9 +178,11 @@
     font-size: 18.11px;
     line-height: 32.33px;
   }
+
   .mission-text {
     position: relative;
-    left: -2rem; /* Moves the element left by 2rem */
+    left: -2rem;
+    /* Moves the element left by 2rem */
 
     margin-left: -2rem;
     margin: 0px;
@@ -154,6 +192,7 @@
     font-size: 9.31px;
     line-height: 14px;
   }
+
   .mission-quote {
     position: relative;
     left: -2rem;
@@ -163,18 +202,22 @@
     font-weight: 400;
     font-size: 9.31px;
   }
+
   .image-section img {
-    max-width: 50%; /* Ensures the images are responsive */
+    max-width: 50%;
+    /* Ensures the images are responsive */
     height: 307px;
   }
+
   .mission-img {
     margin-left: -6rem;
     height: 275px;
     margin-top: -2.5rem;
   }
+
   .image-section {
     position: relative;
-    margin-top: 15px;
+    margin-top: 70px;
     height: 210px;
     width: 90%;
     display: flex;
@@ -193,14 +236,18 @@
 
   .image-section .img-bottom-left {
     bottom: -20%;
-    left: 5%; /* Adjust horizontal positioning */
-    z-index: 2; /* Ensure it's on top */
+    left: 5%;
+    /* Adjust horizontal positioning */
+    z-index: 2;
+    /* Ensure it's on top */
   }
 
   .image-section .img-top-right {
     top: 0;
-    right: 10%; /* Adjust horizontal positioning */
-    z-index: 1; /* Ensure it's below img-bottom-left */
+    right: 10%;
+    /* Adjust horizontal positioning */
+    z-index: 1;
+    /* Ensure it's below img-bottom-left */
   }
 
   /* Add circles on left and right sides */
@@ -210,7 +257,8 @@
     width: 70px;
     height: 70px;
     background: linear-gradient(#5550bc, #57007b);
-    border-radius: 50%; /* Make them circles */
+    border-radius: 50%;
+    /* Make them circles */
     z-index: 0;
   }
 
@@ -223,8 +271,10 @@
     bottom: 10px;
     right: 35%;
   }
+
   .member {
-    margin-top: 2rem; /* Changed from -2rem to a positive value */
+    margin-top: 2rem;
+    /* Changed from -2rem to a positive value */
     width: 405px;
     height: 71px;
   }
@@ -237,6 +287,7 @@
     line-height: 17.68px;
     font-size: 11.25px;
   }
+
   .mission-para {
     margin-left: -5px;
     width: 43px;
