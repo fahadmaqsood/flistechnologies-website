@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../imgs/GameDesign.png";
+import img1 from "../../imgs/hero.png";
 import "../../css/HeroSection.css"; // Include updated CSS
 
 function HeroSection() {

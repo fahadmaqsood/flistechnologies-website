@@ -38,16 +38,16 @@ const Reviews = () => {
       <div className="mb-4 simple-line"></div>
 
       <div className="customerdiv">
-        <h4 className="mb-1 d-none d-lg-block customer-heading">
+        {/* <h4 className="mb-1 d-none d-lg-block customer-heading">
           Why customers love
         </h4>
-        <h2 className="customer-heading d-none d-lg-block">working with us</h2>
+        <h2 className="customer-heading d-none d-lg-block">working with us</h2> */}
 
-        <h4 className="mb-1 d-lg-none customer-heading">
-          Why customers love working with us
+        <h4 className="customer-heading">
+          Why customers love <br /> working with us
         </h4>
       </div>
-      <div className="mb-md-5 mb-sm-0 review-container">
+      <div className="mt-md-5 mb-sm-0 review-container">
         <img src={comma} alt="" className="left-comma" />
         <p className="review-pragh">
           Without any doubt I recommend Flistechnology as one of the best web
@@ -78,7 +78,7 @@ const Reviews = () => {
                 }`}
                 width={index === activeIndex ? "190" : "140"}
                 height={index === activeIndex ? "190" : "140"}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "none" }}
               />
               <div className="my-2 stats">
                 <FaStar color="gold" />

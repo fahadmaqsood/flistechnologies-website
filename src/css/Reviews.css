@@ -52,8 +52,8 @@
 }
 
 .review-col img {
-  width: 150px;
-  height: 150px;
+  width: 105px;
+  height: 105px;
 }
 
 .designation {
@@ -111,9 +111,11 @@
 }
 
 .review-col img {
-  opacity: 0.6;
+  opacity: 1;
   transition: all 0.3s ease;
 }
+
+
 
 .highlightedparagraph {
   font-weight: bold;
@@ -130,6 +132,10 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 2rem;
+}
+
+.customer-heading {
+  line-height: 35px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -156,7 +162,7 @@
     max-width: 188px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 35px;
   }
 
   .review-pragh {
@@ -206,8 +212,8 @@
   }
 
   .review-col img {
-    width: 80.6px;
-    height: 43.6px;
+    width: 50px;
+    height: 50px;
   }
 
   .rounded-circle {
