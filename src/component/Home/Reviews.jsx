@@ -62,7 +62,7 @@ const Reviews = () => {
         <div className="Icons prev-icon" onClick={handlePrev}>
           <FaArrowLeft style={{ color: "white", fontSize: "1.5rem" }} />
         </div>
-        <Row className="justify-content-center no-gutters">
+        <Row className="justify-content-center">
           {reviews.map((review, index) => (
             <Col
               key={index}

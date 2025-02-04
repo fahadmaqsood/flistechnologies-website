@@ -143,7 +143,7 @@
     /* margin-left: 0rem; */
     /* margin-top: -0.8rem; */
     /* width: 405px; */
-    height: 370px;
+    height: 405px;
   }
 
   .simple-line {
@@ -185,7 +185,8 @@
   .stats {
     margin-top: -1rem;
     display: flex;
-    width: 80px;
+    width: 100%;
+    justify-content: center;
   }
 
   .no-gutters {
@@ -199,15 +200,12 @@
   }
 
   .review-col {
-    margin-left: -1rem;
-    width: 105px;
     height: 105px;
     display: flex;
     flex-direction: column;
   }
 
   .review-col p {
-    margin-left: -2rem;
     font-weight: 400;
   }
 
