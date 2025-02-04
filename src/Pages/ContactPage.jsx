@@ -173,7 +173,7 @@ const ContactPage = () => {
                   <div className="custom-radio">
                     <Form.Check
                       inline
-                      label="General Inquiry"
+                      label="Build me a project"
                       name="subject"
                       type="radio"
                       id="subject3"
@@ -210,9 +210,10 @@ const ContactPage = () => {
                 Message
               </Form.Label>
               <div class="textarea">
-                <input
+                <textarea
                   type="text"
                   id="itemInput"
+                  rows={4}
                   placeholder="Write your message.."
                 />
               </div>

@@ -60,7 +60,7 @@
   font-size: 14px;
 }
 
-.textarea input {
+.textarea textarea {
   border: none;
   border-bottom: 3px solid #8d8d8d;
   width: 595px;
