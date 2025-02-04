@@ -10,6 +10,8 @@ import ProjectPage from "./Pages/ProjectPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
+  document.title = "Flis Technologies";
+
   return (
     <>
       <Router>
