@@ -43,7 +43,7 @@ const Reviews = () => {
         </h4>
         <h2 className="customer-heading d-none d-lg-block">working with us</h2>
 
-        <h4 className="mb-1 customer-heading">
+        <h4 className="mb-1 d-lg-none customer-heading">
           Why customers love working with us
         </h4>
       </div>

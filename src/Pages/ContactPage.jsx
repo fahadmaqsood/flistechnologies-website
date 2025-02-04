@@ -39,11 +39,11 @@ const ContactPage = () => {
           <div className="mb-4 mt-5 data">
             <div className="mb-3 mt-2 icon-text">
               <img src={phoneIcon} alt="Phone" className="me-2 custom-icon" />
-              <span className="span">+92 123 456789</span>
+              <span className="span">+92 334 1852985</span>
             </div>
             <div className="mb-3 mt-2 icon-text">
               <img src={emailIcon} alt="Email" className="me-2 custom-icon" />
-              <span className="span">demo@gmail.com</span>
+              <span className="span">admin@flistech.com</span>
             </div>
             <div className="mb-4 icon-text">
               <img
@@ -51,7 +51,12 @@ const ContactPage = () => {
                 alt="Location"
                 className="me-2 custom-icon"
               />
-              <span className="span">123Street, Qasimabad,</span>
+              <span className="span">Main Wadhu Wah Road,</span>
+              <br />
+              <span style={{ marginLeft: "2rem" }} className="span">
+                {" "}
+                Qasimabad,
+              </span>
               <br />
               <span style={{ marginLeft: "2rem" }} className="span">
                 {" "}

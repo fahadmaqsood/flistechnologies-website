@@ -4,7 +4,7 @@ import "../css/Navbar.css";
 
 function InfoBanner() {
   return (
-    <div className="info-banner p-2 text-center bg-black text-white">
+    <div className="info-banner p-2 text-center bg-danger text-white">
       Note: This website is still under construction.
     </div>
   );
