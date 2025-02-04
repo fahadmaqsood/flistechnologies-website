@@ -67,7 +67,7 @@ const ContactPage = () => {
 
           <div className="diff">
             {/* Social Media Icons */}
-            <div className="social-icons d-flex">
+            <div className="social-icons d-flex invisible">
               <img
                 src={twitterIcon}
                 alt="Twitter"
