@@ -21,6 +21,7 @@
   background-color: transparent;
   position: relative;
   top: -12rem;
+  cursor: pointer;
 }
 
 .review-pragh {
