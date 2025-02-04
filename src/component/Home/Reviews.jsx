@@ -34,14 +34,20 @@ const Reviews = () => {
   };
 
   return (
-    <Container className="text-center py-5 py-sm-4 py-xs-0 review-contain ">
+    <Container className="text-center py-md-5 py-sm-4 review-contain ">
       <div className="mb-4 simple-line"></div>
 
       <div className="customerdiv">
-        <h4 className="mb-4 mb-sm-1 customer-heading">Why customers love</h4>
-        <h2 className="customer-heading">working with us</h2>
+        <h4 className="mb-1 d-none d-lg-block customer-heading">
+          Why customers love
+        </h4>
+        <h2 className="customer-heading d-none d-lg-block">working with us</h2>
+
+        <h4 className="mb-1 customer-heading">
+          Why customers love working with us
+        </h4>
       </div>
-      <div className="mb-5 mb-sm-0 review-container">
+      <div className="mb-md-5 mb-sm-0 review-container">
         <img src={comma} alt="" className="left-comma" />
         <p className="review-pragh">
           Without any doubt I recommend Flistechnology as one of the best web
@@ -60,9 +66,8 @@ const Reviews = () => {
           {reviews.map((review, index) => (
             <Col
               key={index}
-              md={2}
               className={`review-col text-center ${
-                index === activeIndex ? "active-review" : ""
+                index === activeIndex ? "active-review" : "d-none"
               }`}
             >
               <img

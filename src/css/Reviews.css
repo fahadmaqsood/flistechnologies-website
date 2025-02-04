@@ -105,6 +105,8 @@
   opacity: 1;
   transform: scale(1.1);
   transition: all 0.3s ease;
+
+  display: block;
 }
 
 .review-col img {
@@ -176,8 +178,7 @@
   .stats {
     margin-top: -1rem;
     display: flex;
-    width: 38px;
-    height: 5.91px;
+    width: 80px;
   }
 
   .no-gutters {
@@ -192,24 +193,20 @@
 
   .review-col {
     margin-left: -1rem;
-    width: 65px;
-    height: 68.2px;
+    width: 105px;
+    height: 105px;
     display: flex;
     flex-direction: column;
   }
 
   .review-col p {
     margin-left: -2rem;
-    margin: 0;
-    width: 40px;
     font-weight: 400;
-    font-size: 4px;
-    line-height: 8px;
   }
 
   .review-col img {
-    width: 33.6px;
-    height: 33.6px;
+    width: 80.6px;
+    height: 43.6px;
   }
 
   .rounded-circle {

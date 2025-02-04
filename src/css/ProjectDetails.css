@@ -4,12 +4,14 @@
   height: 350px;
   overflow: hidden;
 }
+
 .project-content {
   text-align: left;
   margin-left: 4rem;
   width: 800px;
 }
-.success-heading::after {
+
+/* .success-heading::after {
   content: '';
   position: absolute;
   top: 12rem;
@@ -17,7 +19,7 @@
   width: 5%;
   height: 4px;
   background: linear-gradient(#5550bc, #57007b);
-}
+} */
 .success-subheading {
   margin-top: 3rem;
   width: 770px;
@@ -26,6 +28,7 @@
   font-weight: 800;
   line-height: 38px;
 }
+
 .shaping-heading {
   height: 114px;
   width: 670px;
@@ -41,8 +44,10 @@
     /* width: 405px; */
     height: 180px;
   }
+
   .project-content {
-    position: relative; /* Enables movement with top/left properties */
+    position: relative;
+    /* Enables movement with top/left properties */
     top: -3rem;
     display: flex;
     flex-direction: column;
@@ -50,7 +55,8 @@
     margin-left: 1.2rem;
     height: 150px;
   }
-  .success-heading::after {
+
+  /* .success-heading::after {
     content: '';
     position: absolute;
     top: 2rem;
@@ -58,7 +64,7 @@
     width: 15%;
     height: 2px;
     background: linear-gradient(#5550bc, #57007b);
-  }
+  } */
 
   .success-heading {
     width: 239px;
@@ -77,6 +83,7 @@
     font-weight: 800;
     margin-left: 0.5rem;
   }
+
   .success-subheading span {
     margin-top: -1rem;
     width: 240px;
@@ -85,6 +92,7 @@
     font-weight: 800;
     height: 115px;
   }
+
   .shaping-heading {
     position: relative;
     font-weight: 800;
@@ -96,29 +104,40 @@
     line-height: 23px;
     height: 151px;
   }
+
   .overlap-images {
     position: relative;
-    top: 3.8rem; /* Reset positioning */
-    right: -43px; /* Reset positioning */
-    margin: 1rem 0; /* Add spacing for the image */
+    top: 3.8rem;
+    /* Reset positioning */
+    right: -43px;
+    /* Reset positioning */
+    margin: 1rem 0;
+    /* Add spacing for the image */
     display: flex;
-    justify-content: center; /* Center the main content */
+    justify-content: center;
+    /* Center the main content */
     align-items: center;
   }
 
   .circle-image.circle1 {
     position: absolute;
-    top: -13rem; /* Move further up */
-    right: -17rem; /* Align to the right corner */
-    width: 70px; /* Circle size */
+    top: -13rem;
+    /* Move further up */
+    right: -17rem;
+    /* Align to the right corner */
+    width: 70px;
+    /* Circle size */
     height: 70px;
   }
 
   .circle-image.circle2 {
     position: absolute;
-    top: -11rem; /* Move further up, slightly below circle1 */
-    right: -17rem; /* Offset to the left of circle1 */
-    width: 80px; /* Circle size */
+    top: -11rem;
+    /* Move further up, slightly below circle1 */
+    right: -17rem;
+    /* Offset to the left of circle1 */
+    width: 80px;
+    /* Circle size */
     height: 80px;
   }
 }
