@@ -173,7 +173,7 @@ const ContactPage = () => {
                   <div className="custom-radio">
                     <Form.Check
                       inline
-                      label="Build me a project"
+                      label="Project development"
                       name="subject"
                       type="radio"
                       id="subject3"
@@ -183,7 +183,7 @@ const ContactPage = () => {
                   <div className="custom-radio">
                     <Form.Check
                       inline
-                      label="General Inquiry"
+                      label="Technical Support"
                       name="subject"
                       type="radio"
                       id="subject4"
@@ -193,7 +193,7 @@ const ContactPage = () => {
                   <div className="custom-radio">
                     <Form.Check
                       inline
-                      label="General Inquiry"
+                      label="Other"
                       name="subject"
                       type="radio"
                       id="subject5"
